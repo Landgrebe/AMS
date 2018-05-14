@@ -2,24 +2,21 @@
 \graphicspath{{Chapters/Struktur/}}
 %-------------------------------------------------------------------------------
 
-\section{Struktur}
+\section{Graphic display driver}
 
-I dette projekt er der taget et valg udfra læringsmålene om at vi bruger Blackfin platformen til at udføre projektetes funktionalitet. Da en blackfin processor er bygget op af mange funktionalle blokke, vil der i det kommende afsnit laves et overblik over de hardware blokke som bliver brugt i dette projekt. \cite{Struktur}
+Som brugergrænseflade i dette projekt bruges et ITDB02, som er valgt da der tidligere er arbejdet med netop dette produkt. Dertil kommer ILI9341 som driver til selve display'et. 
+
+Driver softwaren til hele displayet, er delt op i flere forskellige cpp filer, dette er gjort for at gøre koden mere overskuelig, og gøre funktionaliteten mere effektiv. Herunder forsøges at gøre et overblik over de forskellige cpp filer og deres integeren. 
+
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = 400pt]{Img/Struktur}
-	\caption{Struktur NSS}
-	\label{fig:LMS_filter}
+	\includegraphics[width = 300 pt]{Img/Entity.png}
+	\caption{Entity Relationship Diagrams}
+	\label{fig:Konceptbillede}
 \end{figure}
+ 
+---Skriv noget når det hele er færdig her
 
-Igennem processen af vores funktionalitet, sendes lydsignalet gennem en codec1836, som har til opgave at sende inputtet gennem en ADC, hvorefter den sender det digitale signal videre til SPORT0, som står for at modtage og sende dataen. \\
 
-DMA'en står for at sende dataen videre til Rx bufferen, når bufferen er fuld sender DMA'en interrupt til processeren om at procesere den modtagne data. \\
-I den modsatte retning bliver det proceserede data flyttet til Tx bufferen, når Tx bufferen er fuld, sendes det til SPORT0 via DMA'en med Ch 2.  
-Til sidst bliver dataen samplet gennem CODEC, som konverterer til til et analogt signal vha. den en DAC.
-De forskellige blokke i strukturen fra figur \ref{fig:LMS_filter}, er implementeret i klassen Init. 
-  
-
-\newpage
 

@@ -3,16 +3,15 @@
 %-------------------------------------------------------------------------------
 
 \section{Indledning}
-Under optagelse til et live madprogram, sker det ofte at værten skal bruge en blender/foodprocesser. Dette betyder at værten ikke kan kommunikere med seerne mens blenderen/foodprocesseren kører. Denne problematik vil Noise Suppression System (NSS) kunne afhjælpe. Gennem en digital signal prossesering (DSP), vil vi dæmpe støjsignalet fra en køkkenmaskine dynamisk i realtid. Systemet består af to mikrofoner, et placeres tæt på støjen, et andet tæt på værten. De to mikrofoner fungere som input til vores system (Blackfin), hvor procceseringen og filtreringen foregår. Efter proceseringen bliver produktet afspillet på en højtaler, som erstatning for højtaleren fra et tv-apperat. Et overblik over systemet kan ses på figur \ref{fig:konceptbillede}
+Næsten alle danskere har nu til dags en mobil på sig som, som indeholder et bluetooth modul. Dette vil vi gerne udnytte til at kunne låse og åbne hoveddøren hos private personer. Dette betyder at forbrugeren aldrig skal tænke på at have nøgle med fra hjemmet, eller finde dem inden man kan lukke sig selv ind. 
+Denne prototype vil derfor kunne låse og låse op for en dør, alt efter om man med sin bluetooth enhed er i nærheden af døren. Hele systemet styres fra en samlet enhed, som kan integeres fra brugeren gennem en skærm og dertilhørende touch funktion. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = 400pt]{Img/Konceptbillede}
-	\caption{Konceptbillede for NSS}
-	\label{fig:konceptbillede}
+	\includegraphics[width = 300 pt]{Img/Konceptbillede.png}
+	\caption{Konceptbillede}
+	\label{fig:Konceptbillede}
 \end{figure}
 
-Med udgangspunkt i brugerens behov vil der blive opstillet en række brugsscenarier, der beskriver brugerens interaktion med systemet. Disse scenarier vil sammen med en række veldefinerede krav og afgrænsninger, danne grundlaget for designet af alle dele af systemet.  \\ 
-
-\newpage
+Igennem brugergrænsefladen kan brugeren tilføje og fjerne enheder (personer) som skal kunne låse og låse op for døren. Når den sidste enhed er uden for rækkevidde, låses døren, og så snart systemet ser en godkendt enhed indenfor rækkevidden bliver døren låst op. 
 

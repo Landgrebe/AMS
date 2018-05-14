@@ -1,14 +1,4 @@
 \BOOKMARK [1][-]{section.1}{Indledning}{}% 1
 \BOOKMARK [1][-]{section.2}{Krav}{}% 2
-\BOOKMARK [1][-]{section.3}{Akt\370rbeskrivelse}{}% 3
-\BOOKMARK [1][-]{section.4}{Use case beskrivelse}{}% 4
-\BOOKMARK [2][-]{subsubsection.4.0.1}{UC 1 - Turn on filter}{section.4}% 5
-\BOOKMARK [3][-]{subsubsection.4.0.2}{UC 2 - Turn off filter}{subsubsection.4.0.1}% 6
-\BOOKMARK [3][-]{subsubsection.4.0.3}{UC 3 - Filter aktiv}{subsubsection.4.0.1}% 7
-\BOOKMARK [1][-]{section.5}{Ikke-funktionelle krav}{}% 8
-\BOOKMARK [2][-]{subsection.5.1}{Problemrelateret krav}{section.5}% 9
-\BOOKMARK [2][-]{subsection.5.2}{System og algoritme krav}{section.5}% 10
-\BOOKMARK [2][-]{subsection.5.3}{Afledte krav}{section.5}% 11
-\BOOKMARK [1][-]{section.6}{Acceptest}{}% 12
-\BOOKMARK [1][-]{section.7}{Struktur}{}% 13
-\BOOKMARK [1][-]{section.8}{Teori}{}% 14
+\BOOKMARK [1][-]{section.3}{Graphic display driver}{}% 3
+\BOOKMARK [1][-]{section.4}{Teori}{}% 4
