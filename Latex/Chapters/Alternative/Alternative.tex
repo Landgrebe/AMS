@@ -1,0 +1,25 @@
+	%!TEX root = ../../Main.tex
+\graphicspath{{Chapters/Alternative/}}
+%-------------------------------------------------------------------------------
+
+
+\section{Fordele og ulemper}
+Da projektets omfang og opbygning har været meget frit, er der også blevet lavet nogle valgt og fravalg i process fasen. Dette vil vi give et overblik over i dette afsnit, forklare fordele og ulmeper ved hvert modul vi har valgt, og driverne dertil. Herunder gives et overblik over de emner gruppen mener har været mest essentielle ift fordele og ulemper af de forekellige moduler. 
+\newline
+\newline
+\textbf{TFT Display} \\*
+Da omfanget for projektet inkluderede et display, gjorde gruppen et valg om at bruge TJC-9341-032 som display, og \href{https://blackboard.au.dk/bbcswebdav/pid-1697983-dt-content-rid-3847230_1/courses/BB-Cou-UUVA-73302/BB-Cou-UUVA-65758_ImportedContent_20170106021228/BB-Cou-STADS-UUVA-52360_ImportedContent_20160107025559/LAB/Lab3a%20Graphic%20LCD%20Display/Files%20for%20LAB3a/ILI9341_v1.11.pdf}{ILI9341} 
+som display controller. Dette \href{https://blackboard.au.dk/bbcswebdav/pid-1697983-dt-content-rid-3847230_1/courses/BB-Cou-UUVA-73302/BB-Cou-UUVA-65758_ImportedContent_20170106021228/BB-Cou-STADS-UUVA-52360_ImportedContent_20160107025559/LAB/Lab3a%20Graphic%20LCD%20Display/Files%20for%20LAB3a/ILI9341_v1.11.pdf}{ILI9341} 
+er valgt på baggrund af, gruppen har abejdet med dette display modul tidligere, derudover var dette også tilgængeligt.
+Til selve display'et er der valgt kun at kunne skrive til display'et og ikke læse fra det. Fordelen ved kun at sende data til displayet, er at det gør opsætningen meget nemmere for udvikleren. \\
+Fordelen ved at intialisere driveren til at kunne modtage data fra displayet, ville være at programstrukturen, kunne spørge skærmen hvilket display, der var på skærmen nu. Dette vil sikre at programstrukturen altid ved hvilket frame der vises på displayet. Ulempen ved den måde gruppen har intialiseret driveren på, er at microcontroller skal holde styr på hvilken frame, der vises på skærmen. Dette gør det mere udfordrende for udvikleren, og derved gør at koden kommer til at fylde mere. Hvis driveren skulle laves på en memory kritisk microcontroller, ville det være en fordel at tilføje skærmen at kunne læse hvilket frame der står på skærmen. \\
+Vi har ikke brugt meget tid på at undersøge alternative display. Der blev valgt at et Alphanumeric display, som tidligere var bearbejdet, ikke villde opfylde de krav vi havde til displayet, og da controlleren shielded ITDB02 
+, havde en Touch controller del, blev Alphanumeric display'et valgt fra.
+\newline
+\newline
+\textbf{Gør brug af globale variabler} \\*
+Igennem de forskellige drivere gøres brug af globale variabler, dette er gjort da for at simplificire udviklingen af driverene. Denne metode at programmere på er dog ikke god program skik, og hvis gruppen havde afsat mere tid til at udvikling, ville det første være at erstatte disse globale variabler, med get og set metoder. 
+\newline
+\newline
+\textbf{Bluetooth} \\*
+  

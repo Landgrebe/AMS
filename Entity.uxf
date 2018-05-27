@@ -4,8 +4,8 @@
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>170</x>
-      <y>100</y>
+      <x>180</x>
+      <y>110</y>
       <w>890</w>
       <h>590</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>610</x>
-      <y>260</y>
+      <x>620</x>
+      <y>270</y>
       <w>160</w>
       <h>400</h>
     </coordinates>
@@ -64,8 +64,8 @@ drawNumber
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>340</x>
-      <y>140</y>
+      <x>350</x>
+      <y>150</y>
       <w>130</w>
       <h>60</h>
     </coordinates>
@@ -77,25 +77,25 @@ drawNumber
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>420</x>
-      <y>410</y>
+      <x>450</x>
+      <y>340</y>
       <w>150</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>character.h
 --
-bogstaver
+bogstaver[]
 -.
-array_carrier</panel_attributes>
+array_carrier[]</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>260</x>
-      <y>280</y>
+      <x>230</x>
+      <y>290</y>
       <w>130</w>
-      <h>190</h>
+      <h>280</h>
     </coordinates>
     <panel_attributes>display.c
 --
@@ -111,70 +111,105 @@ movePointerDown
 -.
 lock
 -.
-pickDevices</panel_attributes>
+pickDevices
+-.
+toggleLock
+-.
+TouchDraw
+-.
+cleanDisplay
+-.
+toggleSwitch
+-.
+MakeLogo</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>200</y>
+      <w>70</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>50.0;10.0;50.0;30.0;10.0;30.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>260</y>
+      <w>290</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;30.0;150.0;30.0;150.0;10.0;270.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>280</y>
+      <w>70</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>180</y>
+      <w>370</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;350.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>180</y>
+      <w>160</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Touch.c
+--
+TouchInit
+-.
+TouchRead
+-.
+Pulse
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>430</y>
+      <w>150</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>logo.h
+--
+LogoBitmaps[]
+-.
+LogoDescriptors[]</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>350</x>
-      <y>190</y>
-      <w>30</w>
-      <h>110</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>380</x>
-      <y>250</y>
-      <w>250</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;</panel_attributes>
-    <additional_attributes>10.0;50.0;110.0;50.0;110.0;10.0;230.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>540</x>
-      <y>270</y>
+      <y>300</y>
       <w>90</w>
-      <h>160</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=-&gt;</panel_attributes>
-    <additional_attributes>70.0;10.0;10.0;10.0;10.0;140.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>460</x>
-      <y>170</y>
-      <w>370</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;350.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>810</x>
-      <y>170</y>
-      <w>160</w>
-      <h>110</h>
-    </coordinates>
-    <panel_attributes>Touch.c
---
-TouchInit
--.
-TouchWriteCommand
--.
-TouchReadData
--.
-TouchRead</panel_attributes>
-    <additional_attributes/>
+    <additional_attributes>10.0;10.0;70.0;10.0;70.0;130.0</additional_attributes>
   </element>
 </diagram>
