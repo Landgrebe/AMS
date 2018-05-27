@@ -5,16 +5,17 @@
 \BOOKMARK [2][-]{subsubsection.4.0.1}{UC 1 - ADD DEVICE}{section.4}% 5
 \BOOKMARK [3][-]{subsubsection.4.0.2}{UC 2 - REMOVE DEVICE}{subsubsection.4.0.1}% 6
 \BOOKMARK [3][-]{subsubsection.4.0.3}{UC 3 - LOCK ON / LOCK OFF / AUTO}{subsubsection.4.0.1}% 7
-\BOOKMARK [1][-]{section.5}{Ikke-funktionelle krav}{}% 8
-\BOOKMARK [2][-]{subsection.5.1}{Problemrelateret krav}{section.5}% 9
-\BOOKMARK [2][-]{subsection.5.2}{System og algoritme krav}{section.5}% 10
-\BOOKMARK [2][-]{subsection.5.3}{Afledte krav}{section.5}% 11
-\BOOKMARK [1][-]{section.6}{System beskrivelse}{}% 12
-\BOOKMARK [2][-]{subsection.6.1}{Blokbeskrivelse BA-TA}{section.6}% 13
-\BOOKMARK [2][-]{subsection.6.2}{Internal Block Diagram for BA-TA}{section.6}% 14
-\BOOKMARK [2][-]{subsection.6.3}{Entity Relationship Diagram for BA-TA}{section.6}% 15
-\BOOKMARK [1][-]{section.7}{Bruger Gr\346nse Flade}{}% 16
-\BOOKMARK [1][-]{section.8}{Graphic display driver}{}% 17
-\BOOKMARK [1][-]{section.9}{Display driver}{}% 18
-\BOOKMARK [1][-]{section.10}{Touch driver}{}% 19
-\BOOKMARK [1][-]{section.11}{Fordele og ulemper}{}% 20
+\BOOKMARK [1][-]{section.5}{Sekvensdiagram}{}% 8
+\BOOKMARK [1][-]{section.6}{Ikke-funktionelle krav}{}% 9
+\BOOKMARK [2][-]{subsection.6.1}{Problemrelateret krav}{section.6}% 10
+\BOOKMARK [2][-]{subsection.6.2}{System og algoritme krav}{section.6}% 11
+\BOOKMARK [2][-]{subsection.6.3}{Afledte krav}{section.6}% 12
+\BOOKMARK [1][-]{section.7}{System beskrivelse}{}% 13
+\BOOKMARK [2][-]{subsection.7.1}{Blokbeskrivelse BA-TA}{section.7}% 14
+\BOOKMARK [2][-]{subsection.7.2}{Internal Block Diagram for BA-TA}{section.7}% 15
+\BOOKMARK [2][-]{subsection.7.3}{Entity Relationship Diagram for BA-TA}{section.7}% 16
+\BOOKMARK [1][-]{section.8}{Bruger Gr\346nse Flade}{}% 17
+\BOOKMARK [1][-]{section.9}{Graphic display driver}{}% 18
+\BOOKMARK [1][-]{section.10}{Display driver}{}% 19
+\BOOKMARK [1][-]{section.11}{Touch driver}{}% 20
+\BOOKMARK [1][-]{section.12}{Fordele og ulemper}{}% 21
