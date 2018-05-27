@@ -1,0 +1,4 @@
+To do AMS:
+Tjek værdier for ad device, forkerte værdier kommer ud på skærmen, der kommer N\A øverst. måske et fix med en strlen(). 
+
+
