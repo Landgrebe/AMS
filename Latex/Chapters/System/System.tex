@@ -4,7 +4,7 @@
 
 
 \section{System beskrivelse}
-I dette afsnit laves et overblik over systemets blokke og de interne fobindelser. Derudover gives et overblik over funktionerne som er implementeret i projektet. 
+I dette afsnit dannes et overblik over systemets blokke og de interne fobindelser. Derudover gives der et overblik over funktionerne som er implementeret i projektet. 
 På figur \ref{fig:Bdd} ses et overordnet Bdd for projektet, hvor de interne forbindelser forklares på figur \ref{fig:Ibd}. 
 
 \begin{figure}[H]
@@ -14,27 +14,29 @@ På figur \ref{fig:Bdd} ses et overordnet Bdd for projektet, hvor de interne for
 	\label{fig:Bdd}
 \end{figure}
 
+\textbf{***Skal vi nøjes med et mere simpelt BDD hvor der eksempelvis ikke står noger til Arduinoen og de andre?}
+
 \subsection{Blokbeskrivelse BA-TA}
 I det følgende vil komme en beskrivelse af de enkelte blokke i BA-TA og deres interne funktionalitet.
 \newline
 \newline
 \textbf{Arduino} \\*
-Arduino står for at styre hele systemet. Den skal styre alt funktionalitet som projektet skal udføre, og står som master ift. resten af projektet. Arduino blokken står for at initialisere  controller blokkene, hhv. Touch og Display, derudover står den for at modtage signaler fra touch, og sende signaler til display. Derudover står den for at få bluetooth til at sende de respektive værdier.
+Arduino'en, mega2560, initialiserer og styrer alt funktionaliteten som indgår i systemet. Arduino blokken står for at initialisere  Touch Display, Touch Controller og Display Controller, som bruges til at kunne modtage signaler fra Touch-delen, samt at sende signaler til Display'et og dermed få repræsenteret noget til brugeren. Yderligere bruges Arduinoen til at kommunikkere med Bluetooth-blokken.
 \newline
 \newline
 \textbf{Touch Controller} \\*
-Touch Controller står for at modtage værdier fra Touch Display, sende værdien videre til Arduino 
+Touch Controller står for at modtage værdier fra Touch Display, samt at sende den modtagede værdi videre til Arduino'en. 
 \newline
 \newline
 \textbf{Display Controller} \\*
-Display Controller står for modtage en værdi fra Arduino og sende sende værdien til Touch Display. \newline
+Display Controller modtager værdier fra Arduino'en og sende sende værdien videre til Touch Display. \newline
 \newline
 \textbf{Bluetooth} \\*
-Er et bluetooth modul, som vha. AT kommandoer kan kommunikere med Arduino.
+Bluetooth modul, HC-05, som kommunikkerer med Arduino'en vha. AT-kommandoer.
 \newline
 \newline
 \textbf{Touch Display} \\*
-Touch Display fungerer som brugergrænseflade og integering mellem system og bruger. 
+Touch Display fungerer som brugergrænseflade og er dermed måden brugeren kan interagere med systemet. 
 \subsection{Internal Block Diagram for BA-TA}
 På figur \ref{fig:Ibd} ses et overordnet IBD over selve systemet, som er bygget på Bdd'et. 
 \begin{figure}[H]
@@ -45,7 +47,8 @@ På figur \ref{fig:Ibd} ses et overordnet IBD over selve systemet, som er bygget
 \end{figure}
 
 \subsection{Entity Relationship Diagram for BA-TA}
-Herefter gives et overblik på figur \ref{fig:Entity} over koden til driverne som er skrevet til dette projekt. 
+Herefter gives et overblik på figur \ref{fig:Entity} over koden til driverne som er skrevet til dette projekt.
+\textbf{*** Skal opdateres når vi er færdige med alt kode}
 
 \begin{figure}[H]
 	\centering
