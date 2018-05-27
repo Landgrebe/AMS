@@ -10,8 +10,8 @@ I dette afsnit beskrives kravene til hvilken funktionalitet systemet har.
 I samarbejde med vejleder er der opstillet en række krav.
 \begin{itemize}
 \item Systemet skal kunne finde de 4 stærkeste bluetooth signaler. 
-\item Systemet skal kunne køre "hele tiden"
-\item Systemet skal opdateres en gang i hvert sekund.  
+\item Systemet skal kunne køre uafbrudt
+\item Systemet skal scanne efter enheder hvert 5. sekund 
 \end{itemize}
 
 \section{Aktørbeskrivelse}
@@ -24,12 +24,11 @@ I samarbejde med vejleder er der opstillet en række krav.
 \end{figure}
 
 På figur \ref{fig:Aktoer Kontekst diagram} ses aktør kontekst diagrammet som beskriver sammenhængen mellem aktørene og det system de interagere med. Aktørene er som følger: \\*
-\textbf{Primær}\\
-\textbf{Bruger:} Den aktør der interagerer med systemet og vælger den ønskede funktionalitet \\
-\textbf{Recording system:} Den aktør der modtager det enedelige produkt\\
-\textbf{Sekundær}\\
-\textbf{Mic støj:} Et input til det samlede system\\
-\textbf{Mic tale+støj:} Et input til det samlede system \\
+\begin{itemize}
+\item \textbf{Bruger:} Aktøren der interagerer med systemet og dets funktionalitet \\
+\item \textbf{BA-TA:} Bluetooth Anti-Theft Alarm systemet\\
+\item \textbf{Enheder:} Op til 4 Bluetooth enheder som er registreret af BA-TA \\
+\end{itemize}
 
 \section{Use case beskrivelse}
 
@@ -42,18 +41,27 @@ På figur \ref{fig:Aktoer Kontekst diagram} ses aktør kontekst diagrammet som b
 
 På figur \ref{fig:Usecase diagram} ses usecase diagrammet som beskriver sammenhængen mellem aktørerne og de forskellige funktionaliteter der findes for systemet.
 
-\subsubsection{UC 1 - Turn on filter}
+\subsubsection{UC 1 - ADD DEVICE}
+\begin{itemize}
+\item Brugeren trykker på "ADD DEVICE".
+\item Systemet scanner efter 4 stærkeste Bluetooth signaler
+\item Brugeren kan vælge imellem de registrerede bluetooth-enheder, som skal tilføjes til listen over de godkendte enheder.
+\end{itemize}
 
-Brugeren trykker på SW1 og filteret aktiveres. 
 
+\subsubsection{UC 2 - REMOVE DEVICE}
 
-\subsubsection{UC 2 - Turn off filter}
+\begin{itemize}
+	\item Brugeren trykker på "REMOVE DEVICE".
+	\item Systemet præsenterer listen over de godkendte enheder
+	\item Brugeren kan vælge imellem de godkendte bluetooth-enheder, som skal fjernes fra listen.
+\end{itemize} 
 
-Brugeren trykker på SW1 og filteret deaktiveres. 
+\subsubsection{UC 3 - LOCK ON / LOCK OFF / AUTO}
 
-\subsubsection{UC 3 - Filter aktiv}
-
-Recording system modtager det filtrede lyd, hvis prækonditionen UC 1  er udført. 
+\begin{itemize}
+	\item I tvivl om staten her
+\end{itemize}
 
 \newpage
 \section{Ikke-funktionelle krav}
