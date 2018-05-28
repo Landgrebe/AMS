@@ -1,0 +1,45 @@
+%!TEX root = ../Main.tex
+
+\begin{center}
+
+% Institution
+\sffamily\large{\institution}\\[2.5cm]
+
+% Subject
+\large{\subject}\\[3cm]
+
+% Title
+{ \Large\bfseries\expandafter\MakeUppercase\expandafter{\title} \\[4cm] }
+
+
+% Author and supervisor
+\noindent
+\begin{minipage}[t]{0.4\textwidth}
+\begin{flushleft} \normalsize
+\emph{Author:}\\[0.7cm] 
+\author
+\end{flushleft}
+\end{minipage}%
+\begin{minipage}[t]{0.4\textwidth}
+\begin{flushright} \normalsize
+\emph{Supervisor:} \\[0.7cm]
+\supervisor
+\end{flushright}
+\end{minipage}
+
+\vfill
+
+% Bottom of the page
+{\normalsize \today}
+
+\end{center}
+
+\clearpage
+\thispagestyle{empty}
+
+\vspace{\fill}
+
+\begin{center}
+\null\vfill
+\copyright \sffamily  \ \ \the\year \ - All Rights Reserved
+\end{center}

@@ -1,0 +1,116 @@
+\usepackage{graphicx}				% Used to include graphics
+\usepackage{helvet}					% Using Helvetica font
+\usepackage[parfill]{parskip}		% Removes indention of first line in paragraph
+\usepackage[absolute]{textpos}		% used to insert cover image
+\usepackage{sectsty}				
+\usepackage[a4paper, headheight=14pt]{geometry}
+\usepackage{titlesec}
+\usepackage{amsmath}				% math tools
+\usepackage{color}
+\usepackage[bottom]{footmisc}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage[titles]{tocloft}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{eso-pic}				% Front page background
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage[hidelinks]{hyperref}
+\usepackage{listings}
+\usepackage[nomargin,inline,marginclue,draft]{fixme}
+\usepackage{courier}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{verbatim}
+\usepackage[utf8]{inputenc}
+
+% Define colors
+\definecolor{Blue}{RGB}{56,85,96}			
+\definecolor{Grey}{RGB}{145,145,145}
+
+% Define new column type for centering a fixed width column
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% Configure listings
+\lstset{
+basicstyle=\footnotesize\ttfamily,
+frame=tb,
+columns=fullflexible,
+showstringspaces=false,
+captionpos=b,
+belowskip=10pt,
+aboveskip=20pt,
+abovecaptionskip=5pt}
+
+% Configure caption
+\captionsetup{
+font=footnotesize,
+textfont=sf,
+labelfont={sf,bf}, 
+margin=1cm}
+
+
+% Set titles
+\renewcommand{\contentsname}{Indholdsfortegnelse}
+\renewcommand{\listfigurename}{Figur liste}
+\renewcommand{\listtablename}{Tabel liste}
+
+% Page margins
+\geometry{verbose,tmargin=1.6in,bmargin=1.6in,lmargin=1.6in,rmargin=1.6in,headsep=0.35in}
+
+%\renewcommand{\familydefault}{\sfdefault}	% Use Sans serif font
+\parskip = \baselineskip 					% Add space between paragraphs
+\frenchspacing 								% Reduces space after periods to make text more compact
+\raggedbottom 								% Makes all pages the height of the text on that page
+\allsectionsfont{\sffamily\color{Blue}}		% Change all section heading to sans serif
+\renewcommand{\chaptername}{}				% Hide the word "chapter"
+
+% Remove page number from the first page of chapters
+\makeatletter
+\let\ps@plain\ps@empty						
+\makeatother
+
+% Page header
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\rule[-1.5ex]{0pt}{1.5ex}\footnotesize\sffamily\bfseries\thepage}
+\lhead{\footnotesize\sffamily\leftmark}
+\rfoot{}
+
+% Chapter title
+\titlespacing{\chapter}{0pt}{*-12}{*10}
+\titleformat{\chapter}[display]
+    {\bfseries\sffamily\huge\color{Blue}}
+    {\flushright\Huge\thechapter}{20pt}{\bfseries\sffamily\color{Blue}\uppercase}
+    []
+
+% TOC: Aesthetic spacing redefines that look nicer to me than the defaults.
+\setlength{\cftbeforechapskip}{3ex}
+\setlength{\cftbeforesecskip}{1ex}
+\setlength{\cftbeforesubsecskip}{1ex}
+
+% TOC: Because of the font change, the page number becomes too large for the
+% horizontal space LaTeX reserves for it by default. Without the following
+% redefines to fix it, this would cause the Chapter entry page numbers
+% to extend a few points into the right margin. The horror!
+\makeatletter
+\renewcommand{\@pnumwidth}{1.75em}
+\renewcommand{\@tocrmarg}{2.75em}
+\makeatother
+
+% TOC styling (sans serif and bold chapter titles)
+\renewcommand{\cftchapfont}{\sffamily\bfseries}
+\renewcommand{\cftsecfont}{\sffamily}
+\renewcommand{\cftsubsecfont}{\sffamily} 
+\renewcommand{\cftsubsubsecfont}{\sffamily}
+\renewcommand{\cftfigfont}{\sffamily}
+\renewcommand{\cfttabfont}{\sffamily}
+\renewcommand{\cftchappagefont}{\bfseries \sffamily}
+\renewcommand{\cftsecpagefont}{\sffamily}
+\renewcommand{\cftsubsecpagefont}{\sffamily}  
+\renewcommand{\cftsubsubsecpagefont}{\sffamily}
+\renewcommand{\cftfigpagefont}{\sffamily}
+\renewcommand{\cfttabpagefont}{\sffamily}

@@ -4,7 +4,16 @@
 
 
 \section{System beskrivelse}
-I dette afsnit dannes et overblik over systemets blokke og de interne fobindelser. Derudover gives der et overblik over funktionerne som er implementeret i projektet. 
+
+BA-TA's (Bluetooth Anti-Theft Alarm) primære funktionalitet ligger i hhv. at kunne låse op og låse hoveddøren, så snart systemet registrerer at husets ejer, og dermed ejerens smartphone, er i nærheden eller ej.
+
+Hele systemet styres fra en samlet enhed, som kan integeres fra brugeren gennem en skærm og dertilhørende touch funktion. 
+
+Igennem brugergrænsefladen kan brugeren både tilføje og fjerne de godkendte Bluetooth-enheder (personer) som skal kunne låse og låse op for døren.
+
+Når alle godkendte enheder er uden for rækkevidde af systemets Bluetooth-modul, låses døren, og så snart systemet ser en godkendt enhed indenfor rækkevidden bliver døren låst op. 
+
+I under-afsnittende herunder bliver systemets blokke og de interne fobindelser præsenteret. Derudover dannes der et overblik over funktionaliteten som er implementeret i projektet og systemet. 
 På figur \ref{fig:Bdd} ses et overordnet Bdd for projektet, hvor de interne forbindelser forklares på figur \ref{fig:Ibd}. 
 
 \begin{figure}[H]

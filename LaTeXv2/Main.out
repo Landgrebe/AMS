@@ -1,0 +1,20 @@
+\BOOKMARK [1][-]{section.0.1}{Indledning}{}% 1
+\BOOKMARK [1][-]{section.0.2}{Krav}{}% 2
+\BOOKMARK [1][-]{section.0.3}{Akt\370rbeskrivelse}{}% 3
+\BOOKMARK [1][-]{section.0.4}{Use case beskrivelse}{}% 4
+\BOOKMARK [1][-]{section.0.5}{Sekvensdiagram}{}% 5
+\BOOKMARK [1][-]{section.0.6}{Ikke-funktionelle krav}{}% 6
+\BOOKMARK [2][-]{subsection.0.6.1}{Problemrelateret krav}{section.0.6}% 7
+\BOOKMARK [2][-]{subsection.0.6.2}{System og algoritme krav}{section.0.6}% 8
+\BOOKMARK [2][-]{subsection.0.6.3}{Afledte krav}{section.0.6}% 9
+\BOOKMARK [1][-]{section.0.7}{System beskrivelse}{}% 10
+\BOOKMARK [2][-]{subsection.0.7.1}{Blokbeskrivelse BA-TA}{section.0.7}% 11
+\BOOKMARK [2][-]{subsection.0.7.2}{Internal Block Diagram for BA-TA}{section.0.7}% 12
+\BOOKMARK [2][-]{subsection.0.7.3}{Entity Relationship Diagram for BA-TA}{section.0.7}% 13
+\BOOKMARK [1][-]{section.0.8}{System Arkitektur}{}% 14
+\BOOKMARK [1][-]{section.0.9}{Brugergr\346nseflade}{}% 15
+\BOOKMARK [1][-]{section.0.10}{Tekniske overvejelse og valg}{}% 16
+\BOOKMARK [2][-]{subsection.0.10.1}{Fordele og ulemper}{section.0.10}% 17
+\BOOKMARK [1][-]{section.0.11}{Tilegnelse af viden}{}% 18
+\BOOKMARK [1][-]{section.0.12}{Test resultater}{}% 19
+\BOOKMARK [1][-]{section.0.13}{Konklusion}{}% 20

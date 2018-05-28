@@ -1,0 +1,29 @@
+\BOOKMARK [1][-]{section.1}{Indledning}{}% 1
+\BOOKMARK [1][-]{section.2}{Krav}{}% 2
+\BOOKMARK [1][-]{section.3}{Akt\370rbeskrivelse}{}% 3
+\BOOKMARK [1][-]{section.4}{Use case beskrivelse}{}% 4
+\BOOKMARK [2][-]{subsubsection.4.0.1}{UC 1 - ADD DEVICE}{section.4}% 5
+\BOOKMARK [3][-]{subsubsection.4.0.2}{UC 2 - REMOVE DEVICE}{subsubsection.4.0.1}% 6
+\BOOKMARK [3][-]{subsubsection.4.0.3}{UC 3 - LOCK ON / LOCK OFF / AUTO}{subsubsection.4.0.1}% 7
+\BOOKMARK [1][-]{section.5}{Sekvensdiagram}{}% 8
+\BOOKMARK [1][-]{section.6}{Ikke-funktionelle krav}{}% 9
+\BOOKMARK [2][-]{subsection.6.1}{Problemrelateret krav}{section.6}% 10
+\BOOKMARK [2][-]{subsection.6.2}{System og algoritme krav}{section.6}% 11
+\BOOKMARK [2][-]{subsection.6.3}{Afledte krav}{section.6}% 12
+\BOOKMARK [1][-]{section.7}{System beskrivelse}{}% 13
+\BOOKMARK [2][-]{subsection.7.1}{Blokbeskrivelse BA-TA}{section.7}% 14
+\BOOKMARK [2][-]{subsection.7.2}{Internal Block Diagram for BA-TA}{section.7}% 15
+\BOOKMARK [2][-]{subsection.7.3}{Entity Relationship Diagram for BA-TA}{section.7}% 16
+\BOOKMARK [1][-]{section.8}{System Arkitektur}{}% 17
+\BOOKMARK [1][-]{section.9}{Brugergr\346nseflade}{}% 18
+\BOOKMARK [1][-]{section.10}{Tekniske overvejelse og valg}{}% 19
+\BOOKMARK [2][-]{subsection.10.1}{Fordele og ulemper}{section.10}% 20
+\BOOKMARK [1][-]{section.11}{Tilegnelse af viden}{}% 21
+\BOOKMARK [1][-]{section.12}{Test resultater}{}% 22
+\BOOKMARK [1][-]{section.13}{Konklusion}{}% 23
+\BOOKMARK [1][-]{section.14}{Graphic display driver}{}% 24
+\BOOKMARK [1][-]{section.15}{Display driver}{}% 25
+\BOOKMARK [1][-]{section.16}{Touch driver}{}% 26
+\BOOKMARK [1][-]{section.17}{Bluetooth modul}{}% 27
+\BOOKMARK [2][-]{subsection.17.1}{Protokol}{section.17}% 28
+\BOOKMARK [2][-]{subsection.17.2}{Implementering}{section.17}% 29
