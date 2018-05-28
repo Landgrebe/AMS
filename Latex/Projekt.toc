@@ -1,4 +1,4 @@
-\select@language {danish}
+\babel@toc {danish}{}
 \contentsline {section}{\numberline {1}Indledning}{3}{section.1}
 \contentsline {section}{\numberline {2}Krav}{4}{section.2}
 \contentsline {section}{\numberline {3}Akt\IeC {\o }rbeskrivelse}{4}{section.3}
@@ -15,8 +15,9 @@
 \contentsline {subsection}{\numberline {7.1}Blokbeskrivelse BA-TA}{10}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}Internal Block Diagram for BA-TA}{11}{subsection.7.2}
 \contentsline {subsection}{\numberline {7.3}Entity Relationship Diagram for BA-TA}{11}{subsection.7.3}
-\contentsline {section}{\numberline {8}Bruger Gr\IeC {\ae }nse Flade}{13}{section.8}
-\contentsline {section}{\numberline {9}Graphic display driver}{19}{section.9}
-\contentsline {section}{\numberline {10}Display driver}{20}{section.10}
-\contentsline {section}{\numberline {11}Touch driver}{23}{section.11}
-\contentsline {section}{\numberline {12}Fordele og ulemper}{24}{section.12}
+\contentsline {section}{\numberline {8}System Arkitektur}{13}{section.8}
+\contentsline {section}{\numberline {9}Bruger Gr\IeC {\ae }nse Flade}{14}{section.9}
+\contentsline {section}{\numberline {10}Graphic display driver}{20}{section.10}
+\contentsline {section}{\numberline {11}Display driver}{21}{section.11}
+\contentsline {section}{\numberline {12}Touch driver}{24}{section.12}
+\contentsline {section}{\numberline {13}Fordele og ulemper}{25}{section.13}
