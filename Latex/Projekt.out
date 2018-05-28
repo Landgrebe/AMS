@@ -17,6 +17,7 @@
 \BOOKMARK [1][-]{section.8}{System Arkitektur}{}% 17
 \BOOKMARK [1][-]{section.9}{Brugergr\346nseflade}{}% 18
 \BOOKMARK [1][-]{section.10}{Tekniske overvejelse og valg}{}% 19
-\BOOKMARK [1][-]{section.11}{Graphic display driver}{}% 20
-\BOOKMARK [1][-]{section.12}{Display driver}{}% 21
-\BOOKMARK [1][-]{section.13}{Touch driver}{}% 22
+\BOOKMARK [2][-]{subsection.10.1}{Fordele og ulemper}{section.10}% 20
+\BOOKMARK [1][-]{section.11}{Graphic display driver}{}% 21
+\BOOKMARK [1][-]{section.12}{Display driver}{}% 22
+\BOOKMARK [1][-]{section.13}{Touch driver}{}% 23

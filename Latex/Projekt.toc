@@ -18,6 +18,7 @@
 \contentsline {section}{\numberline {8}System Arkitektur}{13}{section.8}
 \contentsline {section}{\numberline {9}Brugergr\IeC {\ae }nseflade}{14}{section.9}
 \contentsline {section}{\numberline {10}Tekniske overvejelse og valg}{20}{section.10}
+\contentsline {subsection}{\numberline {10.1}Fordele og ulemper}{20}{subsection.10.1}
 \contentsline {section}{\numberline {11}Graphic display driver}{21}{section.11}
 \contentsline {section}{\numberline {12}Display driver}{22}{section.12}
 \contentsline {section}{\numberline {13}Touch driver}{25}{section.13}
