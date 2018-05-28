@@ -1,0 +1,28 @@
+%!TEX root = ../../Main.tex
+\graphicspath{{Chapters/Touch/}}
+%-------------------------------------------------------------------------------
+
+
+\section{Touch driver}
+Da projektet skulle bruge integering af en bruger, er der valgt at inkudere en touch driver som gør brug af \href{https://blackboard.au.dk/bbcswebdav/pid-1762166-dt-content-rid-4251461_1/courses/BB-Cou-UUVA-73302/BB-Cou-UUVA-65758_ImportedContent_20170106021228/BB-Cou-STADS-UUVA-52360_ImportedContent_20160107025559/LAB/LAB10%20Touch%20Screen%20Driver/Files%20for%20LAB10/XPT2046.pdf}{XPT2046}
+Touch Screen Controller, som allerede var en del af \href{https://blackboard.au.dk/bbcswebdav/pid-1762173-dt-content-rid-4251448_1/courses/BB-Cou-UUVA-73302/BB-Cou-UUVA-65758_ImportedContent_20170106021228/BB-Cou-STADS-UUVA-52360_ImportedContent_20160107025559/LAB/LAB10%20Touch%20Screen%20Driver/Files%20for%20LAB10/DS_IM120417024_ITDB02ArduinoMEGAShield.pdf}{ITDB02}
+Arduino MEGA shield, som bliver også bliver brugt i Display driveren. \\
+Driveren har tre funktioner, hvor Init() sætter de forskellige porte til hhv indgange og udgange, og derefter sætter de respektive ben til enten høj og lav. Funktionen pulse() står for at lave en puls på clk benet som er opsat ift. Figur 15 i \href{https://blackboard.au.dk/bbcswebdav/pid-1762166-dt-content-rid-4251461_1/courses/BB-Cou-UUVA-73302/BB-Cou-UUVA-65758_ImportedContent_20170106021228/BB-Cou-STADS-UUVA-52360_ImportedContent_20160107025559/LAB/LAB10%20Touch%20Screen%20Driver/Files%20for%20LAB10/XPT2046.pdf}{XPT2046}
+datasheet. 
+Herunder vil der laves en tabel over den sidste funktion. 
+
+\begin{center}
+\begin{tabular}{ |l|l|l| }
+\hline
+\multicolumn{1}{ |c| }{\textbf{TouchRead(xy)}} \\
+\hline
+Funktion som står for at læse værdien fra brugerinputtet.\\
+\hline
+\textbf{Paramentre:}  \\ xy: Styrer om retur værdien skal være for x eller y \\
+\textbf{Retur:} Værdien for enten x eller y. \\
+\\
+
+\hline
+\end{tabular}
+\end{center}  
+

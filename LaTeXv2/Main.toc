@@ -1,0 +1,23 @@
+\contentsline {section}{\numberline {0.1}Indledning}{1}{section.0.1}
+\contentsline {section}{\numberline {0.2}Krav}{2}{section.0.2}
+\contentsline {section}{\numberline {0.3}Akt\IeC {\o }rbeskrivelse}{2}{section.0.3}
+\contentsline {section}{\numberline {0.4}Use case beskrivelse}{3}{section.0.4}
+\contentsline {subsubsection}{UC 1 - ADD DEVICE}{3}{subsubsection*.8}
+\contentsline {subsubsection}{UC 2 - REMOVE DEVICE}{3}{subsubsection*.9}
+\contentsline {subsubsection}{UC 3 - LOCK ON / LOCK OFF / AUTO}{4}{subsubsection*.10}
+\contentsline {section}{\numberline {0.5}Sekvensdiagram}{5}{section.0.5}
+\contentsline {section}{\numberline {0.6}Ikke-funktionelle krav}{8}{section.0.6}
+\contentsline {subsection}{\numberline {0.6.1}Problemrelateret krav}{8}{subsection.0.6.1}
+\contentsline {subsection}{\numberline {0.6.2}System og algoritme krav}{8}{subsection.0.6.2}
+\contentsline {subsection}{\numberline {0.6.3}Afledte krav}{8}{subsection.0.6.3}
+\contentsline {section}{\numberline {0.7}System beskrivelse}{9}{section.0.7}
+\contentsline {subsection}{\numberline {0.7.1}Blokbeskrivelse BA-TA}{9}{subsection.0.7.1}
+\contentsline {subsection}{\numberline {0.7.2}Internal Block Diagram for BA-TA}{10}{subsection.0.7.2}
+\contentsline {subsection}{\numberline {0.7.3}Entity Relationship Diagram for BA-TA}{10}{subsection.0.7.3}
+\contentsline {section}{\numberline {0.8}System Arkitektur}{12}{section.0.8}
+\contentsline {section}{\numberline {0.9}Brugergr\IeC {\ae }nseflade}{13}{section.0.9}
+\contentsline {section}{\numberline {0.10}Tekniske overvejelse og valg}{19}{section.0.10}
+\contentsline {subsection}{\numberline {0.10.1}Fordele og ulemper}{19}{subsection.0.10.1}
+\contentsline {section}{\numberline {0.11}Tilegnelse af viden}{20}{section.0.11}
+\contentsline {section}{\numberline {0.12}Test resultater}{21}{section.0.12}
+\contentsline {section}{\numberline {0.13}Konklusion}{22}{section.0.13}

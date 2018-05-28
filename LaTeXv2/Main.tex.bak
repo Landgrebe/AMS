@@ -1,0 +1,48 @@
+\documentclass{report}
+
+\input{Config}
+
+\begin{document}\thispagestyle{empty}
+
+%-----------------------------------------------
+%	PROJECT INFORMATION
+%-----------------------------------------------
+
+\def \institution{Aarhus University}
+\def \subject{3. Semesterprojekt}
+\def \title {EMC - RAPPORT}
+\def \author{Lasse Lildholdt \\ (201507170)}
+\def \supervisor{Arne Justesen}
+
+%-----------------------------------------------
+%	PRE-CONTENT
+%-----------------------------------------------
+
+\include{Pre-content/Title-page-std}
+\include{Pre-content/Contents}
+
+%-----------------------------------------------
+%	CHAPTERS
+%-----------------------------------------------
+
+\pagenumbering{arabic}
+\include{Chapters/Displaymontering/Displaymontering}
+\include{Chapters/Barnevogn/Barnevogn}
+\include{Chapters/Hoejtalermontering/Hoejtalermontering}
+\include{Chapters/Mikrofonmontering/Mikrofonmontering}
+\include{Chapters/Motormontering/Motormontering}
+\include{Chapters/Veroboardmontering/Veroboardmontering}
+
+
+
+
+
+
+%-----------------------------------------------
+%	POST-CONTENT
+%-----------------------------------------------
+
+\bibliographystyle{plain}
+\bibliography{Bibliography}
+
+\end{document}
