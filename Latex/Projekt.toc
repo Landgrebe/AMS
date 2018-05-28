@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {7}System beskrivelse}{11}{section.7}
 \contentsline {subsection}{\numberline {7.1}Blokbeskrivelse BA-TA}{11}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}Internal Block Diagram for BA-TA}{12}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Entity Relationship Diagram for BA-TA}{12}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.3}Entity Relationship Diagram for BA-TA}{13}{subsection.7.3}
 \contentsline {section}{\numberline {8}System Arkitektur}{14}{section.8}
 \contentsline {section}{\numberline {9}Brugergr\IeC {\ae }nseflade}{15}{section.9}
 \contentsline {section}{\numberline {10}Tekniske overvejelse og valg}{21}{section.10}
