@@ -24,3 +24,6 @@
 \BOOKMARK [1][-]{section.14}{Graphic display driver}{}% 24
 \BOOKMARK [1][-]{section.15}{Display driver}{}% 25
 \BOOKMARK [1][-]{section.16}{Touch driver}{}% 26
+\BOOKMARK [1][-]{section.17}{Bluetooth modul}{}% 27
+\BOOKMARK [2][-]{subsection.17.1}{Protokol}{section.17}% 28
+\BOOKMARK [2][-]{subsection.17.2}{Implementering}{section.17}% 29

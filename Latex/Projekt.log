@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.28)  28 MAY 2018 13:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.28)  28 MAY 2018 14:12
 entering extended mode
 **./Projekt.tex
 (Projekt.tex
@@ -1035,7 +1035,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 36.
 (Chapters/TilegnelseAfViden/TilegnelseAfViden.aux)
 (Chapters/TestResultater/TestResultater.aux)
 (Chapters/Konklusion/Konklusion.aux) (Chapters/Struktur/Struktur.aux)
-(Chapters/Display/Display.aux) (Chapters/Touch/Touch.aux))
+(Chapters/Display/Display.aux) (Chapters/Touch/Touch.aux)
+(Chapters/BluetoothModul/BluetoothModul.aux))
 \openout1 = `Projekt.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
@@ -1254,7 +1255,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 .def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-<Img/logo.jpg, id=110, 454.69875pt x 116.68594pt>
+<Img/logo.jpg, id=122, 454.69875pt x 116.68594pt>
 File: Img/logo.jpg Graphic file (type jpg)
 <use Img/logo.jpg>
 Package pdftex.def Info: Img/logo.jpg  used on input line 90.
@@ -1307,7 +1308,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 5.
-<Chapters/Indledning/Img/Konceptbillede.png, id=197, 206.27063pt x 151.3153pt>
+<Chapters/Indledning/Img/Konceptbillede.png, id=212, 206.27063pt x 151.3153pt>
 File: Chapters/Indledning/Img/Konceptbillede.png Graphic file (type png)
 <use Chapters/Indledning/Img/Konceptbillede.png>
 Package pdftex.def Info: Chapters/Indledning/Img/Konceptbillede.png  used on in
@@ -1337,7 +1338,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 17.
-<Chapters/Krav/Img/Aktoer_Kontekst.png, id=202, 353.82187pt x 268.75406pt>
+<Chapters/Krav/Img/Aktoer_Kontekst.png, id=217, 353.82187pt x 268.75406pt>
 File: Chapters/Krav/Img/Aktoer_Kontekst.png Graphic file (type png)
 <use Chapters/Krav/Img/Aktoer_Kontekst.png>
 Package pdftex.def Info: Chapters/Krav/Img/Aktoer_Kontekst.png  used on input l
@@ -1367,7 +1368,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 33.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 33.
-<Chapters/Krav/Img/Usecase_Diagram.png, id=205, 353.82187pt x 270.25969pt>
+<Chapters/Krav/Img/Usecase_Diagram.png, id=220, 353.82187pt x 270.25969pt>
 File: Chapters/Krav/Img/Usecase_Diagram.png Graphic file (type png)
 <use Chapters/Krav/Img/Usecase_Diagram.png>
 Package pdftex.def Info: Chapters/Krav/Img/Usecase_Diagram.png  used on input l
@@ -1423,17 +1424,17 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 68.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 68.
-<Chapters/Krav/Img/SD1.png, id=223, 571.38469pt x 523.20468pt>
+<Chapters/Krav/Img/SD1.png, id=238, 571.38469pt x 523.20468pt>
 File: Chapters/Krav/Img/SD1.png Graphic file (type png)
 <use Chapters/Krav/Img/SD1.png>
 Package pdftex.def Info: Chapters/Krav/Img/SD1.png  used on input line 73.
 (pdftex.def)             Requested size: 400.0pt x 366.2727pt.
-<Chapters/Krav/Img/SD2.png, id=224, 438.8897pt x 411.03563pt>
+<Chapters/Krav/Img/SD2.png, id=239, 438.8897pt x 411.03563pt>
 File: Chapters/Krav/Img/SD2.png Graphic file (type png)
 <use Chapters/Krav/Img/SD2.png>
 Package pdftex.def Info: Chapters/Krav/Img/SD2.png  used on input line 79.
 (pdftex.def)             Requested size: 400.0pt x 374.62001pt.
-<Chapters/Krav/Img/SD3.png, id=225, 570.63188pt x 462.22687pt>
+<Chapters/Krav/Img/SD3.png, id=240, 570.63188pt x 462.22687pt>
 File: Chapters/Krav/Img/SD3.png Graphic file (type png)
 <use Chapters/Krav/Img/SD3.png>
 Package pdftex.def Info: Chapters/Krav/Img/SD3.png  used on input line 85.
@@ -1504,7 +1505,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 6.
-<Chapters/System/Img/Bdd.png, id=262, 713.66624pt x 238.64156pt>
+<Chapters/System/Img/Bdd.png, id=277, 713.66624pt x 238.64156pt>
 File: Chapters/System/Img/Bdd.png Graphic file (type png)
 <use Chapters/System/Img/Bdd.png>
 Package pdftex.def Info: Chapters/System/Img/Bdd.png  used on input line 21.
@@ -1559,7 +1560,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 49.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 49.
-<Chapters/System/Img/Ibd.png, id=269, 444.91219pt x 301.125pt>
+<Chapters/System/Img/Ibd.png, id=284, 444.91219pt x 301.125pt>
 File: Chapters/System/Img/Ibd.png Graphic file (type png)
 <use Chapters/System/Img/Ibd.png>
 Package pdftex.def Info: Chapters/System/Img/Ibd.png  used on input line 53.
@@ -1568,7 +1569,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 58.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 58.
-<Chapters/System/Img/Entity.png, id=271, 676.02562pt x 450.9347pt>
+<Chapters/System/Img/Entity.png, id=286, 676.02562pt x 450.9347pt>
 File: Chapters/System/Img/Entity.png Graphic file (type png)
 <use Chapters/System/Img/Entity.png>
 Package pdftex.def Info: Chapters/System/Img/Entity.png  used on input line 64.
@@ -1627,13 +1628,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-<Chapters/Userinterface/Img/welcome.jpg, id=287, 2168.85281pt x 1626.82782pt>
+<Chapters/Userinterface/Img/welcome.jpg, id=302, 2168.85281pt x 1626.82782pt>
 File: Chapters/Userinterface/Img/welcome.jpg Graphic file (type jpg)
 <use Chapters/Userinterface/Img/welcome.jpg>
 Package pdftex.def Info: Chapters/Userinterface/Img/welcome.jpg  used on input 
 line 12.
 (pdftex.def)             Requested size: 300.0pt x 225.02377pt.
-<Chapters/Userinterface/Img/start.jpg, id=289, 2547.5175pt x 1910.63812pt>
+<Chapters/Userinterface/Img/start.jpg, id=304, 2547.5175pt x 1910.63812pt>
 File: Chapters/Userinterface/Img/start.jpg Graphic file (type jpg)
 <use Chapters/Userinterface/Img/start.jpg>
 Package pdftex.def Info: Chapters/Userinterface/Img/start.jpg  used on input li
@@ -1651,14 +1652,14 @@ Package babel Info: Redefining danish shorthand "~
 
 
  <./Chapters/Userinterface/Img/welcome.jpg>]
-<Chapters/Userinterface/Img/Searching.jpg, id=294, 2259.94313pt x 1695.33376pt>
+<Chapters/Userinterface/Img/Searching.jpg, id=309, 2259.94313pt x 1695.33376pt>
 
 File: Chapters/Userinterface/Img/Searching.jpg Graphic file (type jpg)
 <use Chapters/Userinterface/Img/Searching.jpg>
 Package pdftex.def Info: Chapters/Userinterface/Img/Searching.jpg  used on inpu
 t line 27.
 (pdftex.def)             Requested size: 300.0pt x 225.03162pt.
-<Chapters/Userinterface/Img/devices.jpg, id=296, 737.75626pt x 553.31718pt>
+<Chapters/Userinterface/Img/devices.jpg, id=311, 737.75626pt x 553.31718pt>
 File: Chapters/Userinterface/Img/devices.jpg Graphic file (type jpg)
 <use Chapters/Userinterface/Img/devices.jpg>
 Package pdftex.def Info: Chapters/Userinterface/Img/devices.jpg  used on input 
@@ -1674,19 +1675,19 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 38.
  [16 <./Chapters/Userinterface/Img/start.jpg> <./Chapters/Userinterface/Img/Sea
 rching.jpg>]
-<Chapters/Userinterface/Img/pick.jpg, id=301, 2180.89781pt x 1635.86156pt>
+<Chapters/Userinterface/Img/pick.jpg, id=316, 2180.89781pt x 1635.86156pt>
 File: Chapters/Userinterface/Img/pick.jpg Graphic file (type jpg)
 <use Chapters/Userinterface/Img/pick.jpg>
 Package pdftex.def Info: Chapters/Userinterface/Img/pick.jpg  used on input lin
 e 41.
 (pdftex.def)             Requested size: 300.0pt x 225.02527pt.
-<Chapters/Userinterface/Img/remove.jpg, id=305, 2270.4825pt x 1702.86188pt>
+<Chapters/Userinterface/Img/remove.jpg, id=320, 2270.4825pt x 1702.86188pt>
 File: Chapters/Userinterface/Img/remove.jpg Graphic file (type jpg)
 <use Chapters/Userinterface/Img/remove.jpg>
 Package pdftex.def Info: Chapters/Userinterface/Img/remove.jpg  used on input l
 ine 48.
 (pdftex.def)             Requested size: 300.0pt x 224.99153pt.
-<Chapters/Userinterface/Img/noDevice.jpg, id=306, 2820.78844pt x 2115.40312pt>
+<Chapters/Userinterface/Img/noDevice.jpg, id=321, 2820.78844pt x 2115.40312pt>
 File: Chapters/Userinterface/Img/noDevice.jpg Graphic file (type jpg)
 <use Chapters/Userinterface/Img/noDevice.jpg>
 Package pdftex.def Info: Chapters/Userinterface/Img/noDevice.jpg  used on input
@@ -1702,7 +1703,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 57.
  [17 <./Chapters/Userinterface/Img/devices.jpg> <./Chapters/Userinterface/Img/p
 ick.jpg>]
-<Chapters/Userinterface/Img/delete.jpg, id=312, 2351.78625pt x 1763.83969pt>
+<Chapters/Userinterface/Img/delete.jpg, id=327, 2351.78625pt x 1763.83969pt>
 File: Chapters/Userinterface/Img/delete.jpg Graphic file (type jpg)
 <use Chapters/Userinterface/Img/delete.jpg>
 Package pdftex.def Info: Chapters/Userinterface/Img/delete.jpg  used on input l
@@ -1718,13 +1719,13 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 65.
  [18 <./Chapters/Userinterface/Img/remove.jpg> <./Chapters/Userinterface/Img/no
 Device.jpg>]
-<Chapters/Userinterface/Img/lockOff.jpg, id=319, 2551.28156pt x 1912.89656pt>
+<Chapters/Userinterface/Img/lockOff.jpg, id=334, 2551.28156pt x 1912.89656pt>
 File: Chapters/Userinterface/Img/lockOff.jpg Graphic file (type jpg)
 <use Chapters/Userinterface/Img/lockOff.jpg>
 Package pdftex.def Info: Chapters/Userinterface/Img/lockOff.jpg  used on input 
 line 68.
 (pdftex.def)             Requested size: 300.0pt x 224.92592pt.
-<Chapters/Userinterface/Img/auto.jpg, id=320, 2457.93282pt x 1842.885pt>
+<Chapters/Userinterface/Img/auto.jpg, id=335, 2457.93282pt x 1842.885pt>
 File: Chapters/Userinterface/Img/auto.jpg Graphic file (type jpg)
 <use Chapters/Userinterface/Img/auto.jpg>
 Package pdftex.def Info: Chapters/Userinterface/Img/auto.jpg  used on input lin
@@ -1894,7 +1895,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 6.
-<Chapters/Display/Img/Bus_timing.png, id=361, 654.19406pt x 394.47375pt>
+<Chapters/Display/Img/Bus_timing.png, id=376, 654.19406pt x 394.47375pt>
 File: Chapters/Display/Img/Bus_timing.png Graphic file (type png)
 <use Chapters/Display/Img/Bus_timing.png>
 Package pdftex.def Info: Chapters/Display/Img/Bus_timing.png  used on input lin
@@ -1917,7 +1918,7 @@ Package babel Info: Redefining danish shorthand "~
 
 
  <./Chapters/Display/Img/Bus_timing.png>]
-<Chapters/Display/Img/Thedotfactory.png, id=368, 286.06876pt x 109.91063pt>
+<Chapters/Display/Img/Thedotfactory.png, id=383, 286.06876pt x 109.91063pt>
 File: Chapters/Display/Img/Thedotfactory.png Graphic file (type png)
 <use Chapters/Display/Img/Thedotfactory.png>
 Package pdftex.def Info: Chapters/Display/Img/Thedotfactory.png  used on input 
@@ -1966,8 +1967,66 @@ Package babel Info: Redefining danish shorthand "~
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
+\openout2 = `Chapters/BluetoothModul/BluetoothModul.aux'.
+
+ (Chapters/BluetoothModul/BluetoothModul.tex
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 6.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 10.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 10.
+
+("C:\Users\Phalap-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-3
+2.def"
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+)
+Overfull \hbox (6.89978pt too wide) in paragraph at lines 18--19
+[]\OT1/cmr/m/n/12 "AT+RNAME?<indst,Adresse,Her>" { Bluetooth-modulet sprger o
+m nav-net pa adres-
+ []
+
+
+Overfull \hbox (0.79051pt too wide) in paragraph at lines 21--22
+\OT1/cmr/m/n/12 Bluetooth-modulet ogsa re-tur-ne-re den fund-ne Bluetooth-enhe
+ds navn og et OK til sidst. 
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 25.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 25.
+)
+Overfull \hbox (27.02002pt too wide) in paragraph at lines 30--144
+[]\OT1/cmr/m/n/12 **INDST EK-SEM-PEL FRA KO-DEN HER EVT. { SOM VI-SER HVOR-DAN
+ VI H[]ANDTERER
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 144.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 144.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 144.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 144.
+[31
+
+
+]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 144.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 144.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 144.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 144.
+ [32]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 154.
  (Projekt.aux (Chapters/Indledning/Indledning.aux)
 (Chapters/Krav/Krav.aux) (Chapters/System/System.aux)
 (Chapters/SystemArkitektur/SystemArkitektur.aux)
@@ -1976,21 +2035,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
 (Chapters/TilegnelseAfViden/TilegnelseAfViden.aux)
 (Chapters/TestResultater/TestResultater.aux)
 (Chapters/Konklusion/Konklusion.aux) (Chapters/Struktur/Struktur.aux)
-(Chapters/Display/Display.aux) (Chapters/Touch/Touch.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
+(Chapters/Display/Display.aux) (Chapters/Touch/Touch.aux)
+(Chapters/BluetoothModul/BluetoothModul.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 154.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
 Package rerunfilecheck Info: File `Projekt.out' has not changed.
-(rerunfilecheck)             Checksum: F5EBB523C51F3CED4A944583AA42DEB2;1635.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
+(rerunfilecheck)             Checksum: E47C6AF6C6E5B69318E75FAD0824C52C;1816.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 154.
  ) 
 Here is how much of TeX's memory you used:
- 23912 strings out of 493305
- 442886 string characters out of 3125887
- 606645 words of memory out of 3000000
- 26797 multiletter control sequences out of 15000+200000
+ 24175 strings out of 493305
+ 446365 string characters out of 3125887
+ 607195 words of memory out of 3000000
+ 27043 multiletter control sequences out of 15000+200000
  13871 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,92p,783b,675s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,8n,92p,825b,675s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Phalap-Desktop\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
 c\dpi600\tcrm1200.pk><C:/Users/Phalap-Desktop/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Phalap-Desktop/AppData/Loc
@@ -1998,9 +2058,9 @@ al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Pha
 lap-Desktop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 r12.pfb><C:/Users/Phalap-Desktop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmti12.pfb>
-Output written on Projekt.pdf (31 pages, 18991674 bytes).
+Output written on Projekt.pdf (33 pages, 18998015 bytes).
 PDF statistics:
- 427 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 331 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 451 PDF objects out of 1000 (max. 8388607)
+ 103 named destinations out of 1000 (max. 500000)
+ 355 words of extra memory for PDF output out of 10000 (max. 10000000)
 
