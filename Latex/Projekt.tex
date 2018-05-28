@@ -3,6 +3,8 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[12pt]{article}
+\renewcommand{\contentsname}{whatever}
+\renewcommand{\refname}{whatever}
 \usepackage[danish]{babel}
 \usepackage{mathtools}
 \usepackage[euler]{textgreek}
@@ -37,6 +39,7 @@
 
 % Page margins
 \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headsep=0.35in}
+
 
 \begin{document}
 	
@@ -119,8 +122,8 @@
 \include{Chapters/TestResultater/TestResultater}
 \include{Chapters/Konklusion/Konklusion}
 
+\renewcommand\refname{References}
 \begin{thebibliography}{9}
-	
 	\bibitem{Teori} 
 	Gan and Kuo. \\
 	\textit{Embedded Signal Processing with the Micro Signal Architecture, Chapter 4.4.1}\\ 
@@ -134,6 +137,7 @@
 	John Wiley 1st Ed. 2007.
 	
 \end{thebibliography}
+
 
 %Her skal vi have os besluttes hvordan nedenstående skal integreres med ovenstående kapitler (som Henning har foreslået det)
 %Eksempelvis kann Display,Touch høre under brugergrænseflade segmentet?
