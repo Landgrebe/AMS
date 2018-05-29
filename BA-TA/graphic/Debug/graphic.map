@@ -985,22 +985,22 @@ END GROUP
  .debug_frame   0x00000800       0x58 Touch.o
  .debug_frame   0x00000858       0x9c UART.o
 
-.debug_str      0x00000000      0xeed
+.debug_str      0x00000000      0xf21
  *(.debug_str)
  .debug_str     0x00000000      0x3e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
- .debug_str     0x000003e6      0x5c8 Bluetooth.o
-                                0x60e (size before relaxing)
- .debug_str     0x000009ae       0x7e counting_millis.o
+ .debug_str     0x000003e6      0x5a8 Bluetooth.o
+                                0x5ee (size before relaxing)
+ .debug_str     0x0000098e       0xd2 counting_millis.o
                                 0x1f3 (size before relaxing)
- .debug_str     0x00000a2c      0x1b6 display.o
+ .debug_str     0x00000a60      0x1b6 display.o
                                 0x3b6 (size before relaxing)
- .debug_str     0x00000be2      0x1ec TFTdriver.o
+ .debug_str     0x00000c16      0x1ec TFTdriver.o
                                 0x40a (size before relaxing)
- .debug_str     0x00000dce       0x91 TFTtest.o
+ .debug_str     0x00000e02       0x91 TFTtest.o
                                 0x2e0 (size before relaxing)
- .debug_str     0x00000e5f       0x13 Touch.o
+ .debug_str     0x00000e93       0x13 Touch.o
                                 0x1a2 (size before relaxing)
- .debug_str     0x00000e72       0x7b UART.o
+ .debug_str     0x00000ea6       0x7b UART.o
                                 0x227 (size before relaxing)
 
 .debug_loc      0x00000000     0x2d05

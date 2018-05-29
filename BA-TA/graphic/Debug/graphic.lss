@@ -23,11 +23,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   9 .debug_frame  000008f4  00000000  00000000  0000b69c  2**2
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_str    00000eed  00000000  00000000  0000bf90  2**0
+ 10 .debug_str    00000f21  00000000  00000000  0000bf90  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    00002d05  00000000  00000000  0000ce7d  2**0
+ 11 .debug_loc    00002d05  00000000  00000000  0000ceb1  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_ranges 00000260  00000000  00000000  0000fb82  2**0
+ 12 .debug_ranges 00000260  00000000  00000000  0000fbb6  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -338,50 +338,50 @@ void setModuleName(char* newBluetoothName)
      23c:	0f be       	out	0x3f, r0	; 63
      23e:	cd bf       	out	0x3d, r28	; 61
      240:	8c 01       	movw	r16, r24
-     242:	fc 01       	movw	r30, r24
-     244:	33 97       	sbiw	r30, 0x03	; 3
-     246:	9c 01       	movw	r18, r24
-     248:	27 5d       	subi	r18, 0xD7	; 215
-     24a:	3e 4f       	sbci	r19, 0xFE	; 254
-     24c:	81 91       	ld	r24, Z+
-     24e:	8b 32       	cpi	r24, 0x2B	; 43
-     250:	91 f4       	brne	.+36     	; 0x276 <nearbyAddressDelimeter+0x6a>
-     252:	80 81       	ld	r24, Z
-     254:	89 34       	cpi	r24, 0x49	; 73
-     256:	79 f4       	brne	.+30     	; 0x276 <nearbyAddressDelimeter+0x6a>
-     258:	81 81       	ldd	r24, Z+1	; 0x01
-     25a:	8e 34       	cpi	r24, 0x4E	; 78
-     25c:	61 f4       	brne	.+24     	; 0x276 <nearbyAddressDelimeter+0x6a>
-     25e:	82 81       	ldd	r24, Z+2	; 0x02
-     260:	81 35       	cpi	r24, 0x51	; 81
-     262:	49 f4       	brne	.+18     	; 0x276 <nearbyAddressDelimeter+0x6a>
-     264:	80 91 b0 18 	lds	r24, 0x18B0	; 0x8018b0 <numberOfNearbyAddresses>
-     268:	90 91 b1 18 	lds	r25, 0x18B1	; 0x8018b1 <numberOfNearbyAddresses+0x1>
-     26c:	01 96       	adiw	r24, 0x01	; 1
-     26e:	90 93 b1 18 	sts	0x18B1, r25	; 0x8018b1 <numberOfNearbyAddresses+0x1>
-     272:	80 93 b0 18 	sts	0x18B0, r24	; 0x8018b0 <numberOfNearbyAddresses>
-     276:	e2 17       	cp	r30, r18
-     278:	f3 07       	cpc	r31, r19
-     27a:	41 f7       	brne	.-48     	; 0x24c <nearbyAddressDelimeter+0x40>
-     27c:	85 e0       	ldi	r24, 0x05	; 5
-     27e:	90 e0       	ldi	r25, 0x00	; 0
-     280:	0e 94 32 10 	call	0x2064	; 0x2064 <malloc>
-     284:	7c 01       	movw	r14, r24
-     286:	83 e0       	ldi	r24, 0x03	; 3
-     288:	90 e0       	ldi	r25, 0x00	; 0
-     28a:	0e 94 32 10 	call	0x2064	; 0x2064 <malloc>
-     28e:	6c 01       	movw	r12, r24
-     290:	ae 01       	movw	r20, r28
-     292:	4f 5f       	subi	r20, 0xFF	; 255
-     294:	5f 4f       	sbci	r21, 0xFF	; 255
-     296:	62 e1       	ldi	r22, 0x12	; 18
-     298:	73 e0       	ldi	r23, 0x03	; 3
-     29a:	c8 01       	movw	r24, r16
-     29c:	0e 94 94 11 	call	0x2328	; 0x2328 <strtok_r>
-     2a0:	83 e0       	ldi	r24, 0x03	; 3
-     2a2:	90 e0       	ldi	r25, 0x00	; 0
-     2a4:	0e 94 32 10 	call	0x2064	; 0x2064 <malloc>
-     2a8:	1c 01       	movw	r2, r24
+     242:	85 e0       	ldi	r24, 0x05	; 5
+     244:	90 e0       	ldi	r25, 0x00	; 0
+     246:	0e 94 32 10 	call	0x2064	; 0x2064 <malloc>
+     24a:	7c 01       	movw	r14, r24
+     24c:	83 e0       	ldi	r24, 0x03	; 3
+     24e:	90 e0       	ldi	r25, 0x00	; 0
+     250:	0e 94 32 10 	call	0x2064	; 0x2064 <malloc>
+     254:	6c 01       	movw	r12, r24
+     256:	83 e0       	ldi	r24, 0x03	; 3
+     258:	90 e0       	ldi	r25, 0x00	; 0
+     25a:	0e 94 32 10 	call	0x2064	; 0x2064 <malloc>
+     25e:	1c 01       	movw	r2, r24
+     260:	f8 01       	movw	r30, r16
+     262:	33 97       	sbiw	r30, 0x03	; 3
+     264:	98 01       	movw	r18, r16
+     266:	27 5d       	subi	r18, 0xD7	; 215
+     268:	3e 4f       	sbci	r19, 0xFE	; 254
+     26a:	81 91       	ld	r24, Z+
+     26c:	8b 32       	cpi	r24, 0x2B	; 43
+     26e:	91 f4       	brne	.+36     	; 0x294 <nearbyAddressDelimeter+0x88>
+     270:	80 81       	ld	r24, Z
+     272:	89 34       	cpi	r24, 0x49	; 73
+     274:	79 f4       	brne	.+30     	; 0x294 <nearbyAddressDelimeter+0x88>
+     276:	81 81       	ldd	r24, Z+1	; 0x01
+     278:	8e 34       	cpi	r24, 0x4E	; 78
+     27a:	61 f4       	brne	.+24     	; 0x294 <nearbyAddressDelimeter+0x88>
+     27c:	82 81       	ldd	r24, Z+2	; 0x02
+     27e:	81 35       	cpi	r24, 0x51	; 81
+     280:	49 f4       	brne	.+18     	; 0x294 <nearbyAddressDelimeter+0x88>
+     282:	80 91 b0 18 	lds	r24, 0x18B0	; 0x8018b0 <numberOfNearbyAddresses>
+     286:	90 91 b1 18 	lds	r25, 0x18B1	; 0x8018b1 <numberOfNearbyAddresses+0x1>
+     28a:	01 96       	adiw	r24, 0x01	; 1
+     28c:	90 93 b1 18 	sts	0x18B1, r25	; 0x8018b1 <numberOfNearbyAddresses+0x1>
+     290:	80 93 b0 18 	sts	0x18B0, r24	; 0x8018b0 <numberOfNearbyAddresses>
+     294:	e2 17       	cp	r30, r18
+     296:	f3 07       	cpc	r31, r19
+     298:	41 f7       	brne	.-48     	; 0x26a <nearbyAddressDelimeter+0x5e>
+     29a:	ae 01       	movw	r20, r28
+     29c:	4f 5f       	subi	r20, 0xFF	; 255
+     29e:	5f 4f       	sbci	r21, 0xFF	; 255
+     2a0:	62 e1       	ldi	r22, 0x12	; 18
+     2a2:	73 e0       	ldi	r23, 0x03	; 3
+     2a4:	c8 01       	movw	r24, r16
+     2a6:	0e 94 94 11 	call	0x2328	; 0x2328 <strtok_r>
      2aa:	80 91 b0 18 	lds	r24, 0x18B0	; 0x8018b0 <numberOfNearbyAddresses>
      2ae:	90 91 b1 18 	lds	r25, 0x18B1	; 0x8018b1 <numberOfNearbyAddresses+0x1>
      2b2:	18 16       	cp	r1, r24
@@ -1487,12 +1487,6 @@ char* getNearbyDeviceAddress(int i)
      c6a:	08 95       	ret
 
 00000c6c <__vector_17>:
-    // Now enable global interrupts
-    sei();
-}
-
-ISR (TIMER1_COMPA_vect)
-{
      c6c:	1f 92       	push	r1
      c6e:	0f 92       	push	r0
      c70:	0f b6       	in	r0, 0x3f	; 63
@@ -1502,7 +1496,6 @@ ISR (TIMER1_COMPA_vect)
      c78:	9f 93       	push	r25
      c7a:	af 93       	push	r26
      c7c:	bf 93       	push	r27
-	timer1_millis++;
      c7e:	80 91 c4 18 	lds	r24, 0x18C4	; 0x8018c4 <timer1_millis>
      c82:	90 91 c5 18 	lds	r25, 0x18C5	; 0x8018c5 <timer1_millis+0x1>
      c86:	a0 91 c6 18 	lds	r26, 0x18C6	; 0x8018c6 <timer1_millis+0x2>
@@ -1514,7 +1507,6 @@ ISR (TIMER1_COMPA_vect)
      c98:	90 93 c5 18 	sts	0x18C5, r25	; 0x8018c5 <timer1_millis+0x1>
      c9c:	a0 93 c6 18 	sts	0x18C6, r26	; 0x8018c6 <timer1_millis+0x2>
      ca0:	b0 93 c7 18 	sts	0x18C7, r27	; 0x8018c7 <timer1_millis+0x3>
-}
      ca4:	bf 91       	pop	r27
      ca6:	af 91       	pop	r26
      ca8:	9f 91       	pop	r25
@@ -1526,24 +1518,15 @@ ISR (TIMER1_COMPA_vect)
      cb4:	18 95       	reti
 
 00000cb6 <movePointerUp>:
-				break;
-		}
-		return state;
-}
-int movePointerUp()
-{
      cb6:	ef 92       	push	r14
      cb8:	0f 93       	push	r16
      cba:	cf 93       	push	r28
-	if (pointer_position_y > 0)
      cbc:	80 91 96 18 	lds	r24, 0x1896	; 0x801896 <pointer_position_y>
      cc0:	90 91 97 18 	lds	r25, 0x1897	; 0x801897 <pointer_position_y+0x1>
      cc4:	18 16       	cp	r1, r24
      cc6:	19 06       	cpc	r1, r25
      cc8:	0c f0       	brlt	.+2      	; 0xccc <movePointerUp+0x16>
      cca:	3e c0       	rjmp	.+124    	; 0xd48 <movePointerUp+0x92>
-	{
-		drawletters(">", start_position_x-20,start_position_y+(pointer_position_y*30),31,63,31);
      ccc:	ce e1       	ldi	r28, 0x1E	; 30
      cce:	c8 9f       	mul	r28, r24
      cd0:	a0 01       	movw	r20, r0
@@ -1567,13 +1550,11 @@ int movePointerUp()
      cfc:	88 e9       	ldi	r24, 0x98	; 152
      cfe:	92 e0       	ldi	r25, 0x02	; 2
      d00:	35 d7       	rcall	.+3690   	; 0x1b6c <drawletters>
-		pointer_position_y--;
      d02:	80 91 96 18 	lds	r24, 0x1896	; 0x801896 <pointer_position_y>
      d06:	90 91 97 18 	lds	r25, 0x1897	; 0x801897 <pointer_position_y+0x1>
      d0a:	01 97       	sbiw	r24, 0x01	; 1
      d0c:	90 93 97 18 	sts	0x1897, r25	; 0x801897 <pointer_position_y+0x1>
      d10:	80 93 96 18 	sts	0x1896, r24	; 0x801896 <pointer_position_y>
-		drawletters(">", start_position_x-20,start_position_y+(pointer_position_y*30),0,0,0);
      d14:	c8 9f       	mul	r28, r24
      d16:	a0 01       	movw	r20, r0
      d18:	c9 9f       	mul	r28, r25
@@ -1593,28 +1574,20 @@ int movePointerUp()
      d3c:	88 e9       	ldi	r24, 0x98	; 152
      d3e:	92 e0       	ldi	r25, 0x02	; 2
      d40:	15 d7       	rcall	.+3626   	; 0x1b6c <drawletters>
-		return 1;
      d42:	81 e0       	ldi	r24, 0x01	; 1
      d44:	90 e0       	ldi	r25, 0x00	; 0
      d46:	02 c0       	rjmp	.+4      	; 0xd4c <movePointerUp+0x96>
-	}
-	else
-	{return 0;}
      d48:	80 e0       	ldi	r24, 0x00	; 0
      d4a:	90 e0       	ldi	r25, 0x00	; 0
-}
      d4c:	cf 91       	pop	r28
      d4e:	0f 91       	pop	r16
      d50:	ef 90       	pop	r14
      d52:	08 95       	ret
 
 00000d54 <movePointerDown>:
-int movePointerDown()
-{
      d54:	ef 92       	push	r14
      d56:	0f 93       	push	r16
      d58:	cf 93       	push	r28
-	if (pointer_position_y < pointer_max-1)
      d5a:	20 91 96 18 	lds	r18, 0x1896	; 0x801896 <pointer_position_y>
      d5e:	30 91 97 18 	lds	r19, 0x1897	; 0x801897 <pointer_position_y+0x1>
      d62:	80 91 94 18 	lds	r24, 0x1894	; 0x801894 <pointer_max>
@@ -1624,9 +1597,6 @@ int movePointerDown()
      d6e:	39 07       	cpc	r19, r25
      d70:	0c f0       	brlt	.+2      	; 0xd74 <movePointerDown+0x20>
      d72:	3e c0       	rjmp	.+124    	; 0xdf0 <movePointerDown+0x9c>
-	{
-		
-		drawletters(">", start_position_x-20,start_position_y+(pointer_position_y*30),31,63,31);
      d74:	ce e1       	ldi	r28, 0x1E	; 30
      d76:	c2 9f       	mul	r28, r18
      d78:	a0 01       	movw	r20, r0
@@ -1650,13 +1620,11 @@ int movePointerDown()
      da4:	88 e9       	ldi	r24, 0x98	; 152
      da6:	92 e0       	ldi	r25, 0x02	; 2
      da8:	e1 d6       	rcall	.+3522   	; 0x1b6c <drawletters>
-		pointer_position_y++;
      daa:	80 91 96 18 	lds	r24, 0x1896	; 0x801896 <pointer_position_y>
      dae:	90 91 97 18 	lds	r25, 0x1897	; 0x801897 <pointer_position_y+0x1>
      db2:	01 96       	adiw	r24, 0x01	; 1
      db4:	90 93 97 18 	sts	0x1897, r25	; 0x801897 <pointer_position_y+0x1>
      db8:	80 93 96 18 	sts	0x1896, r24	; 0x801896 <pointer_position_y>
-		drawletters(">", start_position_x-20,start_position_y+(pointer_position_y*30),0,0,0);
      dbc:	c8 9f       	mul	r28, r24
      dbe:	a0 01       	movw	r20, r0
      dc0:	c9 9f       	mul	r28, r25
@@ -1676,31 +1644,19 @@ int movePointerDown()
      de4:	88 e9       	ldi	r24, 0x98	; 152
      de6:	92 e0       	ldi	r25, 0x02	; 2
      de8:	c1 d6       	rcall	.+3458   	; 0x1b6c <drawletters>
-		return 1;
      dea:	81 e0       	ldi	r24, 0x01	; 1
      dec:	90 e0       	ldi	r25, 0x00	; 0
      dee:	02 c0       	rjmp	.+4      	; 0xdf4 <movePointerDown+0xa0>
-	}
-	else
-	{return 0;}
      df0:	80 e0       	ldi	r24, 0x00	; 0
      df2:	90 e0       	ldi	r25, 0x00	; 0
-	
-}
      df4:	cf 91       	pop	r28
      df6:	0f 91       	pop	r16
      df8:	ef 90       	pop	r14
      dfa:	08 95       	ret
 
 00000dfc <addPointer>:
-
-// LOCAL FUNCTIONS /
-
-void addPointer()
-{
      dfc:	ef 92       	push	r14
      dfe:	0f 93       	push	r16
-		drawletters(">", start_position_x-20,start_position_y,0,0,0);
      e00:	40 91 08 02 	lds	r20, 0x0208	; 0x800208 <start_position_y>
      e04:	50 91 09 02 	lds	r21, 0x0209	; 0x800209 <start_position_y+0x1>
      e08:	60 91 0a 02 	lds	r22, 0x020A	; 0x80020a <start_position_x>
@@ -1713,26 +1669,19 @@ void addPointer()
      e1a:	88 e9       	ldi	r24, 0x98	; 152
      e1c:	92 e0       	ldi	r25, 0x02	; 2
      e1e:	a6 d6       	rcall	.+3404   	; 0x1b6c <drawletters>
-}
      e20:	0f 91       	pop	r16
      e22:	ef 90       	pop	r14
      e24:	08 95       	ret
 
 00000e26 <lock>:
-void lock()
-{
      e26:	cf 92       	push	r12
      e28:	ef 92       	push	r14
      e2a:	0f 93       	push	r16
-	
-	if (locked == 1)
      e2c:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <locked>
      e30:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <locked+0x1>
      e34:	81 30       	cpi	r24, 0x01	; 1
      e36:	91 05       	cpc	r25, r1
      e38:	81 f4       	brne	.+32     	; 0xe5a <lock+0x34>
-	{
-		FillRectangle(261,0,60,60,0,63,0);
      e3a:	c1 2c       	mov	r12, r1
      e3c:	0f 2e       	mov	r0, r31
      e3e:	ff e3       	ldi	r31, 0x3F	; 63
@@ -1749,12 +1698,8 @@ void lock()
      e54:	91 e0       	ldi	r25, 0x01	; 1
      e56:	c1 d4       	rcall	.+2434   	; 0x17da <FillRectangle>
      e58:	0e c0       	rjmp	.+28     	; 0xe76 <lock+0x50>
-	}
-	else if (locked == 0)
      e5a:	89 2b       	or	r24, r25
      e5c:	61 f4       	brne	.+24     	; 0xe76 <lock+0x50>
-	{
-		FillRectangle(261,0,60,60,31,0,0);
      e5e:	c1 2c       	mov	r12, r1
      e60:	e1 2c       	mov	r14, r1
      e62:	0f e1       	ldi	r16, 0x1F	; 31
@@ -1767,51 +1712,29 @@ void lock()
      e70:	85 e0       	ldi	r24, 0x05	; 5
      e72:	91 e0       	ldi	r25, 0x01	; 1
      e74:	b2 d4       	rcall	.+2404   	; 0x17da <FillRectangle>
-	}
-}
      e76:	0f 91       	pop	r16
      e78:	ef 90       	pop	r14
      e7a:	cf 90       	pop	r12
      e7c:	08 95       	ret
 
 00000e7e <toggleLock>:
-void toggleLock()
-{
-	locked++;
      e7e:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <locked>
      e82:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <locked+0x1>
      e86:	01 96       	adiw	r24, 0x01	; 1
-	if (locked == 3)
      e88:	83 30       	cpi	r24, 0x03	; 3
      e8a:	91 05       	cpc	r25, r1
      e8c:	29 f0       	breq	.+10     	; 0xe98 <toggleLock+0x1a>
-		FillRectangle(261,0,60,60,31,0,0);
-	}
-}
-void toggleLock()
-{
-	locked++;
      e8e:	90 93 07 02 	sts	0x0207, r25	; 0x800207 <locked+0x1>
      e92:	80 93 06 02 	sts	0x0206, r24	; 0x800206 <locked>
      e96:	04 c0       	rjmp	.+8      	; 0xea0 <toggleLock+0x22>
-	if (locked == 3)
-	{locked = 0;}
      e98:	10 92 07 02 	sts	0x0207, r1	; 0x800207 <locked+0x1>
      e9c:	10 92 06 02 	sts	0x0206, r1	; 0x800206 <locked>
-	lock();
      ea0:	c2 cf       	rjmp	.-124    	; 0xe26 <lock>
      ea2:	08 95       	ret
 
 00000ea4 <TouchDraw>:
-		{return 0;}	
-	}
-
-}
-void TouchDraw()
-{
      ea4:	ef 92       	push	r14
      ea6:	0f 93       	push	r16
-	setBaggroundPixel(0,0,0);
      ea8:	40 e0       	ldi	r20, 0x00	; 0
      eaa:	50 e0       	ldi	r21, 0x00	; 0
      eac:	60 e0       	ldi	r22, 0x00	; 0
@@ -1819,7 +1742,6 @@ void TouchDraw()
      eb0:	80 e0       	ldi	r24, 0x00	; 0
      eb2:	90 e0       	ldi	r25, 0x00	; 0
      eb4:	d0 d4       	rcall	.+2464   	; 0x1856 <setBaggroundPixel>
-	drawletters("Enter", 15 ,200,31,63,31);
      eb6:	0f 2e       	mov	r0, r31
      eb8:	ff e1       	ldi	r31, 0x1F	; 31
      eba:	ef 2e       	mov	r14, r31
@@ -1833,7 +1755,6 @@ void TouchDraw()
      eca:	8a e9       	ldi	r24, 0x9A	; 154
      ecc:	92 e0       	ldi	r25, 0x02	; 2
      ece:	4e d6       	rcall	.+3228   	; 0x1b6c <drawletters>
-	drawletters("Back", 90,200,31,63,31);
      ed0:	2f e1       	ldi	r18, 0x1F	; 31
      ed2:	48 ec       	ldi	r20, 0xC8	; 200
      ed4:	50 e0       	ldi	r21, 0x00	; 0
@@ -1842,7 +1763,6 @@ void TouchDraw()
      eda:	80 ea       	ldi	r24, 0xA0	; 160
      edc:	92 e0       	ldi	r25, 0x02	; 2
      ede:	46 d6       	rcall	.+3212   	; 0x1b6c <drawletters>
-	drawletters("Up",185,200,31,63,31);
      ee0:	2f e1       	ldi	r18, 0x1F	; 31
      ee2:	48 ec       	ldi	r20, 0xC8	; 200
      ee4:	50 e0       	ldi	r21, 0x00	; 0
@@ -1851,7 +1771,6 @@ void TouchDraw()
      eea:	85 ea       	ldi	r24, 0xA5	; 165
      eec:	92 e0       	ldi	r25, 0x02	; 2
      eee:	3e d6       	rcall	.+3196   	; 0x1b6c <drawletters>
-	drawletters("Down", 230,200,31,63,31);
      ef0:	2f e1       	ldi	r18, 0x1F	; 31
      ef2:	48 ec       	ldi	r20, 0xC8	; 200
      ef4:	50 e0       	ldi	r21, 0x00	; 0
@@ -1860,7 +1779,6 @@ void TouchDraw()
      efa:	88 ea       	ldi	r24, 0xA8	; 168
      efc:	92 e0       	ldi	r25, 0x02	; 2
      efe:	36 d6       	rcall	.+3180   	; 0x1b6c <drawletters>
-	setBaggroundPixel(31,63,31);
      f00:	4f e1       	ldi	r20, 0x1F	; 31
      f02:	50 e0       	ldi	r21, 0x00	; 0
      f04:	6f e3       	ldi	r22, 0x3F	; 63
@@ -1868,18 +1786,14 @@ void TouchDraw()
      f08:	8f e1       	ldi	r24, 0x1F	; 31
      f0a:	90 e0       	ldi	r25, 0x00	; 0
      f0c:	a4 d4       	rcall	.+2376   	; 0x1856 <setBaggroundPixel>
-}
      f0e:	0f 91       	pop	r16
      f10:	ef 90       	pop	r14
      f12:	08 95       	ret
 
 00000f14 <cleanDisplay>:
-void cleanDisplay()
-{
      f14:	cf 92       	push	r12
      f16:	ef 92       	push	r14
      f18:	0f 93       	push	r16
-	FillRectangle(0,0,320,240,31,63,31);
      f1a:	0f 2e       	mov	r0, r31
      f1c:	ff e1       	ldi	r31, 0x1F	; 31
      f1e:	cf 2e       	mov	r12, r31
@@ -1898,19 +1812,12 @@ void cleanDisplay()
      f38:	80 e0       	ldi	r24, 0x00	; 0
      f3a:	90 e0       	ldi	r25, 0x00	; 0
      f3c:	4e d4       	rcall	.+2204   	; 0x17da <FillRectangle>
-}
      f3e:	0f 91       	pop	r16
      f40:	ef 90       	pop	r14
      f42:	cf 90       	pop	r12
      f44:	08 95       	ret
 
 00000f46 <pickDevices>:
-	
-}
-
-
-int pickDevices(int num, int _state)
-{
      f46:	af 92       	push	r10
      f48:	bf 92       	push	r11
      f4a:	cf 92       	push	r12
@@ -1922,18 +1829,14 @@ int pickDevices(int num, int _state)
      f56:	cf 93       	push	r28
      f58:	df 93       	push	r29
      f5a:	5c 01       	movw	r10, r24
-	num--;
      f5c:	6c 01       	movw	r12, r24
      f5e:	81 e0       	ldi	r24, 0x01	; 1
      f60:	c8 1a       	sub	r12, r24
      f62:	d1 08       	sbc	r13, r1
-	if (_state == 1)
      f64:	61 30       	cpi	r22, 0x01	; 1
      f66:	71 05       	cpc	r23, r1
      f68:	09 f0       	breq	.+2      	; 0xf6c <pickDevices+0x26>
      f6a:	3e c0       	rjmp	.+124    	; 0xfe8 <pickDevices+0xa2>
-	{
-		strcpy(save_name[devices], get_name[num]);
      f6c:	c0 91 92 18 	lds	r28, 0x1892	; 0x801892 <__data_end>
      f70:	d0 91 93 18 	lds	r29, 0x1893	; 0x801893 <__data_end+0x1>
      f74:	86 01       	movw	r16, r12
@@ -1955,7 +1858,6 @@ int pickDevices(int num, int _state)
      f94:	84 53       	subi	r24, 0x34	; 52
      f96:	97 4e       	sbci	r25, 0xE7	; 231
      f98:	0e 94 7f 11 	call	0x22fe	; 0x22fe <strcpy>
-		strcpy(save_address[devices], get_address[num]);
      f9c:	f8 01       	movw	r30, r16
      f9e:	e8 56       	subi	r30, 0x68	; 104
      fa0:	f7 4e       	sbci	r31, 0xE7	; 231
@@ -1965,14 +1867,10 @@ int pickDevices(int num, int _state)
      fa8:	8c 5b       	subi	r24, 0xBC	; 188
      faa:	96 4e       	sbci	r25, 0xE6	; 230
      fac:	0e 94 7f 11 	call	0x22fe	; 0x22fe <strcpy>
-		
-		devices++;
      fb0:	21 96       	adiw	r28, 0x01	; 1
      fb2:	d0 93 93 18 	sts	0x1893, r29	; 0x801893 <__data_end+0x1>
      fb6:	c0 93 92 18 	sts	0x1892, r28	; 0x801892 <__data_end>
-        cleanDisplay();
      fba:	ac df       	rcall	.-168    	; 0xf14 <cleanDisplay>
-		drawletters("You picked:", 50 ,100,0,0,0);
      fbc:	e1 2c       	mov	r14, r1
      fbe:	00 e0       	ldi	r16, 0x00	; 0
      fc0:	20 e0       	ldi	r18, 0x00	; 0
@@ -1983,7 +1881,6 @@ int pickDevices(int num, int _state)
      fca:	8d ea       	ldi	r24, 0xAD	; 173
      fcc:	92 e0       	ldi	r25, 0x02	; 2
      fce:	ce d5       	rcall	.+2972   	; 0x1b6c <drawletters>
-		drawletters(get_name[num], 50 ,140,0,0,0);
      fd0:	20 e0       	ldi	r18, 0x00	; 0
      fd2:	4c e8       	ldi	r20, 0x8C	; 140
      fd4:	50 e0       	ldi	r21, 0x00	; 0
@@ -1993,28 +1890,20 @@ int pickDevices(int num, int _state)
      fdc:	80 81       	ld	r24, Z
      fde:	91 81       	ldd	r25, Z+1	; 0x01
      fe0:	c5 d5       	rcall	.+2954   	; 0x1b6c <drawletters>
-		return 1;
      fe2:	81 e0       	ldi	r24, 0x01	; 1
      fe4:	90 e0       	ldi	r25, 0x00	; 0
      fe6:	5c c0       	rjmp	.+184    	; 0x10a0 <pickDevices+0x15a>
-	}
-	else if(_state == 2)
      fe8:	62 30       	cpi	r22, 0x02	; 2
      fea:	71 05       	cpc	r23, r1
      fec:	09 f0       	breq	.+2      	; 0xff0 <pickDevices+0xaa>
      fee:	55 c0       	rjmp	.+170    	; 0x109a <pickDevices+0x154>
-	{
-		if (devices > 0)
      ff0:	80 91 92 18 	lds	r24, 0x1892	; 0x801892 <__data_end>
      ff4:	90 91 93 18 	lds	r25, 0x1893	; 0x801893 <__data_end+0x1>
      ff8:	18 16       	cp	r1, r24
      ffa:	19 06       	cpc	r1, r25
      ffc:	0c f0       	brlt	.+2      	; 0x1000 <pickDevices+0xba>
-		{
-			cleanDisplay();
      ffe:	4e c0       	rjmp	.+156    	; 0x109c <pickDevices+0x156>
     1000:	89 df       	rcall	.-238    	; 0xf14 <cleanDisplay>
-			drawletters("You deleted:", 50 ,100,0,0,0);
     1002:	e1 2c       	mov	r14, r1
     1004:	00 e0       	ldi	r16, 0x00	; 0
     1006:	20 e0       	ldi	r18, 0x00	; 0
@@ -2025,7 +1914,6 @@ int pickDevices(int num, int _state)
     1010:	89 eb       	ldi	r24, 0xB9	; 185
     1012:	92 e0       	ldi	r25, 0x02	; 2
     1014:	ab d5       	rcall	.+2902   	; 0x1b6c <drawletters>
-			drawletters(save_name[num], 50 ,140,0,0,0);
     1016:	28 e2       	ldi	r18, 0x28	; 40
     1018:	2c 9d       	mul	r18, r12
     101a:	c0 01       	movw	r24, r0
@@ -2040,7 +1928,6 @@ int pickDevices(int num, int _state)
     102c:	84 53       	subi	r24, 0x34	; 52
     102e:	97 4e       	sbci	r25, 0xE7	; 231
     1030:	9d d5       	rcall	.+2874   	; 0x1b6c <drawletters>
-			for (int i=num;i<devices+num;i++)
     1032:	e0 90 92 18 	lds	r14, 0x1892	; 0x801892 <__data_end>
     1036:	f0 90 93 18 	lds	r15, 0x1893	; 0x801893 <__data_end+0x1>
     103a:	86 01       	movw	r16, r12
@@ -2061,8 +1948,6 @@ int pickDevices(int num, int _state)
     1058:	5c 01       	movw	r10, r24
     105a:	cc 5b       	subi	r28, 0xBC	; 188
     105c:	d6 4e       	sbci	r29, 0xE6	; 230
-			{
-				strcpy(save_name[i], save_name[i+1]);
     105e:	9f ef       	ldi	r25, 0xFF	; 255
     1060:	c9 1a       	sub	r12, r25
     1062:	d9 0a       	sbc	r13, r25
@@ -2070,7 +1955,6 @@ int pickDevices(int num, int _state)
     1066:	c5 01       	movw	r24, r10
     1068:	88 97       	sbiw	r24, 0x28	; 40
     106a:	0e 94 7f 11 	call	0x22fe	; 0x22fe <strcpy>
-				strcpy(save_address[i], save_address[i+1]);
     106e:	be 01       	movw	r22, r28
     1070:	ce 01       	movw	r24, r28
     1072:	88 97       	sbiw	r24, 0x28	; 40
@@ -2079,48 +1963,20 @@ int pickDevices(int num, int _state)
     107a:	ae 0e       	add	r10, r30
     107c:	b1 1c       	adc	r11, r1
     107e:	a8 96       	adiw	r28, 0x28	; 40
-		if (devices > 0)
-		{
-			cleanDisplay();
-			drawletters("You deleted:", 50 ,100,0,0,0);
-			drawletters(save_name[num], 50 ,140,0,0,0);
-			for (int i=num;i<devices+num;i++)
     1080:	c0 16       	cp	r12, r16
     1082:	d1 06       	cpc	r13, r17
     1084:	64 f3       	brlt	.-40     	; 0x105e <pickDevices+0x118>
-			{
-				strcpy(save_name[i], save_name[i+1]);
-				strcpy(save_address[i], save_address[i+1]);
-			}
-	
-			devices--;
     1086:	f1 e0       	ldi	r31, 0x01	; 1
     1088:	ef 1a       	sub	r14, r31
     108a:	f1 08       	sbc	r15, r1
     108c:	f0 92 93 18 	sts	0x1893, r15	; 0x801893 <__data_end+0x1>
     1090:	e0 92 92 18 	sts	0x1892, r14	; 0x801892 <__data_end>
-			return 1;
     1094:	81 e0       	ldi	r24, 0x01	; 1
     1096:	90 e0       	ldi	r25, 0x00	; 0
     1098:	03 c0       	rjmp	.+6      	; 0x10a0 <pickDevices+0x15a>
-		}
-		else
-		{return 0;}	
-	}
-
-}
     109a:	02 c0       	rjmp	.+4      	; 0x10a0 <pickDevices+0x15a>
-	
-			devices--;
-			return 1;
-		}
-		else
-		{return 0;}	
     109c:	80 e0       	ldi	r24, 0x00	; 0
     109e:	90 e0       	ldi	r25, 0x00	; 0
-	}
-
-}
     10a0:	df 91       	pop	r29
     10a2:	cf 91       	pop	r28
     10a4:	1f 91       	pop	r17
@@ -2134,22 +1990,13 @@ int pickDevices(int num, int _state)
     10b4:	08 95       	ret
 
 000010b6 <toggleSwitch>:
-void cleanDisplay()
-{
-	FillRectangle(0,0,320,240,31,63,31);
-}
-void toggleSwitch()
-{
     10b6:	ef 92       	push	r14
     10b8:	0f 93       	push	r16
-	if(locked == 2)
     10ba:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <locked>
     10be:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <locked+0x1>
     10c2:	82 30       	cpi	r24, 0x02	; 2
     10c4:	91 05       	cpc	r25, r1
     10c6:	21 f5       	brne	.+72     	; 0x1110 <toggleSwitch+0x5a>
-	{
-		drawletters("LOCK AUTO", start_position_x,start_position_y+60,31,63,31); //make pixel whites
     10c8:	40 91 08 02 	lds	r20, 0x0208	; 0x800208 <start_position_y>
     10cc:	50 91 09 02 	lds	r21, 0x0209	; 0x800209 <start_position_y+0x1>
     10d0:	44 5c       	subi	r20, 0xC4	; 196
@@ -2165,7 +2012,6 @@ void toggleSwitch()
     10e8:	86 ec       	ldi	r24, 0xC6	; 198
     10ea:	92 e0       	ldi	r25, 0x02	; 2
     10ec:	3f d5       	rcall	.+2686   	; 0x1b6c <drawletters>
-		drawletters("LOCK AUTO", start_position_x,start_position_y+60,0,0,0); //make text
     10ee:	40 91 08 02 	lds	r20, 0x0208	; 0x800208 <start_position_y>
     10f2:	50 91 09 02 	lds	r21, 0x0209	; 0x800209 <start_position_y+0x1>
     10f6:	44 5c       	subi	r20, 0xC4	; 196
@@ -2179,12 +2025,8 @@ void toggleSwitch()
     110a:	92 e0       	ldi	r25, 0x02	; 2
     110c:	2f d5       	rcall	.+2654   	; 0x1b6c <drawletters>
     110e:	49 c0       	rjmp	.+146    	; 0x11a2 <toggleSwitch+0xec>
-	}
-	else if(locked == 1)
     1110:	01 97       	sbiw	r24, 0x01	; 1
     1112:	21 f5       	brne	.+72     	; 0x115c <toggleSwitch+0xa6>
-	{
-		drawletters("LOCK AUTO", start_position_x,start_position_y+60,31,63,31); //make pixel whites
     1114:	40 91 08 02 	lds	r20, 0x0208	; 0x800208 <start_position_y>
     1118:	50 91 09 02 	lds	r21, 0x0209	; 0x800209 <start_position_y+0x1>
     111c:	44 5c       	subi	r20, 0xC4	; 196
@@ -2200,7 +2042,6 @@ void toggleSwitch()
     1134:	86 ec       	ldi	r24, 0xC6	; 198
     1136:	92 e0       	ldi	r25, 0x02	; 2
     1138:	19 d5       	rcall	.+2610   	; 0x1b6c <drawletters>
-		drawletters("LOCK OFF", start_position_x,start_position_y+60,0,0,0); //make text
     113a:	40 91 08 02 	lds	r20, 0x0208	; 0x800208 <start_position_y>
     113e:	50 91 09 02 	lds	r21, 0x0209	; 0x800209 <start_position_y+0x1>
     1142:	44 5c       	subi	r20, 0xC4	; 196
@@ -2214,10 +2055,6 @@ void toggleSwitch()
     1156:	92 e0       	ldi	r25, 0x02	; 2
     1158:	09 d5       	rcall	.+2578   	; 0x1b6c <drawletters>
     115a:	23 c0       	rjmp	.+70     	; 0x11a2 <toggleSwitch+0xec>
-	}
-	else
-	{
-		drawletters("LOCK AUTO", start_position_x,start_position_y+60,31,63,31); //make pixel whites
     115c:	40 91 08 02 	lds	r20, 0x0208	; 0x800208 <start_position_y>
     1160:	50 91 09 02 	lds	r21, 0x0209	; 0x800209 <start_position_y+0x1>
     1164:	44 5c       	subi	r20, 0xC4	; 196
@@ -2233,7 +2070,6 @@ void toggleSwitch()
     117c:	86 ec       	ldi	r24, 0xC6	; 198
     117e:	92 e0       	ldi	r25, 0x02	; 2
     1180:	f5 d4       	rcall	.+2538   	; 0x1b6c <drawletters>
-		drawletters("LOCK ON", start_position_x,start_position_y+60,0,0,0); //make text
     1182:	40 91 08 02 	lds	r20, 0x0208	; 0x800208 <start_position_y>
     1186:	50 91 09 02 	lds	r21, 0x0209	; 0x800209 <start_position_y+0x1>
     118a:	44 5c       	subi	r20, 0xC4	; 196
@@ -2246,15 +2082,11 @@ void toggleSwitch()
     119c:	89 ed       	ldi	r24, 0xD9	; 217
     119e:	92 e0       	ldi	r25, 0x02	; 2
     11a0:	e5 d4       	rcall	.+2506   	; 0x1b6c <drawletters>
-	}
-}
     11a2:	0f 91       	pop	r16
     11a4:	ef 90       	pop	r14
     11a6:	08 95       	ret
 
 000011a8 <MakeLogo>:
-void MakeLogo()
-{
     11a8:	8f 92       	push	r8
     11aa:	af 92       	push	r10
     11ac:	cf 92       	push	r12
@@ -2263,8 +2095,6 @@ void MakeLogo()
     11b2:	ff 92       	push	r15
     11b4:	0f 93       	push	r16
     11b6:	1f 93       	push	r17
-	int xposition = 10; 
-	drawXletter(LogoBitmaps,4,LogoDescriptors[7]-LogoDescriptors[5],xposition,10,LogoDescriptors[5],LogoDescriptors[5]%8,31,0,0);
     11b8:	1f 92       	push	r1
     11ba:	81 2c       	mov	r8, r1
     11bc:	0f 2e       	mov	r0, r31
@@ -2289,8 +2119,6 @@ void MakeLogo()
     11e2:	84 e3       	ldi	r24, 0x34	; 52
     11e4:	93 e0       	ldi	r25, 0x03	; 3
     11e6:	44 d3       	rcall	.+1672   	; 0x1870 <drawXletter>
-	xposition = xposition+32;
-	drawXletter(LogoBitmaps,5,LogoDescriptors[5]-LogoDescriptors[3],xposition,10,LogoDescriptors[3],LogoDescriptors[3]%8,31,0,0);
     11e8:	1f 92       	push	r1
     11ea:	0f 2e       	mov	r0, r31
     11ec:	f6 e0       	ldi	r31, 0x06	; 6
@@ -2311,8 +2139,6 @@ void MakeLogo()
     120a:	84 e3       	ldi	r24, 0x34	; 52
     120c:	93 e0       	ldi	r25, 0x03	; 3
     120e:	30 d3       	rcall	.+1632   	; 0x1870 <drawXletter>
-	xposition = xposition+39;
-	drawXletter(LogoBitmaps,3,LogoDescriptors[3]-LogoDescriptors[1],xposition,10,LogoDescriptors[1],LogoDescriptors[1]%8,31,0,0);
     1210:	1f 92       	push	r1
     1212:	c1 2c       	mov	r12, r1
     1214:	d1 2c       	mov	r13, r1
@@ -2327,8 +2153,6 @@ void MakeLogo()
     1226:	84 e3       	ldi	r24, 0x34	; 52
     1228:	93 e0       	ldi	r25, 0x03	; 3
     122a:	22 d3       	rcall	.+1604   	; 0x1870 <drawXletter>
-	xposition = xposition+18;
-	drawXletter(LogoBitmaps,4,540-LogoDescriptors[7],xposition,10,LogoDescriptors[7],LogoDescriptors[7]%8,31,0,0);
     122c:	1f 92       	push	r1
     122e:	0f 2e       	mov	r0, r31
     1230:	f8 e9       	ldi	r31, 0x98	; 152
@@ -2345,8 +2169,6 @@ void MakeLogo()
     1246:	84 e3       	ldi	r24, 0x34	; 52
     1248:	93 e0       	ldi	r25, 0x03	; 3
     124a:	12 d3       	rcall	.+1572   	; 0x1870 <drawXletter>
-	xposition = xposition+35;
-	drawXletter(LogoBitmaps,5,LogoDescriptors[5]-LogoDescriptors[3],xposition,10,LogoDescriptors[3],LogoDescriptors[3]%8,31,0,0);
     124c:	1f 92       	push	r1
     124e:	0f 2e       	mov	r0, r31
     1250:	f6 e0       	ldi	r31, 0x06	; 6
@@ -2367,7 +2189,6 @@ void MakeLogo()
     126e:	84 e3       	ldi	r24, 0x34	; 52
     1270:	93 e0       	ldi	r25, 0x03	; 3
     1272:	fe d2       	rcall	.+1532   	; 0x1870 <drawXletter>
-}
     1274:	0f 90       	pop	r0
     1276:	0f 90       	pop	r0
     1278:	0f 90       	pop	r0
@@ -2384,17 +2205,9 @@ void MakeLogo()
     128e:	08 95       	ret
 
 00001290 <wait>:
-
-
-
-// PUBLIC FUNCTIONS 
-void wait()
-{
     1290:	ef 92       	push	r14
     1292:	0f 93       	push	r16
-	cleanDisplay();
     1294:	3f de       	rcall	.-898    	; 0xf14 <cleanDisplay>
-	drawletters("SEARCHING", 100,108,0,0,0);
     1296:	e1 2c       	mov	r14, r1
     1298:	00 e0       	ldi	r16, 0x00	; 0
     129a:	20 e0       	ldi	r18, 0x00	; 0
@@ -2404,23 +2217,16 @@ void wait()
     12a2:	70 e0       	ldi	r23, 0x00	; 0
     12a4:	81 ee       	ldi	r24, 0xE1	; 225
     12a6:	92 e0       	ldi	r25, 0x02	; 2
-	MakeLogo();
     12a8:	61 d4       	rcall	.+2242   	; 0x1b6c <drawletters>
     12aa:	7e df       	rcall	.-260    	; 0x11a8 <MakeLogo>
-	
-}
     12ac:	0f 91       	pop	r16
     12ae:	ef 90       	pop	r14
     12b0:	08 95       	ret
 
 000012b2 <welcome>:
-void welcome()
-{
     12b2:	ef 92       	push	r14
     12b4:	0f 93       	push	r16
-	cleanDisplay();
     12b6:	2e de       	rcall	.-932    	; 0xf14 <cleanDisplay>
-	drawletters("WELCOME", 100,108,0,0,0);
     12b8:	e1 2c       	mov	r14, r1
     12ba:	00 e0       	ldi	r16, 0x00	; 0
     12bc:	20 e0       	ldi	r18, 0x00	; 0
@@ -2430,17 +2236,13 @@ void welcome()
     12c4:	70 e0       	ldi	r23, 0x00	; 0
     12c6:	8b ee       	ldi	r24, 0xEB	; 235
     12c8:	92 e0       	ldi	r25, 0x02	; 2
-	MakeLogo();
     12ca:	50 d4       	rcall	.+2208   	; 0x1b6c <drawletters>
     12cc:	6d df       	rcall	.-294    	; 0x11a8 <MakeLogo>
-}
     12ce:	0f 91       	pop	r16
     12d0:	ef 90       	pop	r14
     12d2:	08 95       	ret
 
 000012d4 <makedisplay>:
-int makedisplay(int state)
-{
     12d4:	8f 92       	push	r8
     12d6:	9f 92       	push	r9
     12d8:	af 92       	push	r10
@@ -2453,8 +2255,6 @@ int makedisplay(int state)
     12e6:	cf 93       	push	r28
     12e8:	df 93       	push	r29
     12ea:	4c 01       	movw	r8, r24
-	
-	switch (state)
     12ec:	02 97       	sbiw	r24, 0x02	; 2
     12ee:	09 f4       	brne	.+2      	; 0x12f2 <makedisplay+0x1e>
     12f0:	aa c0       	rjmp	.+340    	; 0x1446 <makedisplay+0x172>
@@ -2468,21 +2268,13 @@ int makedisplay(int state)
     1300:	91 04       	cpc	r9, r1
     1302:	09 f0       	breq	.+2      	; 0x1306 <makedisplay+0x32>
     1304:	f3 c0       	rjmp	.+486    	; 0x14ec <makedisplay+0x218>
-		{
-		
-			case 1: //add device
-				wait();
     1306:	c4 df       	rcall	.-120    	; 0x1290 <wait>
-				trustedDevicesScan();
     1308:	75 db       	rcall	.-2326   	; 0x9f4 <trustedDevicesScan>
     130a:	08 e9       	ldi	r16, 0x98	; 152
     130c:	18 e1       	ldi	r17, 0x18	; 24
     130e:	c1 2c       	mov	r12, r1
-				for (int i=0; i<4; i++)
     1310:	d1 2c       	mov	r13, r1
     1312:	ff ef       	ldi	r31, 0xFF	; 255
-				{
-					variable2 = getTrustedDeviceAddress(i+1);
     1314:	cf 1a       	sub	r12, r31
     1316:	df 0a       	sbc	r13, r31
     1318:	c6 01       	movw	r24, r12
@@ -2491,7 +2283,6 @@ int makedisplay(int state)
     131e:	90 93 cb 18 	sts	0x18CB, r25	; 0x8018cb <variable2+0x1>
     1322:	80 93 ca 18 	sts	0x18CA, r24	; 0x8018ca <variable2>
     1326:	fc 01       	movw	r30, r24
-					get_address[i] = malloc(strlen(variable2)+1); //0 terminering
     1328:	01 90       	ld	r0, Z+
     132a:	00 20       	and	r0, r0
     132c:	e9 f7       	brne	.-6      	; 0x1328 <makedisplay+0x54>
@@ -2503,16 +2294,9 @@ int makedisplay(int state)
     1338:	81 93       	st	Z+, r24
     133a:	91 93       	st	Z+, r25
     133c:	8f 01       	movw	r16, r30
-					strcpy(get_address[i],variable2);
     133e:	be 01       	movw	r22, r28
     1340:	de d7       	rcall	.+4028   	; 0x22fe <strcpy>
     1342:	f4 e0       	ldi	r31, 0x04	; 4
-		{
-		
-			case 1: //add device
-				wait();
-				trustedDevicesScan();
-				for (int i=0; i<4; i++)
     1344:	cf 16       	cp	r12, r31
     1346:	d1 04       	cpc	r13, r1
     1348:	21 f7       	brne	.-56     	; 0x1312 <makedisplay+0x3e>
@@ -2526,12 +2310,6 @@ int makedisplay(int state)
     1358:	c1 2c       	mov	r12, r1
     135a:	d1 2c       	mov	r13, r1
     135c:	2f ef       	ldi	r18, 0xFF	; 255
-					strcpy(get_address[i],variable2);
-				}
-				
-				for (int i=0; i<4; i++)
-				{
-					variable1 = getTrustedDeviceName(i+1);
     135e:	c2 1a       	sub	r12, r18
     1360:	d2 0a       	sbc	r13, r18
     1362:	c6 01       	movw	r24, r12
@@ -2540,7 +2318,6 @@ int makedisplay(int state)
     1368:	90 93 c9 18 	sts	0x18C9, r25	; 0x8018c9 <variable1+0x1>
     136c:	80 93 c8 18 	sts	0x18C8, r24	; 0x8018c8 <variable1>
     1370:	fc 01       	movw	r30, r24
-					get_name[i] = malloc(strlen(variable1)+1); //0 terminering
     1372:	01 90       	ld	r0, Z+
     1374:	00 20       	and	r0, r0
     1376:	e9 f7       	brne	.-6      	; 0x1372 <makedisplay+0x9e>
@@ -2552,28 +2329,14 @@ int makedisplay(int state)
     1382:	81 93       	st	Z+, r24
     1384:	91 93       	st	Z+, r25
     1386:	8f 01       	movw	r16, r30
-					strcpy(get_name[i],variable1);
     1388:	be 01       	movw	r22, r28
     138a:	b9 d7       	rcall	.+3954   	; 0x22fe <strcpy>
-					variable2 = getTrustedDeviceAddress(i+1);
-					get_address[i] = malloc(strlen(variable2)+1); //0 terminering
-					strcpy(get_address[i],variable2);
-				}
-				
-				for (int i=0; i<4; i++)
     138c:	f4 e0       	ldi	r31, 0x04	; 4
     138e:	cf 16       	cp	r12, r31
     1390:	d1 04       	cpc	r13, r1
     1392:	21 f7       	brne	.-56     	; 0x135c <makedisplay+0x88>
-				{
-					variable1 = getTrustedDeviceName(i+1);
-					get_name[i] = malloc(strlen(variable1)+1); //0 terminering
-					strcpy(get_name[i],variable1);
-				}
-				cleanDisplay();
     1394:	bf dd       	rcall	.-1154   	; 0xf14 <cleanDisplay>
     1396:	40 91 08 02 	lds	r20, 0x0208	; 0x800208 <start_position_y>
-				drawletters("AVALIBLE DEVICES:", start_position_x-40,start_position_y-40,0,0,0);
     139a:	50 91 09 02 	lds	r21, 0x0209	; 0x800209 <start_position_y+0x1>
     139e:	48 52       	subi	r20, 0x28	; 40
     13a0:	51 09       	sbc	r21, r1
@@ -2588,7 +2351,6 @@ int makedisplay(int state)
     13b6:	92 e0       	ldi	r25, 0x02	; 2
     13b8:	d9 d3       	rcall	.+1970   	; 0x1b6c <drawletters>
     13ba:	10 92 93 18 	sts	0x1893, r1	; 0x801893 <__data_end+0x1>
-				devices = 0;
     13be:	10 92 92 18 	sts	0x1892, r1	; 0x801892 <__data_end>
     13c2:	0f 2e       	mov	r0, r31
     13c4:	f4 e4       	ldi	r31, 0x44	; 68
@@ -2598,11 +2360,6 @@ int makedisplay(int state)
     13cc:	f0 2d       	mov	r31, r0
     13ce:	c0 e0       	ldi	r28, 0x00	; 0
     13d0:	d0 e0       	ldi	r29, 0x00	; 0
-				
-				for (int i=0;i<4;i++)
-				{
-					
-					if (strcmp(save_address[i],"N/A\0") !=  0)
     13d2:	62 e1       	ldi	r22, 0x12	; 18
     13d4:	72 e0       	ldi	r23, 0x02	; 2
     13d6:	c6 01       	movw	r24, r12
@@ -2610,8 +2367,6 @@ int makedisplay(int state)
     13da:	89 2b       	or	r24, r25
     13dc:	d1 f0       	breq	.+52     	; 0x1412 <makedisplay+0x13e>
     13de:	40 91 08 02 	lds	r20, 0x0208	; 0x800208 <start_position_y>
-					{
-						drawletters(get_name[i], start_position_x,start_position_y+(30*i),0,0,0);
     13e2:	50 91 09 02 	lds	r21, 0x0209	; 0x800209 <start_position_y+0x1>
     13e6:	4c 0f       	add	r20, r28
     13e8:	5d 1f       	adc	r21, r29
@@ -2625,7 +2380,6 @@ int makedisplay(int state)
     13fc:	91 81       	ldd	r25, Z+1	; 0x01
     13fe:	b6 d3       	rcall	.+1900   	; 0x1b6c <drawletters>
     1400:	80 91 92 18 	lds	r24, 0x1892	; 0x801892 <__data_end>
-						devices++;
     1404:	90 91 93 18 	lds	r25, 0x1893	; 0x801893 <__data_end+0x1>
     1408:	01 96       	adiw	r24, 0x01	; 1
     140a:	90 93 93 18 	sts	0x1893, r25	; 0x801893 <__data_end+0x1>
@@ -2635,47 +2389,25 @@ int makedisplay(int state)
     1416:	d1 1c       	adc	r13, r1
     1418:	6e 96       	adiw	r28, 0x1e	; 30
     141a:	22 e0       	ldi	r18, 0x02	; 2
-				}
-				cleanDisplay();
-				drawletters("AVALIBLE DEVICES:", start_position_x-40,start_position_y-40,0,0,0);
-				devices = 0;
-				
-				for (int i=0;i<4;i++)
     141c:	a2 0e       	add	r10, r18
     141e:	b1 1c       	adc	r11, r1
     1420:	c8 37       	cpi	r28, 0x78	; 120
-						devices++;
-					}
-				}
-				
-				//drawNumber(devices,300,100,0,0,0); //debug devices
-				addPointer();
     1422:	d1 05       	cpc	r29, r1
     1424:	b1 f6       	brne	.-84     	; 0x13d2 <makedisplay+0xfe>
-				lock();
     1426:	ea dc       	rcall	.-1580   	; 0xdfc <addPointer>
     1428:	fe dc       	rcall	.-1540   	; 0xe26 <lock>
-				TouchDraw();
     142a:	3c dd       	rcall	.-1416   	; 0xea4 <TouchDraw>
     142c:	80 91 92 18 	lds	r24, 0x1892	; 0x801892 <__data_end>
-				pointer_max = devices;
     1430:	90 91 93 18 	lds	r25, 0x1893	; 0x801893 <__data_end+0x1>
     1434:	90 93 95 18 	sts	0x1895, r25	; 0x801895 <pointer_max+0x1>
     1438:	80 93 94 18 	sts	0x1894, r24	; 0x801894 <pointer_max>
-				devices = 0;
     143c:	10 92 93 18 	sts	0x1893, r1	; 0x801893 <__data_end+0x1>
     1440:	10 92 92 18 	sts	0x1892, r1	; 0x801892 <__data_end>
-				break;
     1444:	7f c0       	rjmp	.+254    	; 0x1544 <makedisplay+0x270>
-			case 2: //remove device
-				cleanDisplay();
     1446:	66 dd       	rcall	.-1332   	; 0xf14 <cleanDisplay>
     1448:	10 92 97 18 	sts	0x1897, r1	; 0x801897 <pointer_position_y+0x1>
-				pointer_position_y = 0;
     144c:	10 92 96 18 	sts	0x1896, r1	; 0x801896 <pointer_position_y>
     1450:	40 91 08 02 	lds	r20, 0x0208	; 0x800208 <start_position_y>
-				
-				drawletters("REMOVE DEVICE:", start_position_x-40,start_position_y-40,0,0,0);
     1454:	50 91 09 02 	lds	r21, 0x0209	; 0x800209 <start_position_y+0x1>
     1458:	48 52       	subi	r20, 0x28	; 40
     145a:	51 09       	sbc	r21, r1
@@ -2690,13 +2422,10 @@ int makedisplay(int state)
     1470:	93 e0       	ldi	r25, 0x03	; 3
     1472:	7c d3       	rcall	.+1784   	; 0x1b6c <drawletters>
     1474:	80 91 92 18 	lds	r24, 0x1892	; 0x801892 <__data_end>
-				pointer_max = devices;
     1478:	90 91 93 18 	lds	r25, 0x1893	; 0x801893 <__data_end+0x1>
     147c:	90 93 95 18 	sts	0x1895, r25	; 0x801895 <pointer_max+0x1>
     1480:	80 93 94 18 	sts	0x1894, r24	; 0x801894 <pointer_max>
     1484:	18 16       	cp	r1, r24
-			
-				for (int i=0;i<devices;i++)
     1486:	19 06       	cpc	r1, r25
     1488:	5c f5       	brge	.+86     	; 0x14e0 <makedisplay+0x20c>
     148a:	0f 2e       	mov	r0, r31
@@ -2709,8 +2438,6 @@ int makedisplay(int state)
     1498:	d1 2c       	mov	r13, r1
     149a:	c0 e0       	ldi	r28, 0x00	; 0
     149c:	d0 e0       	ldi	r29, 0x00	; 0
-					{
-						drawletters(save_name[i], start_position_x,start_position_y+(30*i),0,0,0);	
     149e:	40 91 08 02 	lds	r20, 0x0208	; 0x800208 <start_position_y>
     14a2:	50 91 09 02 	lds	r21, 0x0209	; 0x800209 <start_position_y+0x1>
     14a6:	4c 0d       	add	r20, r12
@@ -2723,66 +2450,38 @@ int makedisplay(int state)
     14b8:	c5 01       	movw	r24, r10
     14ba:	58 d3       	rcall	.+1712   	; 0x1b6c <drawletters>
     14bc:	21 96       	adiw	r28, 0x01	; 1
-				pointer_position_y = 0;
-				
-				drawletters("REMOVE DEVICE:", start_position_x-40,start_position_y-40,0,0,0);
-				pointer_max = devices;
-			
-				for (int i=0;i<devices;i++)
     14be:	80 91 92 18 	lds	r24, 0x1892	; 0x801892 <__data_end>
     14c2:	90 91 93 18 	lds	r25, 0x1893	; 0x801893 <__data_end+0x1>
     14c6:	ee e1       	ldi	r30, 0x1E	; 30
     14c8:	ce 0e       	add	r12, r30
     14ca:	d1 1c       	adc	r13, r1
     14cc:	f8 e2       	ldi	r31, 0x28	; 40
-					{
-						drawletters(save_name[i], start_position_x,start_position_y+(30*i),0,0,0);	
-					}
-			
-				//drawNumber(devices,300,100,0,0,0); //debug devices
-				if(devices > 0)
     14ce:	af 0e       	add	r10, r31
     14d0:	b1 1c       	adc	r11, r1
     14d2:	c8 17       	cp	r28, r24
-				{
-					addPointer();
     14d4:	d9 07       	cpc	r29, r25
     14d6:	1c f3       	brlt	.-58     	; 0x149e <makedisplay+0x1ca>
-				}
-				lock();
     14d8:	18 16       	cp	r1, r24
     14da:	19 06       	cpc	r1, r25
-				TouchDraw();
     14dc:	0c f4       	brge	.+2      	; 0x14e0 <makedisplay+0x20c>
     14de:	8e dc       	rcall	.-1764   	; 0xdfc <addPointer>
-				break;
     14e0:	a2 dc       	rcall	.-1724   	; 0xe26 <lock>
-			case 3: //lock switch
-				toggleLock();
     14e2:	e0 dc       	rcall	.-1600   	; 0xea4 <TouchDraw>
     14e4:	2f c0       	rjmp	.+94     	; 0x1544 <makedisplay+0x270>
-				toggleSwitch();
     14e6:	cb dc       	rcall	.-1642   	; 0xe7e <toggleLock>
     14e8:	e6 dd       	rcall	.-1076   	; 0x10b6 <toggleSwitch>
-				
-				break;
-			default:
-				cleanDisplay();
     14ea:	2c c0       	rjmp	.+88     	; 0x1544 <makedisplay+0x270>
     14ec:	13 dd       	rcall	.-1498   	; 0xf14 <cleanDisplay>
-				pointer_max = 3;
     14ee:	83 e0       	ldi	r24, 0x03	; 3
     14f0:	90 e0       	ldi	r25, 0x00	; 0
     14f2:	90 93 95 18 	sts	0x1895, r25	; 0x801895 <pointer_max+0x1>
     14f6:	80 93 94 18 	sts	0x1894, r24	; 0x801894 <pointer_max>
-				drawletters("ADD DEVICE", start_position_x,start_position_y,0,0,0);
     14fa:	40 91 08 02 	lds	r20, 0x0208	; 0x800208 <start_position_y>
     14fe:	50 91 09 02 	lds	r21, 0x0209	; 0x800209 <start_position_y+0x1>
     1502:	60 91 0a 02 	lds	r22, 0x020A	; 0x80020a <start_position_x>
     1506:	70 91 0b 02 	lds	r23, 0x020B	; 0x80020b <start_position_x+0x1>
     150a:	e1 2c       	mov	r14, r1
     150c:	00 e0       	ldi	r16, 0x00	; 0
-				drawletters("REMOVE DEVICE", start_position_x,start_position_y+30,0,0,0);
     150e:	20 e0       	ldi	r18, 0x00	; 0
     1510:	84 e1       	ldi	r24, 0x14	; 20
     1512:	93 e0       	ldi	r25, 0x03	; 3
@@ -2794,28 +2493,18 @@ int makedisplay(int state)
     1522:	60 91 0a 02 	lds	r22, 0x020A	; 0x80020a <start_position_x>
     1526:	70 91 0b 02 	lds	r23, 0x020B	; 0x80020b <start_position_x+0x1>
     152a:	20 e0       	ldi	r18, 0x00	; 0
-				toggleSwitch();
     152c:	8f e1       	ldi	r24, 0x1F	; 31
     152e:	93 e0       	ldi	r25, 0x03	; 3
-				addPointer();
     1530:	1d d3       	rcall	.+1594   	; 0x1b6c <drawletters>
     1532:	c1 dd       	rcall	.-1150   	; 0x10b6 <toggleSwitch>
-				lock();
     1534:	63 dc       	rcall	.-1850   	; 0xdfc <addPointer>
     1536:	77 dc       	rcall	.-1810   	; 0xe26 <lock>
-				TouchDraw();
     1538:	b5 dc       	rcall	.-1686   	; 0xea4 <TouchDraw>
     153a:	36 de       	rcall	.-916    	; 0x11a8 <MakeLogo>
-				MakeLogo();
     153c:	10 92 97 18 	sts	0x1897, r1	; 0x801897 <pointer_position_y+0x1>
-				pointer_position_y = 0;
     1540:	10 92 96 18 	sts	0x1896, r1	; 0x801896 <pointer_position_y>
     1544:	c4 01       	movw	r24, r8
     1546:	df 91       	pop	r29
-				break;
-		}
-		return state;
-}
     1548:	cf 91       	pop	r28
     154a:	1f 91       	pop	r17
     154c:	0f 91       	pop	r16
@@ -2831,12 +2520,6 @@ int makedisplay(int state)
 0000155e <backgroundprocess>:
     155e:	6f 92       	push	r6
     1560:	7f 92       	push	r7
-	drawXletter(LogoBitmaps,4,540-LogoDescriptors[7],xposition,10,LogoDescriptors[7],LogoDescriptors[7]%8,31,0,0);
-	xposition = xposition+35;
-	drawXletter(LogoBitmaps,5,LogoDescriptors[5]-LogoDescriptors[3],xposition,10,LogoDescriptors[3],LogoDescriptors[3]%8,31,0,0);
-}
-void backgroundprocess(int idle_state)
-{
     1562:	8f 92       	push	r8
     1564:	9f 92       	push	r9
     1566:	af 92       	push	r10
@@ -2849,7 +2532,6 @@ void backgroundprocess(int idle_state)
     1574:	1f 93       	push	r17
     1576:	cf 93       	push	r28
     1578:	df 93       	push	r29
-	if(locked == 2 && idle_state == 0)
     157a:	20 91 06 02 	lds	r18, 0x0206	; 0x800206 <locked>
     157e:	30 91 07 02 	lds	r19, 0x0207	; 0x800207 <locked+0x1>
     1582:	22 30       	cpi	r18, 0x02	; 2
@@ -2859,8 +2541,6 @@ void backgroundprocess(int idle_state)
     158a:	89 2b       	or	r24, r25
     158c:	09 f0       	breq	.+2      	; 0x1590 <backgroundprocess+0x32>
     158e:	78 c0       	rjmp	.+240    	; 0x1680 <backgroundprocess+0x122>
-	{
-		drawletters("UPDATE", start_position_x,start_position_y+90,0,0,0);
     1590:	40 91 08 02 	lds	r20, 0x0208	; 0x800208 <start_position_y>
     1594:	50 91 09 02 	lds	r21, 0x0209	; 0x800209 <start_position_y+0x1>
     1598:	46 5a       	subi	r20, 0xA6	; 166
@@ -2873,8 +2553,6 @@ void backgroundprocess(int idle_state)
     15aa:	8d e2       	ldi	r24, 0x2D	; 45
     15ac:	93 e0       	ldi	r25, 0x03	; 3
     15ae:	de d2       	rcall	.+1468   	; 0x1b6c <drawletters>
-		int lock_flag = 0;
-		nearbyDevicesScan();
     15b0:	0e 94 98 02 	call	0x530	; 0x530 <nearbyDevicesScan>
     15b4:	0f 2e       	mov	r0, r31
     15b6:	f8 e9       	ldi	r31, 0x98	; 152
@@ -2882,15 +2560,8 @@ void backgroundprocess(int idle_state)
     15ba:	f8 e1       	ldi	r31, 0x18	; 24
     15bc:	bf 2e       	mov	r11, r31
     15be:	f0 2d       	mov	r31, r0
-		for (int i=0; i<4; i++)
     15c0:	c1 2c       	mov	r12, r1
     15c2:	d1 2c       	mov	r13, r1
-void backgroundprocess(int idle_state)
-{
-	if(locked == 2 && idle_state == 0)
-	{
-		drawletters("UPDATE", start_position_x,start_position_y+90,0,0,0);
-		int lock_flag = 0;
     15c4:	81 2c       	mov	r8, r1
     15c6:	91 2c       	mov	r9, r1
     15c8:	0f 2e       	mov	r0, r31
@@ -2899,21 +2570,9 @@ void backgroundprocess(int idle_state)
     15ce:	f9 e1       	ldi	r31, 0x19	; 25
     15d0:	ff 2e       	mov	r15, r31
     15d2:	f0 2d       	mov	r31, r0
-			strcpy(get_address[i],variable2);
-			for (int j=0; j<4; j++)
-			{
-				if (strcmp(save_address[j],get_address[i]) ==  0)
-				{
-					locked = 1;
     15d4:	66 24       	eor	r6, r6
     15d6:	63 94       	inc	r6
     15d8:	71 2c       	mov	r7, r1
-		drawletters("UPDATE", start_position_x,start_position_y+90,0,0,0);
-		int lock_flag = 0;
-		nearbyDevicesScan();
-		for (int i=0; i<4; i++)
-		{
-			variable2 = getNearbyDeviceAddress(i+1);
     15da:	8f ef       	ldi	r24, 0xFF	; 255
     15dc:	c8 1a       	sub	r12, r24
     15de:	d8 0a       	sbc	r13, r24
@@ -2922,7 +2581,6 @@ void backgroundprocess(int idle_state)
     15e4:	ec 01       	movw	r28, r24
     15e6:	90 93 cb 18 	sts	0x18CB, r25	; 0x8018cb <variable2+0x1>
     15ea:	80 93 ca 18 	sts	0x18CA, r24	; 0x8018ca <variable2>
-			get_address[i] = malloc(strlen(variable2)+1); //0 terminering
     15ee:	fc 01       	movw	r30, r24
     15f0:	01 90       	ld	r0, Z+
     15f2:	00 20       	and	r0, r0
@@ -2934,15 +2592,11 @@ void backgroundprocess(int idle_state)
     15fe:	85 01       	movw	r16, r10
     1600:	f5 01       	movw	r30, r10
     1602:	91 83       	std	Z+1, r25	; 0x01
-			strcpy(get_address[i],variable2);
     1604:	80 83       	st	Z, r24
     1606:	be 01       	movw	r22, r28
     1608:	7a d6       	rcall	.+3316   	; 0x22fe <strcpy>
     160a:	c4 e4       	ldi	r28, 0x44	; 68
     160c:	d9 e1       	ldi	r29, 0x19	; 25
-			for (int j=0; j<4; j++)
-			{
-				if (strcmp(save_address[j],get_address[i]) ==  0)
     160e:	f8 01       	movw	r30, r16
     1610:	60 81       	ld	r22, Z
     1612:	71 81       	ldd	r23, Z+1	; 0x01
@@ -2950,60 +2604,32 @@ void backgroundprocess(int idle_state)
     1616:	6a d6       	rcall	.+3284   	; 0x22ec <strcmp>
     1618:	89 2b       	or	r24, r25
     161a:	39 f4       	brne	.+14     	; 0x162a <backgroundprocess+0xcc>
-				{
-					locked = 1;
     161c:	60 92 06 02 	sts	0x0206, r6	; 0x800206 <locked>
     1620:	70 92 07 02 	sts	0x0207, r7	; 0x800207 <locked+0x1>
-					lock();
     1624:	00 dc       	rcall	.-2048   	; 0xe26 <lock>
     1626:	86 2c       	mov	r8, r6
-					lock_flag = 1;
     1628:	97 2c       	mov	r9, r7
     162a:	a8 96       	adiw	r28, 0x28	; 40
     162c:	ce 15       	cp	r28, r14
-		for (int i=0; i<4; i++)
-		{
-			variable2 = getNearbyDeviceAddress(i+1);
-			get_address[i] = malloc(strlen(variable2)+1); //0 terminering
-			strcpy(get_address[i],variable2);
-			for (int j=0; j<4; j++)
     162e:	df 05       	cpc	r29, r15
     1630:	71 f7       	brne	.-36     	; 0x160e <backgroundprocess+0xb0>
     1632:	f2 e0       	ldi	r31, 0x02	; 2
     1634:	af 0e       	add	r10, r31
     1636:	b1 1c       	adc	r11, r1
     1638:	84 e0       	ldi	r24, 0x04	; 4
-	if(locked == 2 && idle_state == 0)
-	{
-		drawletters("UPDATE", start_position_x,start_position_y+90,0,0,0);
-		int lock_flag = 0;
-		nearbyDevicesScan();
-		for (int i=0; i<4; i++)
     163a:	c8 16       	cp	r12, r24
     163c:	d1 04       	cpc	r13, r1
     163e:	69 f6       	brne	.-102    	; 0x15da <backgroundprocess+0x7c>
     1640:	89 28       	or	r8, r9
-					lock();
-					lock_flag = 1;
-				}
-			}
-		}
-		if (lock_flag == 0)
     1642:	29 f4       	brne	.+10     	; 0x164e <backgroundprocess+0xf0>
-		{
-			locked = 0;
     1644:	10 92 07 02 	sts	0x0207, r1	; 0x800207 <locked+0x1>
     1648:	10 92 06 02 	sts	0x0206, r1	; 0x800206 <locked>
-			lock();
     164c:	ec db       	rcall	.-2088   	; 0xe26 <lock>
     164e:	82 e0       	ldi	r24, 0x02	; 2
-		}
-	locked = 2;
     1650:	90 e0       	ldi	r25, 0x00	; 0
     1652:	90 93 07 02 	sts	0x0207, r25	; 0x800207 <locked+0x1>
     1656:	80 93 06 02 	sts	0x0206, r24	; 0x800206 <locked>
     165a:	40 91 08 02 	lds	r20, 0x0208	; 0x800208 <start_position_y>
-	drawletters("UPDATE", start_position_x,start_position_y+90,31,63,31);
     165e:	50 91 09 02 	lds	r21, 0x0209	; 0x800209 <start_position_y+0x1>
     1662:	46 5a       	subi	r20, 0xA6	; 166
     1664:	5f 4f       	sbci	r21, 0xFF	; 255
@@ -3019,8 +2645,6 @@ void backgroundprocess(int idle_state)
     167c:	93 e0       	ldi	r25, 0x03	; 3
     167e:	76 d2       	rcall	.+1260   	; 0x1b6c <drawletters>
     1680:	df 91       	pop	r29
-	}
-	
     1682:	cf 91       	pop	r28
     1684:	1f 91       	pop	r17
     1686:	0f 91       	pop	r16
@@ -3038,12 +2662,6 @@ void backgroundprocess(int idle_state)
 
 0000169e <WriteCommand>:
     169e:	88 b9       	out	0x08, r24	; 8
-	InterfacePixelFormat(0b00000101);
-}
-
-void DisplayOff()
-{
-	WriteCommand(0x28);
     16a0:	5f 98       	cbi	0x0b, 7	; 11
     16a2:	a1 98       	cbi	0x14, 1	; 20
     16a4:	a2 98       	cbi	0x14, 2	; 20
@@ -3064,91 +2682,53 @@ void DisplayOff()
     16be:	08 95       	ret
 
 000016c0 <DisplayOn>:
-}
-
-void DisplayOn()
-{
-	WriteCommand(0x29);
     16c0:	89 e2       	ldi	r24, 0x29	; 41
     16c2:	90 e0       	ldi	r25, 0x00	; 0
     16c4:	ec cf       	rjmp	.-40     	; 0x169e <WriteCommand>
     16c6:	08 95       	ret
 
 000016c8 <SleepOut>:
-}
-
-void SleepOut()
-{
-	WriteCommand(0x11);
     16c8:	81 e1       	ldi	r24, 0x11	; 17
     16ca:	90 e0       	ldi	r25, 0x00	; 0
     16cc:	e8 cf       	rjmp	.-48     	; 0x169e <WriteCommand>
     16ce:	08 95       	ret
 
 000016d0 <MemoryAccessControl>:
-}
-
-void MemoryAccessControl(unsigned char parameter)
-{
     16d0:	cf 93       	push	r28
     16d2:	c8 2f       	mov	r28, r24
-	WriteCommand(0x36);
     16d4:	86 e3       	ldi	r24, 0x36	; 54
     16d6:	90 e0       	ldi	r25, 0x00	; 0
     16d8:	e2 df       	rcall	.-60     	; 0x169e <WriteCommand>
-	WriteData(parameter);
     16da:	8c 2f       	mov	r24, r28
     16dc:	90 e0       	ldi	r25, 0x00	; 0
     16de:	e7 df       	rcall	.-50     	; 0x16ae <WriteData>
-}
     16e0:	cf 91       	pop	r28
     16e2:	08 95       	ret
 
 000016e4 <InterfacePixelFormat>:
-
-void InterfacePixelFormat(unsigned char parameter)
-{
     16e4:	cf 93       	push	r28
     16e6:	c8 2f       	mov	r28, r24
-	WriteCommand(0x3A);
     16e8:	8a e3       	ldi	r24, 0x3A	; 58
     16ea:	90 e0       	ldi	r25, 0x00	; 0
     16ec:	d8 df       	rcall	.-80     	; 0x169e <WriteCommand>
-	WriteData(parameter);
     16ee:	8c 2f       	mov	r24, r28
     16f0:	90 e0       	ldi	r25, 0x00	; 0
     16f2:	dd df       	rcall	.-70     	; 0x16ae <WriteData>
-}
     16f4:	cf 91       	pop	r28
     16f6:	08 95       	ret
 
 000016f8 <DisplayInit>:
-
-// Initializes (resets) the display
-// Initializes (resets) the display
-void DisplayInit()
-{
-	DDRG |= 0b00000111;
     16f8:	83 b3       	in	r24, 0x13	; 19
     16fa:	87 60       	ori	r24, 0x07	; 7
     16fc:	83 bb       	out	0x13, r24	; 19
-	DDRD |= 0b10000000;
     16fe:	57 9a       	sbi	0x0a, 7	; 10
-	
-	DDRA = 0xFF;
     1700:	8f ef       	ldi	r24, 0xFF	; 255
     1702:	81 b9       	out	0x01, r24	; 1
-	DDRC = 0xFF;
     1704:	87 b9       	out	0x07, r24	; 7
-	
-	PORTG |= 0b00000111;
     1706:	84 b3       	in	r24, 0x14	; 20
     1708:	87 60       	ori	r24, 0x07	; 7
     170a:	84 bb       	out	0x14, r24	; 20
-	PORTD |= 0b10000000;
     170c:	5f 9a       	sbi	0x0b, 7	; 11
-	
-	RST_PORT &= ~(1<<RST_BIT);
     170e:	a0 98       	cbi	0x14, 0	; 20
 	#else
 		//round up by default
@@ -3165,10 +2745,6 @@ void DisplayInit()
     171c:	e1 f7       	brne	.-8      	; 0x1716 <DisplayInit+0x1e>
     171e:	00 c0       	rjmp	.+0      	; 0x1720 <DisplayInit+0x28>
     1720:	00 00       	nop
-	
-	_delay_ms(500);
-	
-	RST_PORT |= (1<<RST_BIT);
     1722:	a0 9a       	sbi	0x14, 0	; 20
     1724:	2f ef       	ldi	r18, 0xFF	; 255
     1726:	88 e5       	ldi	r24, 0x58	; 88
@@ -3179,42 +2755,21 @@ void DisplayInit()
     1730:	e1 f7       	brne	.-8      	; 0x172a <DisplayInit+0x32>
     1732:	00 c0       	rjmp	.+0      	; 0x1734 <DisplayInit+0x3c>
     1734:	00 00       	nop
-	_delay_ms(130);
-	
-	SleepOut();
     1736:	c8 df       	rcall	.-112    	; 0x16c8 <SleepOut>
-	
-	DisplayOn();
     1738:	c3 df       	rcall	.-122    	; 0x16c0 <DisplayOn>
-	
-	MemoryAccessControl(0b00001000);
     173a:	88 e0       	ldi	r24, 0x08	; 8
     173c:	c9 df       	rcall	.-110    	; 0x16d0 <MemoryAccessControl>
-	
-	InterfacePixelFormat(0b00000101);
     173e:	85 e0       	ldi	r24, 0x05	; 5
     1740:	d1 cf       	rjmp	.-94     	; 0x16e4 <InterfacePixelFormat>
     1742:	08 95       	ret
 
 00001744 <MemoryWrite>:
     1744:	8c e2       	ldi	r24, 0x2C	; 44
-	WriteData(parameter);
-}
-
-void MemoryWrite()
-{
-	WriteCommand(0x2C);
     1746:	90 e0       	ldi	r25, 0x00	; 0
     1748:	aa cf       	rjmp	.-172    	; 0x169e <WriteCommand>
     174a:	08 95       	ret
 
 0000174c <WritePixel>:
-}
-
-// Red 0-31, Green 0-63, Blue 0-31
-void WritePixel(unsigned char Red, unsigned char Green, unsigned char Blue)
-{
-	WriteData((Red<<11) | (Green<<5) | Blue);
     174c:	90 e2       	ldi	r25, 0x20	; 32
     174e:	69 9f       	mul	r22, r25
     1750:	b0 01       	movw	r22, r0
@@ -3232,11 +2787,6 @@ void WritePixel(unsigned char Red, unsigned char Green, unsigned char Blue)
     1768:	08 95       	ret
 
 0000176a <SetColumnAddress>:
-}
-
-// Set Column Address (0-239), Start > End
-void SetColumnAddress(unsigned int Start, unsigned int End)
-{
     176a:	0f 93       	push	r16
     176c:	1f 93       	push	r17
     176e:	cf 93       	push	r28
@@ -3245,28 +2795,22 @@ void SetColumnAddress(unsigned int Start, unsigned int End)
     1774:	d9 2f       	mov	r29, r25
     1776:	16 2f       	mov	r17, r22
     1778:	c7 2f       	mov	r28, r23
-	WriteCommand(0x2A);
     177a:	8a e2       	ldi	r24, 0x2A	; 42
     177c:	90 e0       	ldi	r25, 0x00	; 0
     177e:	8f df       	rcall	.-226    	; 0x169e <WriteCommand>
-	WriteData(Start>>8);
     1780:	8d 2f       	mov	r24, r29
     1782:	90 e0       	ldi	r25, 0x00	; 0
     1784:	94 df       	rcall	.-216    	; 0x16ae <WriteData>
-	WriteData(Start);
     1786:	80 2f       	mov	r24, r16
     1788:	9d 2f       	mov	r25, r29
     178a:	91 df       	rcall	.-222    	; 0x16ae <WriteData>
-	WriteData(End>>8);
     178c:	8c 2f       	mov	r24, r28
     178e:	90 e0       	ldi	r25, 0x00	; 0
     1790:	8e df       	rcall	.-228    	; 0x16ae <WriteData>
-	WriteData(End);
     1792:	81 2f       	mov	r24, r17
     1794:	9c 2f       	mov	r25, r28
     1796:	8b df       	rcall	.-234    	; 0x16ae <WriteData>
     1798:	df 91       	pop	r29
-}
     179a:	cf 91       	pop	r28
     179c:	1f 91       	pop	r17
     179e:	0f 91       	pop	r16
@@ -3274,10 +2818,6 @@ void SetColumnAddress(unsigned int Start, unsigned int End)
 
 000017a2 <SetPageAddress>:
     17a2:	0f 93       	push	r16
-
-// Set Page Address (0-319), Start > End
-void SetPageAddress(unsigned int Start, unsigned int End)
-{
     17a4:	1f 93       	push	r17
     17a6:	cf 93       	push	r28
     17a8:	df 93       	push	r29
@@ -3285,28 +2825,22 @@ void SetPageAddress(unsigned int Start, unsigned int End)
     17ac:	d9 2f       	mov	r29, r25
     17ae:	16 2f       	mov	r17, r22
     17b0:	c7 2f       	mov	r28, r23
-	WriteCommand(0x2B);
     17b2:	8b e2       	ldi	r24, 0x2B	; 43
     17b4:	90 e0       	ldi	r25, 0x00	; 0
     17b6:	73 df       	rcall	.-282    	; 0x169e <WriteCommand>
-	WriteData(Start>>8);
     17b8:	8d 2f       	mov	r24, r29
     17ba:	90 e0       	ldi	r25, 0x00	; 0
     17bc:	78 df       	rcall	.-272    	; 0x16ae <WriteData>
-	WriteData(Start);
     17be:	80 2f       	mov	r24, r16
     17c0:	9d 2f       	mov	r25, r29
     17c2:	75 df       	rcall	.-278    	; 0x16ae <WriteData>
-	WriteData(End>>8);
     17c4:	8c 2f       	mov	r24, r28
     17c6:	90 e0       	ldi	r25, 0x00	; 0
     17c8:	72 df       	rcall	.-284    	; 0x16ae <WriteData>
-	WriteData(End);
     17ca:	81 2f       	mov	r24, r17
     17cc:	9c 2f       	mov	r25, r28
     17ce:	6f df       	rcall	.-290    	; 0x16ae <WriteData>
     17d0:	df 91       	pop	r29
-}
     17d2:	cf 91       	pop	r28
     17d4:	1f 91       	pop	r17
     17d6:	0f 91       	pop	r16
@@ -3314,9 +2848,6 @@ void SetPageAddress(unsigned int Start, unsigned int End)
 
 000017da <FillRectangle>:
     17da:	4f 92       	push	r4
-
-void FillRectangle(unsigned int StartX, unsigned int StartY, unsigned int Width, unsigned int Height, unsigned char Red, unsigned char Green, unsigned char Blue)
-{
     17dc:	5f 92       	push	r5
     17de:	6f 92       	push	r6
     17e0:	7f 92       	push	r7
@@ -3330,19 +2861,15 @@ void FillRectangle(unsigned int StartX, unsigned int StartY, unsigned int Width,
     17f0:	3b 01       	movw	r6, r22
     17f2:	4a 01       	movw	r8, r20
     17f4:	59 01       	movw	r10, r18
-	SetPageAddress(StartX,StartX+Width);
     17f6:	bc 01       	movw	r22, r24
     17f8:	64 0f       	add	r22, r20
     17fa:	75 1f       	adc	r23, r21
     17fc:	d2 df       	rcall	.-92     	; 0x17a2 <SetPageAddress>
-	SetColumnAddress(StartY,StartY+Height);
     17fe:	b3 01       	movw	r22, r6
     1800:	6a 0d       	add	r22, r10
     1802:	7b 1d       	adc	r23, r11
     1804:	c3 01       	movw	r24, r6
-	MemoryWrite();
     1806:	b1 df       	rcall	.-158    	; 0x176a <SetColumnAddress>
-	for(unsigned long i = 0; i<((unsigned long)Width*Height); i++)
     1808:	9d df       	rcall	.-198    	; 0x1744 <MemoryWrite>
     180a:	94 01       	movw	r18, r8
     180c:	d5 01       	movw	r26, r10
@@ -3355,19 +2882,11 @@ void FillRectangle(unsigned int StartX, unsigned int StartY, unsigned int Width,
     181a:	89 f0       	breq	.+34     	; 0x183e <FillRectangle+0x64>
     181c:	81 2c       	mov	r8, r1
     181e:	91 2c       	mov	r9, r1
-	{
-		WritePixel(Red,Green,Blue);	
     1820:	54 01       	movw	r10, r8
     1822:	4c 2d       	mov	r20, r12
     1824:	6e 2d       	mov	r22, r14
     1826:	80 2f       	mov	r24, r16
     1828:	91 df       	rcall	.-222    	; 0x174c <WritePixel>
-void FillRectangle(unsigned int StartX, unsigned int StartY, unsigned int Width, unsigned int Height, unsigned char Red, unsigned char Green, unsigned char Blue)
-{
-	SetPageAddress(StartX,StartX+Width);
-	SetColumnAddress(StartY,StartY+Height);
-	MemoryWrite();
-	for(unsigned long i = 0; i<((unsigned long)Width*Height); i++)
     182a:	8f ef       	ldi	r24, 0xFF	; 255
     182c:	88 1a       	sub	r8, r24
     182e:	98 0a       	sbc	r9, r24
@@ -3378,11 +2897,6 @@ void FillRectangle(unsigned int StartX, unsigned int StartY, unsigned int Width,
     1838:	a6 04       	cpc	r10, r6
     183a:	b7 04       	cpc	r11, r7
     183c:	91 f7       	brne	.-28     	; 0x1822 <FillRectangle+0x48>
-	{
-		WritePixel(Red,Green,Blue);	
-	}
-	
-}
     183e:	0f 91       	pop	r16
     1840:	ef 90       	pop	r14
     1842:	cf 90       	pop	r12
@@ -3397,27 +2911,15 @@ void FillRectangle(unsigned int StartX, unsigned int StartY, unsigned int Width,
     1854:	08 95       	ret
 
 00001856 <setBaggroundPixel>:
-	
-}
-
-void setBaggroundPixel(int red, int green, int blue)
-{
-	backgoundred = red;
     1856:	90 93 11 02 	sts	0x0211, r25	; 0x800211 <backgoundred+0x1>
     185a:	80 93 10 02 	sts	0x0210, r24	; 0x800210 <backgoundred>
-	backgoundgreen = green;
     185e:	70 93 0f 02 	sts	0x020F, r23	; 0x80020f <backgoundgreen+0x1>
     1862:	60 93 0e 02 	sts	0x020E, r22	; 0x80020e <backgoundgreen>
-	backgoundblue = blue;
     1866:	50 93 0d 02 	sts	0x020D, r21	; 0x80020d <backgoundblue+0x1>
     186a:	40 93 0c 02 	sts	0x020C, r20	; 0x80020c <backgoundblue>
     186e:	08 95       	ret
 
 00001870 <drawXletter>:
-}
-
-void drawXletter(const uint8_t bitmap[],int length,int count,int startx,int starty, int letter, int modulus,unsigned char Red, unsigned char Green, unsigned char Blue)
-{
     1870:	2f 92       	push	r2
     1872:	3f 92       	push	r3
     1874:	4f 92       	push	r4
@@ -3453,22 +2955,12 @@ void drawXletter(const uint8_t bitmap[],int length,int count,int startx,int star
     18b0:	28 01       	movw	r4, r16
     18b2:	16 01       	movw	r2, r12
     18b4:	b8 2c       	mov	r11, r8
-	int startpage = startx; //set startpage
-	int stoppage= startx+7; //set stoppage
     18b6:	29 5f       	subi	r18, 0xF9	; 249
     18b8:	3f 4f       	sbci	r19, 0xFF	; 255
-	int colum = starty; //set colum
-	for (int g=0;g<count;g++)
     18ba:	14 16       	cp	r1, r20
     18bc:	15 06       	cpc	r1, r21
     18be:	0c f0       	brlt	.+2      	; 0x18c2 <drawXletter+0x52>
     18c0:	7e c0       	rjmp	.+252    	; 0x19be <drawXletter+0x14e>
-			{WritePixel(backgoundred, backgoundgreen, backgoundblue);}
-		}
-		startpage = stoppage+1; //set new startpage +1 for not writing to the same bit.
-		stoppage = stoppage+8; //set new stoppage +7 for ending the byte, +1 because off startpage.
-		
-		if(stoppage >= length*8+startx) //check length of character
     18c2:	ab 01       	movw	r20, r22
     18c4:	44 0f       	add	r20, r20
     18c6:	55 1f       	adc	r21, r21
@@ -3497,39 +2989,18 @@ void drawXletter(const uint8_t bitmap[],int length,int count,int startx,int star
     18f4:	39 01       	movw	r6, r18
     18f6:	8b 81       	ldd	r24, Y+3	; 0x03
     18f8:	9c 81       	ldd	r25, Y+4	; 0x04
-		SetPageAddress(startpage,stoppage);
-		SetColumnAddress(colum,colum);
-		MemoryWrite();
-		for (int i=0; i<8; i++)
-		{
-			if((bitmap[g+letter] & (0b10000000>>i)) != 0) //check for bit in array
     18fa:	68 94       	set
     18fc:	ee 24       	eor	r14, r14
     18fe:	e7 f8       	bld	r14, 7
     1900:	f1 2c       	mov	r15, r1
-			{WritePixel(Red,Green,Blue);}
-			else
-			{WritePixel(backgoundred, backgoundgreen, backgoundblue);}
     1902:	0f 2e       	mov	r0, r31
     1904:	f0 e1       	ldi	r31, 0x10	; 16
     1906:	8f 2e       	mov	r8, r31
     1908:	f2 e0       	ldi	r31, 0x02	; 2
     190a:	9f 2e       	mov	r9, r31
     190c:	f0 2d       	mov	r31, r0
-		
-		if(stoppage >= length*8+startx) //check length of character
-		{
-			colum++; // next colum
-			startpage = startx; //reset startpage
-			stoppage = startpage+7; //reset stoppage
     190e:	29 87       	std	Y+9, r18	; 0x09
     1910:	3a 87       	std	Y+10, r19	; 0x0a
-		stoppage = stoppage+8; //set new stoppage +7 for ending the byte, +1 because off startpage.
-		
-		if(stoppage >= length*8+startx) //check length of character
-		{
-			colum++; // next colum
-			startpage = startx; //reset startpage
     1912:	5b 81       	ldd	r21, Y+3	; 0x03
     1914:	5b 87       	std	Y+11, r21	; 0x0b
     1916:	6c 81       	ldd	r22, Y+4	; 0x04
@@ -3541,26 +3012,15 @@ void drawXletter(const uint8_t bitmap[],int length,int count,int startx,int star
     1922:	5a 2c       	mov	r5, r10
     1924:	3b 2c       	mov	r3, r11
     1926:	58 01       	movw	r10, r16
-	int startpage = startx; //set startpage
-	int stoppage= startx+7; //set stoppage
-	int colum = starty; //set colum
-	for (int g=0;g<count;g++)
-	{
-		SetPageAddress(startpage,stoppage);
     1928:	b3 01       	movw	r22, r6
     192a:	3b df       	rcall	.-394    	; 0x17a2 <SetPageAddress>
-		SetColumnAddress(colum,colum);
     192c:	b5 01       	movw	r22, r10
     192e:	c5 01       	movw	r24, r10
-		MemoryWrite();
     1930:	1c df       	rcall	.-456    	; 0x176a <SetColumnAddress>
     1932:	08 df       	rcall	.-496    	; 0x1744 <MemoryWrite>
-		for (int i=0; i<8; i++)
     1934:	00 e0       	ldi	r16, 0x00	; 0
     1936:	10 e0       	ldi	r17, 0x00	; 0
     1938:	4a a4       	ldd	r4, Y+42	; 0x2a
-		{
-			if((bitmap[g+letter] & (0b10000000>>i)) != 0) //check for bit in array
     193a:	f6 01       	movw	r30, r12
     193c:	80 81       	ld	r24, Z
     193e:	28 2f       	mov	r18, r24
@@ -3576,14 +3036,11 @@ void drawXletter(const uint8_t bitmap[],int length,int count,int startx,int star
     1952:	93 23       	and	r25, r19
     1954:	89 2b       	or	r24, r25
     1956:	29 f0       	breq	.+10     	; 0x1962 <drawXletter+0xf2>
-			{WritePixel(Red,Green,Blue);}
     1958:	44 2d       	mov	r20, r4
     195a:	63 2d       	mov	r22, r3
     195c:	85 2d       	mov	r24, r5
     195e:	f6 de       	rcall	.-532    	; 0x174c <WritePixel>
     1960:	09 c0       	rjmp	.+18     	; 0x1974 <drawXletter+0x104>
-			else
-			{WritePixel(backgoundred, backgoundgreen, backgoundblue);}
     1962:	ec e0       	ldi	r30, 0x0C	; 12
     1964:	f2 e0       	ldi	r31, 0x02	; 2
     1966:	40 81       	ld	r20, Z
@@ -3593,72 +3050,33 @@ void drawXletter(const uint8_t bitmap[],int length,int count,int startx,int star
     196e:	f4 01       	movw	r30, r8
     1970:	80 81       	ld	r24, Z
     1972:	ec de       	rcall	.-552    	; 0x174c <WritePixel>
-	for (int g=0;g<count;g++)
-	{
-		SetPageAddress(startpage,stoppage);
-		SetColumnAddress(colum,colum);
-		MemoryWrite();
-		for (int i=0; i<8; i++)
     1974:	0f 5f       	subi	r16, 0xFF	; 255
     1976:	1f 4f       	sbci	r17, 0xFF	; 255
     1978:	08 30       	cpi	r16, 0x08	; 8
     197a:	11 05       	cpc	r17, r1
     197c:	f1 f6       	brne	.-68     	; 0x193a <drawXletter+0xca>
-			{WritePixel(Red,Green,Blue);}
-			else
-			{WritePixel(backgoundred, backgoundgreen, backgoundblue);}
-		}
-		startpage = stoppage+1; //set new startpage +1 for not writing to the same bit.
-		stoppage = stoppage+8; //set new stoppage +7 for ending the byte, +1 because off startpage.
     197e:	93 01       	movw	r18, r6
     1980:	28 5f       	subi	r18, 0xF8	; 248
     1982:	3f 4f       	sbci	r19, 0xFF	; 255
-		
-		if(stoppage >= length*8+startx) //check length of character
     1984:	4d 81       	ldd	r20, Y+5	; 0x05
     1986:	5e 81       	ldd	r21, Y+6	; 0x06
     1988:	24 17       	cp	r18, r20
     198a:	35 07       	cpc	r19, r21
     198c:	24 f4       	brge	.+8      	; 0x1996 <drawXletter+0x126>
-			if((bitmap[g+letter] & (0b10000000>>i)) != 0) //check for bit in array
-			{WritePixel(Red,Green,Blue);}
-			else
-			{WritePixel(backgoundred, backgoundgreen, backgoundblue);}
-		}
-		startpage = stoppage+1; //set new startpage +1 for not writing to the same bit.
     198e:	c3 01       	movw	r24, r6
     1990:	01 96       	adiw	r24, 0x01	; 1
-		stoppage = stoppage+8; //set new stoppage +7 for ending the byte, +1 because off startpage.
     1992:	39 01       	movw	r6, r18
     1994:	07 c0       	rjmp	.+14     	; 0x19a4 <drawXletter+0x134>
-		
-		if(stoppage >= length*8+startx) //check length of character
-		{
-			colum++; // next colum
     1996:	5f ef       	ldi	r21, 0xFF	; 255
     1998:	a5 1a       	sub	r10, r21
     199a:	b5 0a       	sbc	r11, r21
-			startpage = startx; //reset startpage
-			stoppage = startpage+7; //reset stoppage
     199c:	69 84       	ldd	r6, Y+9	; 0x09
     199e:	7a 84       	ldd	r7, Y+10	; 0x0a
-		stoppage = stoppage+8; //set new stoppage +7 for ending the byte, +1 because off startpage.
-		
-		if(stoppage >= length*8+startx) //check length of character
-		{
-			colum++; // next colum
-			startpage = startx; //reset startpage
     19a0:	8b 85       	ldd	r24, Y+11	; 0x0b
     19a2:	9c 85       	ldd	r25, Y+12	; 0x0c
     19a4:	6f ef       	ldi	r22, 0xFF	; 255
     19a6:	c6 1a       	sub	r12, r22
     19a8:	d6 0a       	sbc	r13, r22
-void drawXletter(const uint8_t bitmap[],int length,int count,int startx,int starty, int letter, int modulus,unsigned char Red, unsigned char Green, unsigned char Blue)
-{
-	int startpage = startx; //set startpage
-	int stoppage= startx+7; //set stoppage
-	int colum = starty; //set colum
-	for (int g=0;g<count;g++)
     19aa:	ef 81       	ldd	r30, Y+7	; 0x07
     19ac:	f8 85       	ldd	r31, Y+8	; 0x08
     19ae:	ce 16       	cp	r12, r30
@@ -3668,12 +3086,6 @@ void drawXletter(const uint8_t bitmap[],int length,int count,int startx,int star
     19b6:	49 88       	ldd	r4, Y+17	; 0x11
     19b8:	5a 88       	ldd	r5, Y+18	; 0x12
     19ba:	2b 88       	ldd	r2, Y+19	; 0x13
-		}
-	}
-	//delete old character on display
-	colum = starty; //reset colum
-	
-	for (int i=0; i<count/length;i++)
     19bc:	3c 88       	ldd	r3, Y+20	; 0x14
     19be:	8d 85       	ldd	r24, Y+13	; 0x0d
     19c0:	9e 85       	ldd	r25, Y+14	; 0x0e
@@ -3684,10 +3096,6 @@ void drawXletter(const uint8_t bitmap[],int length,int count,int startx,int star
     19ca:	17 06       	cpc	r1, r23
     19cc:	0c f0       	brlt	.+2      	; 0x19d0 <drawXletter+0x160>
     19ce:	4e c0       	rjmp	.+156    	; 0x1a6c <drawXletter+0x1fc>
-	{
-		if(modulus == 0)
-		{modulus = 8;}
-		SetPageAddress(startx+(length*8-(8-modulus)),startx+(length*8-(8-modulus))+7); //set white, where the character stopped
     19d0:	6f 84       	ldd	r6, Y+15	; 0x0f
     19d2:	78 88       	ldd	r7, Y+16	; 0x10
     19d4:	66 0c       	add	r6, r6
@@ -3701,21 +3109,10 @@ void drawXletter(const uint8_t bitmap[],int length,int count,int startx,int star
     19e4:	35 1d       	adc	r19, r5
     19e6:	3a 83       	std	Y+2, r19	; 0x02
     19e8:	29 83       	std	Y+1, r18	; 0x01
-	colum = starty; //reset colum
-	
-	for (int i=0; i<count/length;i++)
-	{
-		if(modulus == 0)
-		{modulus = 8;}
     19ea:	68 94       	set
     19ec:	88 24       	eor	r8, r8
     19ee:	83 f8       	bld	r8, 3
     19f0:	91 2c       	mov	r9, r1
-		SetPageAddress(startx+(length*8-(8-modulus)),startx+(length*8-(8-modulus))+7); //set white, where the character stopped
-		SetColumnAddress(colum,colum);
-		MemoryWrite();
-		for (int j=0; j<8; j++)
-		{WritePixel(backgoundred, backgoundgreen, backgoundblue);}
     19f2:	0f 2e       	mov	r0, r31
     19f4:	fc e0       	ldi	r31, 0x0C	; 12
     19f6:	af 2e       	mov	r10, r31
@@ -3734,18 +3131,10 @@ void drawXletter(const uint8_t bitmap[],int length,int count,int startx,int star
     1a10:	f2 e0       	ldi	r31, 0x02	; 2
     1a12:	ff 2e       	mov	r15, r31
     1a14:	f0 2d       	mov	r31, r0
-	//delete old character on display
-	colum = starty; //reset colum
-	
-	for (int i=0; i<count/length;i++)
-	{
-		if(modulus == 0)
     1a16:	21 14       	cp	r2, r1
     1a18:	31 04       	cpc	r3, r1
     1a1a:	09 f4       	brne	.+2      	; 0x1a1e <drawXletter+0x1ae>
-		{modulus = 8;}
     1a1c:	14 01       	movw	r2, r8
-		SetPageAddress(startx+(length*8-(8-modulus)),startx+(length*8-(8-modulus))+7); //set white, where the character stopped
     1a1e:	c4 01       	movw	r24, r8
     1a20:	82 19       	sub	r24, r2
     1a22:	93 09       	sbc	r25, r3
@@ -3759,17 +3148,13 @@ void drawXletter(const uint8_t bitmap[],int length,int count,int startx,int star
     1a32:	97 1f       	adc	r25, r23
     1a34:	bc 01       	movw	r22, r24
     1a36:	69 5f       	subi	r22, 0xF9	; 249
-		SetColumnAddress(colum,colum);
     1a38:	7f 4f       	sbci	r23, 0xFF	; 255
     1a3a:	b3 de       	rcall	.-666    	; 0x17a2 <SetPageAddress>
     1a3c:	b2 01       	movw	r22, r4
     1a3e:	c2 01       	movw	r24, r4
-		MemoryWrite();
     1a40:	94 de       	rcall	.-728    	; 0x176a <SetColumnAddress>
     1a42:	80 de       	rcall	.-768    	; 0x1744 <MemoryWrite>
     1a44:	08 e0       	ldi	r16, 0x08	; 8
-		for (int j=0; j<8; j++)
-		{WritePixel(backgoundred, backgoundgreen, backgoundblue);}
     1a46:	10 e0       	ldi	r17, 0x00	; 0
     1a48:	f5 01       	movw	r30, r10
     1a4a:	40 81       	ld	r20, Z
@@ -3780,35 +3165,15 @@ void drawXletter(const uint8_t bitmap[],int length,int count,int startx,int star
     1a54:	7b de       	rcall	.-778    	; 0x174c <WritePixel>
     1a56:	01 50       	subi	r16, 0x01	; 1
     1a58:	11 09       	sbc	r17, r1
-		if(modulus == 0)
-		{modulus = 8;}
-		SetPageAddress(startx+(length*8-(8-modulus)),startx+(length*8-(8-modulus))+7); //set white, where the character stopped
-		SetColumnAddress(colum,colum);
-		MemoryWrite();
-		for (int j=0; j<8; j++)
     1a5a:	b1 f7       	brne	.-20     	; 0x1a48 <drawXletter+0x1d8>
-		{WritePixel(backgoundred, backgoundgreen, backgoundblue);}
-		colum++;
     1a5c:	ff ef       	ldi	r31, 0xFF	; 255
     1a5e:	4f 1a       	sub	r4, r31
     1a60:	5f 0a       	sbc	r5, r31
-		}
-	}
-	//delete old character on display
-	colum = starty; //reset colum
-	
-	for (int i=0; i<count/length;i++)
     1a62:	29 81       	ldd	r18, Y+1	; 0x01
     1a64:	3a 81       	ldd	r19, Y+2	; 0x02
     1a66:	24 15       	cp	r18, r4
     1a68:	35 05       	cpc	r19, r5
     1a6a:	a9 f6       	brne	.-86     	; 0x1a16 <drawXletter+0x1a6>
-		for (int j=0; j<8; j++)
-		{WritePixel(backgoundred, backgoundgreen, backgoundblue);}
-		colum++;
-	}
-	
-}
     1a6c:	64 96       	adiw	r28, 0x14	; 20
     1a6e:	0f b6       	in	r0, 0x3f	; 63
     1a70:	f8 94       	cli
@@ -3836,12 +3201,6 @@ void drawXletter(const uint8_t bitmap[],int length,int count,int startx,int star
     1a9c:	08 95       	ret
 
 00001a9e <letterhelper>:
-	
-	_NOP();
-}
-
-void letterhelper(int numberletter, int startx, int starty,unsigned char Red, unsigned char Green, unsigned char Blue)
-{
     1a9e:	8f 92       	push	r8
     1aa0:	af 92       	push	r10
     1aa2:	cf 92       	push	r12
@@ -3854,25 +3213,17 @@ void letterhelper(int numberletter, int startx, int starty,unsigned char Red, un
     1ab0:	df 93       	push	r29
     1ab2:	da 01       	movw	r26, r20
     1ab4:	3e 2d       	mov	r19, r14
-	if (startx != check_x) //secure we don't overwrite the last command.
     1ab6:	40 91 a4 18 	lds	r20, 0x18A4	; 0x8018a4 <check_x>
     1aba:	50 91 a5 18 	lds	r21, 0x18A5	; 0x8018a5 <check_x+0x1>
     1abe:	46 17       	cp	r20, r22
     1ac0:	57 07       	cpc	r21, r23
     1ac2:	41 f0       	breq	.+16     	; 0x1ad4 <letterhelper+0x36>
-	{
-		check_x = startx;
     1ac4:	70 93 a5 18 	sts	0x18A5, r23	; 0x8018a5 <check_x+0x1>
     1ac8:	60 93 a4 18 	sts	0x18A4, r22	; 0x8018a4 <check_x>
-		start_x = startx;
     1acc:	70 93 a7 18 	sts	0x18A7, r23	; 0x8018a7 <start_x+0x1>
     1ad0:	60 93 a6 18 	sts	0x18A6, r22	; 0x8018a6 <start_x>
-	}
-	
-	numberletter = numberletter*2; //first parameter is length second is the offset
     1ad4:	88 0f       	add	r24, r24
     1ad6:	99 1f       	adc	r25, r25
-	int count = array_carrier[numberletter+3]-array_carrier[numberletter+1]; //find the number of interger
     1ad8:	fc 01       	movw	r30, r24
     1ada:	ee 0f       	add	r30, r30
     1adc:	ff 1f       	adc	r31, r31
@@ -3889,8 +3240,6 @@ void letterhelper(int numberletter, int startx, int starty,unsigned char Red, un
     1af2:	51 81       	ldd	r21, Z+1	; 0x01
     1af4:	4e 19       	sub	r20, r14
     1af6:	5f 09       	sbc	r21, r15
-	unsigned int offset = array_carrier[numberletter+1]; //set the offset compared to the array
-	int fixed_letter = (array_carrier[numberletter]/8); //find the length of the sign
     1af8:	88 0f       	add	r24, r24
     1afa:	99 1f       	adc	r25, r25
     1afc:	fc 01       	movw	r30, r24
@@ -3905,21 +3254,15 @@ void letterhelper(int numberletter, int startx, int starty,unsigned char Red, un
     1b0e:	67 95       	ror	r22
     1b10:	76 95       	lsr	r23
     1b12:	67 95       	ror	r22
-	int modulus = array_carrier[numberletter]%8;
     1b14:	6e 01       	movw	r12, r28
     1b16:	87 e0       	ldi	r24, 0x07	; 7
     1b18:	c8 22       	and	r12, r24
     1b1a:	dd 24       	eor	r13, r13
-	if (modulus>0) //getting the Rest with modulus % operator
     1b1c:	1c 14       	cp	r1, r12
     1b1e:	1d 04       	cpc	r1, r13
     1b20:	14 f4       	brge	.+4      	; 0x1b26 <letterhelper+0x88>
-	{
-		fixed_letter++; //add one length
     1b22:	6f 5f       	subi	r22, 0xFF	; 255
     1b24:	7f 4f       	sbci	r23, 0xFF	; 255
-	}
-	drawXletter(bogstaver,fixed_letter,count,start_x,starty, offset,modulus,Red,Green,Blue);
     1b26:	80 91 a6 18 	lds	r24, 0x18A6	; 0x8018a6 <start_x>
     1b2a:	90 91 a7 18 	lds	r25, 0x18A7	; 0x8018a7 <start_x+0x1>
     1b2e:	3f 93       	push	r19
@@ -3930,7 +3273,6 @@ void letterhelper(int numberletter, int startx, int starty,unsigned char Red, un
     1b38:	8c ec       	ldi	r24, 0xCC	; 204
     1b3a:	96 e0       	ldi	r25, 0x06	; 6
     1b3c:	99 de       	rcall	.-718    	; 0x1870 <drawXletter>
-	start_x = start_x+array_carrier[numberletter]+1; //sets the new startpoint for next session
     1b3e:	80 91 a6 18 	lds	r24, 0x18A6	; 0x8018a6 <start_x>
     1b42:	90 91 a7 18 	lds	r25, 0x18A7	; 0x8018a7 <start_x+0x1>
     1b46:	01 96       	adiw	r24, 0x01	; 1
@@ -3938,7 +3280,6 @@ void letterhelper(int numberletter, int startx, int starty,unsigned char Red, un
     1b4a:	d9 1f       	adc	r29, r25
     1b4c:	d0 93 a7 18 	sts	0x18A7, r29	; 0x8018a7 <start_x+0x1>
     1b50:	c0 93 a6 18 	sts	0x18A6, r28	; 0x8018a6 <start_x>
-}
     1b54:	0f 90       	pop	r0
     1b56:	df 91       	pop	r29
     1b58:	cf 91       	pop	r28
@@ -3953,12 +3294,6 @@ void letterhelper(int numberletter, int startx, int starty,unsigned char Red, un
     1b6a:	08 95       	ret
 
 00001b6c <drawletters>:
-	}
-	
-}
-
-void drawletters(char str[],int startx, int starty,unsigned char Red, unsigned char Green, unsigned char Blue) 
-{
     1b6c:	5f 92       	push	r5
     1b6e:	6f 92       	push	r6
     1b70:	7f 92       	push	r7
@@ -3987,7 +3322,6 @@ void drawletters(char str[],int startx, int starty,unsigned char Red, unsigned c
     1b9e:	12 2f       	mov	r17, r18
     1ba0:	f0 2e       	mov	r15, r16
     1ba2:	5e 2c       	mov	r5, r14
-	int test[25]={},i=0,j;
     1ba4:	fe 01       	movw	r30, r28
     1ba6:	31 96       	adiw	r30, 0x01	; 1
     1ba8:	22 e3       	ldi	r18, 0x32	; 50
@@ -3995,8 +3329,6 @@ void drawletters(char str[],int startx, int starty,unsigned char Red, unsigned c
     1bac:	1d 92       	st	X+, r1
     1bae:	2a 95       	dec	r18
     1bb0:	e9 f7       	brne	.-6      	; 0x1bac <drawletters+0x40>
-	
-	while(str[i]!='\0') {test[i]=str[i]; i++;}
     1bb2:	fc 01       	movw	r30, r24
     1bb4:	20 81       	ld	r18, Z
     1bb6:	22 23       	and	r18, r18
@@ -4018,8 +3350,6 @@ void drawletters(char str[],int startx, int starty,unsigned char Red, unsigned c
     1bd6:	21 91       	ld	r18, Z+
     1bd8:	21 11       	cpse	r18, r1
     1bda:	f7 cf       	rjmp	.-18     	; 0x1bca <drawletters+0x5e>
-	
-	for(j=0;j<i;j++)
     1bdc:	16 14       	cp	r1, r6
     1bde:	17 04       	cpc	r1, r7
     1be0:	24 f5       	brge	.+72     	; 0x1c2a <drawletters+0xbe>
@@ -4031,19 +3361,15 @@ void drawletters(char str[],int startx, int starty,unsigned char Red, unsigned c
     1bec:	9d 1f       	adc	r25, r29
     1bee:	68 0e       	add	r6, r24
     1bf0:	79 1e       	adc	r7, r25
-	{
-		int not_space = test[j]-33; //convert to array from ascii
     1bf2:	d6 01       	movw	r26, r12
     1bf4:	8d 91       	ld	r24, X+
     1bf6:	9d 91       	ld	r25, X+
     1bf8:	6d 01       	movw	r12, r26
     1bfa:	81 97       	sbiw	r24, 0x21	; 33
-		if (not_space != -1)
     1bfc:	8f 3f       	cpi	r24, 0xFF	; 255
     1bfe:	bf ef       	ldi	r27, 0xFF	; 255
     1c00:	9b 07       	cpc	r25, r27
     1c02:	39 f0       	breq	.+14     	; 0x1c12 <drawletters+0xa6>
-		{letterhelper(not_space,startx,starty,Red,Green,Blue);}
     1c04:	e5 2c       	mov	r14, r5
     1c06:	0f 2d       	mov	r16, r15
     1c08:	21 2f       	mov	r18, r17
@@ -4051,32 +3377,16 @@ void drawletters(char str[],int startx, int starty,unsigned char Red, unsigned c
     1c0c:	b5 01       	movw	r22, r10
     1c0e:	47 df       	rcall	.-370    	; 0x1a9e <letterhelper>
     1c10:	09 c0       	rjmp	.+18     	; 0x1c24 <drawletters+0xb8>
-		else
-		{start_x = start_x+10;}
     1c12:	80 91 a6 18 	lds	r24, 0x18A6	; 0x8018a6 <start_x>
     1c16:	90 91 a7 18 	lds	r25, 0x18A7	; 0x8018a7 <start_x+0x1>
     1c1a:	0a 96       	adiw	r24, 0x0a	; 10
     1c1c:	90 93 a7 18 	sts	0x18A7, r25	; 0x8018a7 <start_x+0x1>
     1c20:	80 93 a6 18 	sts	0x18A6, r24	; 0x8018a6 <start_x>
-{
-	int test[25]={},i=0,j;
-	
-	while(str[i]!='\0') {test[i]=str[i]; i++;}
-	
-	for(j=0;j<i;j++)
     1c24:	6c 14       	cp	r6, r12
     1c26:	7d 04       	cpc	r7, r13
     1c28:	21 f7       	brne	.-56     	; 0x1bf2 <drawletters+0x86>
-		if (not_space != -1)
-		{letterhelper(not_space,startx,starty,Red,Green,Blue);}
-		else
-		{start_x = start_x+10;}
-	}
-	start_x = startx;
     1c2a:	b0 92 a7 18 	sts	0x18A7, r11	; 0x8018a7 <start_x+0x1>
     1c2e:	a0 92 a6 18 	sts	0x18A6, r10	; 0x8018a6 <start_x>
-	return 0;
-}
     1c32:	e2 96       	adiw	r28, 0x32	; 50
     1c34:	0f b6       	in	r0, 0x3f	; 63
     1c36:	f8 94       	cli
@@ -4101,21 +3411,10 @@ void drawletters(char str[],int startx, int starty,unsigned char Red, unsigned c
     1c5c:	08 95       	ret
 
 00001c5e <main>:
-
-int main(void)
-{
-	// Initialize system
-	
-	DisplayInit();
     1c5e:	4c dd       	rcall	.-1384   	; 0x16f8 <DisplayInit>
-	TouchInit();
     1c60:	f5 d0       	rcall	.+490    	; 0x1e4c <TouchInit>
-	//CountingInit();
-	//
-	DisplayOn();
     1c62:	2e dd       	rcall	.-1444   	; 0x16c0 <DisplayOn>
     1c64:	26 db       	rcall	.-2484   	; 0x12b2 <welcome>
-	welcome();
     1c66:	2f ef       	ldi	r18, 0xFF	; 255
     1c68:	83 ed       	ldi	r24, 0xD3	; 211
     1c6a:	90 e3       	ldi	r25, 0x30	; 48
@@ -4127,10 +3426,6 @@ int main(void)
     1c76:	00 00       	nop
     1c78:	2e e4       	ldi	r18, 0x4E	; 78
     1c7a:	48 e0       	ldi	r20, 0x08	; 8
-	//Time for Bluetooth module to load its info from its chip
-	_delay_ms(1000);
-	
-	InitUART(38400, 8, 'N');
     1c7c:	60 e0       	ldi	r22, 0x00	; 0
     1c7e:	76 e9       	ldi	r23, 0x96	; 150
     1c80:	80 e0       	ldi	r24, 0x00	; 0
@@ -4146,11 +3441,6 @@ int main(void)
     1c94:	00 c0       	rjmp	.+0      	; 0x1c96 <main+0x38>
     1c96:	00 00       	nop
     1c98:	0e 94 bc 00 	call	0x178	; 0x178 <InitBluetoothModule>
-	
-	//Time for bluetooth module to load its info from its chip -- SSP profile
-	_delay_ms(500);
-	
-	InitBluetoothModule();
     1c9c:	2f ef       	ldi	r18, 0xFF	; 255
     1c9e:	83 ed       	ldi	r24, 0xD3	; 211
     1ca0:	90 e3       	ldi	r25, 0x30	; 48
@@ -4161,50 +3451,20 @@ int main(void)
     1caa:	00 c0       	rjmp	.+0      	; 0x1cac <main+0x4e>
     1cac:	00 00       	nop
     1cae:	80 e0       	ldi	r24, 0x00	; 0
-	_delay_ms(1000);
-	
-	
-	
-	// System startup
-	makedisplay(0);
     1cb0:	90 e0       	ldi	r25, 0x00	; 0
     1cb2:	10 db       	rcall	.-2528   	; 0x12d4 <makedisplay>
     1cb4:	00 e0       	ldi	r16, 0x00	; 0
     1cb6:	10 e0       	ldi	r17, 0x00	; 0
-	//variables for touch
-	int x,y;
-	int idlestate = 0, busy = 0;
-	int number = 1;
-	int counting_background = 0;
     1cb8:	aa 24       	eor	r10, r10
     1cba:	a3 94       	inc	r10
-	// System startup
-	makedisplay(0);
-	//variables for touch
-	int x,y;
-	int idlestate = 0, busy = 0;
-	int number = 1;
     1cbc:	b1 2c       	mov	r11, r1
     1cbe:	c1 2c       	mov	r12, r1
-	
-	// System startup
-	makedisplay(0);
-	//variables for touch
-	int x,y;
-	int idlestate = 0, busy = 0;
     1cc0:	d1 2c       	mov	r13, r1
     1cc2:	81 e0       	ldi	r24, 0x01	; 1
-	//check for input
-	
-	while(1)
-	{
-		
-		x = TouchRead(1);
     1cc4:	90 e0       	ldi	r25, 0x00	; 0
     1cc6:	d3 d0       	rcall	.+422    	; 0x1e6e <TouchRead>
     1cc8:	ec 01       	movw	r28, r24
     1cca:	82 e0       	ldi	r24, 0x02	; 2
-		y = TouchRead(2);
     1ccc:	90 e0       	ldi	r25, 0x00	; 0
     1cce:	cf d0       	rcall	.+414    	; 0x1e6e <TouchRead>
     1cd0:	7c 01       	movw	r14, r24
@@ -4219,11 +3479,8 @@ int main(void)
     1ce2:	00 00       	nop
     1ce4:	0f 5f       	subi	r16, 0xFF	; 255
     1ce6:	1f 4f       	sbci	r17, 0xFF	; 255
-		_delay_ms(100);
-	   counting_background ++;
     1ce8:	ce 01       	movw	r24, r28
     1cea:	83 56       	subi	r24, 0x63	; 99
-	   if (x < 3700 && x > 3170 && y < 720 && y > 460)
     1cec:	9c 40       	sbci	r25, 0x0C	; 12
     1cee:	81 31       	cpi	r24, 0x11	; 17
     1cf0:	92 40       	sbci	r25, 0x02	; 2
@@ -4235,51 +3492,33 @@ int main(void)
     1cfc:	91 40       	sbci	r25, 0x01	; 1
     1cfe:	78 f5       	brcc	.+94     	; 0x1d5e <main+0x100>
     1d00:	c1 14       	cp	r12, r1
-			{
-				int _state;
-				busy = 0;
-				if(idlestate == 0)
     1d02:	d1 04       	cpc	r13, r1
     1d04:	79 f4       	brne	.+30     	; 0x1d24 <main+0xc6>
     1d06:	c5 01       	movw	r24, r10
-				{
-					_state = makedisplay(number);
     1d08:	e5 da       	rcall	.-2614   	; 0x12d4 <makedisplay>
     1d0a:	4c 01       	movw	r8, r24
     1d0c:	83 e0       	ldi	r24, 0x03	; 3
     1d0e:	a8 16       	cp	r10, r24
-					if(number != 3)
     1d10:	b1 04       	cpc	r11, r1
     1d12:	09 f4       	brne	.+2      	; 0x1d16 <main+0xb8>
     1d14:	76 c0       	rjmp	.+236    	; 0x1e02 <main+0x1a4>
     1d16:	aa 24       	eor	r10, r10
     1d18:	a3 94       	inc	r10
-					{
-						number = 1;
     1d1a:	b1 2c       	mov	r11, r1
     1d1c:	cc 24       	eor	r12, r12
     1d1e:	c3 94       	inc	r12
-						idlestate = 1;
     1d20:	d1 2c       	mov	r13, r1
     1d22:	6f c0       	rjmp	.+222    	; 0x1e02 <main+0x1a4>
     1d24:	91 e0       	ldi	r25, 0x01	; 1
-						busy = 1;
-					}	
-				}
-				
-				else if(idlestate == 1 && busy == 0)
     1d26:	c9 16       	cp	r12, r25
     1d28:	d1 04       	cpc	r13, r1
     1d2a:	09 f0       	breq	.+2      	; 0x1d2e <main+0xd0>
     1d2c:	6a c0       	rjmp	.+212    	; 0x1e02 <main+0x1a4>
     1d2e:	b4 01       	movw	r22, r8
-				{
-					int succes = pickDevices(number, _state);
     1d30:	c5 01       	movw	r24, r10
     1d32:	09 d9       	rcall	.-3566   	; 0xf46 <pickDevices>
     1d34:	01 97       	sbiw	r24, 0x01	; 1
     1d36:	09 f0       	breq	.+2      	; 0x1d3a <main+0xdc>
-					if(succes == 1)
     1d38:	64 c0       	rjmp	.+200    	; 0x1e02 <main+0x1a4>
     1d3a:	2f ef       	ldi	r18, 0xFF	; 255
     1d3c:	83 ed       	ldi	r24, 0xD3	; 211
@@ -4291,39 +3530,16 @@ int main(void)
     1d48:	00 c0       	rjmp	.+0      	; 0x1d4a <main+0xec>
     1d4a:	00 00       	nop
     1d4c:	80 e0       	ldi	r24, 0x00	; 0
-					{
-						idlestate = 0;
-						number = 1;
-						_delay_ms(1000);
-						makedisplay(0);	
     1d4e:	90 e0       	ldi	r25, 0x00	; 0
     1d50:	c1 da       	rcall	.-2686   	; 0x12d4 <makedisplay>
     1d52:	aa 24       	eor	r10, r10
     1d54:	a3 94       	inc	r10
-				{
-					int succes = pickDevices(number, _state);
-					if(succes == 1)
-					{
-						idlestate = 0;
-						number = 1;
     1d56:	b1 2c       	mov	r11, r1
     1d58:	c1 2c       	mov	r12, r1
     1d5a:	d1 2c       	mov	r13, r1
-				else if(idlestate == 1 && busy == 0)
-				{
-					int succes = pickDevices(number, _state);
-					if(succes == 1)
-					{
-						idlestate = 0;
     1d5c:	52 c0       	rjmp	.+164    	; 0x1e02 <main+0x1a4>
     1d5e:	ce 01       	movw	r24, r28
     1d60:	85 5d       	subi	r24, 0xD5	; 213
-					}
-				}
-				
-			}
-
-	   if (x < 2840 && x > 2260 && y < 720 && y > 460)
     1d62:	98 40       	sbci	r25, 0x08	; 8
     1d64:	83 34       	cpi	r24, 0x43	; 67
     1d66:	92 40       	sbci	r25, 0x02	; 2
@@ -4337,47 +3553,22 @@ int main(void)
     1d76:	08 f0       	brcs	.+2      	; 0x1d7a <main+0x11c>
     1d78:	51 c0       	rjmp	.+162    	; 0x1e1c <main+0x1be>
     1d7a:	80 e0       	ldi	r24, 0x00	; 0
-			{
-				makedisplay(0);
     1d7c:	90 e0       	ldi	r25, 0x00	; 0
     1d7e:	aa da       	rcall	.-2732   	; 0x12d4 <makedisplay>
     1d80:	ce 01       	movw	r24, r28
     1d82:	85 50       	subi	r24, 0x05	; 5
-				number = 1;
-				idlestate = 0;
-			}
-		
-		
-		if (x < 1830 && x > 1540 && y < 720 && y > 460)
     1d84:	96 40       	sbci	r25, 0x06	; 6
     1d86:	81 32       	cpi	r24, 0x21	; 33
     1d88:	91 40       	sbci	r25, 0x01	; 1
     1d8a:	80 f0       	brcs	.+32     	; 0x1dac <main+0x14e>
     1d8c:	c1 2c       	mov	r12, r1
     1d8e:	d1 2c       	mov	r13, r1
-
-	   if (x < 2840 && x > 2260 && y < 720 && y > 460)
-			{
-				makedisplay(0);
-				number = 1;
-				idlestate = 0;
     1d90:	aa 24       	eor	r10, r10
     1d92:	a3 94       	inc	r10
-			}
-
-	   if (x < 2840 && x > 2260 && y < 720 && y > 460)
-			{
-				makedisplay(0);
-				number = 1;
     1d94:	b1 2c       	mov	r11, r1
     1d96:	17 c0       	rjmp	.+46     	; 0x1dc6 <main+0x168>
     1d98:	8d ec       	ldi	r24, 0xCD	; 205
     1d9a:	e8 1a       	sub	r14, r24
-				idlestate = 0;
-			}
-		
-		
-		if (x < 1830 && x > 1540 && y < 720 && y > 460)
     1d9c:	81 e0       	ldi	r24, 0x01	; 1
     1d9e:	f8 0a       	sbc	r15, r24
     1da0:	93 e0       	ldi	r25, 0x03	; 3
@@ -4388,38 +3579,18 @@ int main(void)
     1daa:	05 c0       	rjmp	.+10     	; 0x1db6 <main+0x158>
     1dac:	aa 24       	eor	r10, r10
     1dae:	a3 94       	inc	r10
-			}
-
-	   if (x < 2840 && x > 2260 && y < 720 && y > 460)
-			{
-				makedisplay(0);
-				number = 1;
     1db0:	b1 2c       	mov	r11, r1
     1db2:	c1 2c       	mov	r12, r1
     1db4:	d1 2c       	mov	r13, r1
-				idlestate = 0;
     1db6:	0e 94 5b 06 	call	0xcb6	; 0xcb6 <movePointerUp>
-		
-		
-		if (x < 1830 && x > 1540 && y < 720 && y > 460)
-		{
-			int up_return = 0;
-			up_return = movePointerUp();
     1dba:	01 97       	sbiw	r24, 0x01	; 1
     1dbc:	49 f5       	brne	.+82     	; 0x1e10 <main+0x1b2>
-			if (up_return == 1)
     1dbe:	21 e0       	ldi	r18, 0x01	; 1
     1dc0:	a2 1a       	sub	r10, r18
-			{
-				number--;
     1dc2:	b1 08       	sbc	r11, r1
     1dc4:	25 c0       	rjmp	.+74     	; 0x1e10 <main+0x1b2>
     1dc6:	c9 5a       	subi	r28, 0xA9	; 169
     1dc8:	d2 40       	sbci	r29, 0x02	; 2
-			}
-			
-		}
-		if (x < 1270 && x > 680 && y < 720 && y > 460)
     1dca:	cd 34       	cpi	r28, 0x4D	; 77
     1dcc:	d2 40       	sbci	r29, 0x02	; 2
     1dce:	80 f4       	brcc	.+32     	; 0x1df0 <main+0x192>
@@ -4433,40 +3604,22 @@ int main(void)
     1dde:	f2 06       	cpc	r15, r18
     1de0:	38 f4       	brcc	.+14     	; 0x1df0 <main+0x192>
     1de2:	0e 94 aa 06 	call	0xd54	; 0xd54 <movePointerDown>
-		{
-			int down_return = 0;
-			down_return = movePointerDown();
     1de6:	01 97       	sbiw	r24, 0x01	; 1
-			if (down_return == 1)
     1de8:	19 f4       	brne	.+6      	; 0x1df0 <main+0x192>
     1dea:	8f ef       	ldi	r24, 0xFF	; 255
-			{
-				number++;
     1dec:	a8 1a       	sub	r10, r24
     1dee:	b8 0a       	sbc	r11, r24
     1df0:	02 33       	cpi	r16, 0x32	; 50
-			}
-		}
-		if (counting_background == 5000/100) //5 sekunder tæller op ift delay
     1df2:	11 05       	cpc	r17, r1
     1df4:	09 f0       	breq	.+2      	; 0x1df8 <main+0x19a>
     1df6:	65 cf       	rjmp	.-310    	; 0x1cc2 <main+0x64>
     1df8:	c6 01       	movw	r24, r12
-		{
-			backgroundprocess(idlestate);
     1dfa:	b1 db       	rcall	.-2206   	; 0x155e <backgroundprocess>
     1dfc:	00 e0       	ldi	r16, 0x00	; 0
     1dfe:	10 e0       	ldi	r17, 0x00	; 0
-			counting_background = 0;
     1e00:	60 cf       	rjmp	.-320    	; 0x1cc2 <main+0x64>
     1e02:	ce 01       	movw	r24, r28
     1e04:	85 5d       	subi	r24, 0xD5	; 213
-					}
-				}
-				
-			}
-
-	   if (x < 2840 && x > 2260 && y < 720 && y > 460)
     1e06:	98 40       	sbci	r25, 0x08	; 8
     1e08:	83 34       	cpi	r24, 0x43	; 67
     1e0a:	92 40       	sbci	r25, 0x02	; 2
@@ -4474,24 +3627,12 @@ int main(void)
     1e0e:	b5 cf       	rjmp	.-150    	; 0x1d7a <main+0x11c>
     1e10:	c9 5a       	subi	r28, 0xA9	; 169
     1e12:	d2 40       	sbci	r29, 0x02	; 2
-			{
-				number--;
-			}
-			
-		}
-		if (x < 1270 && x > 680 && y < 720 && y > 460)
     1e14:	cd 34       	cpi	r28, 0x4D	; 77
     1e16:	d2 40       	sbci	r29, 0x02	; 2
     1e18:	20 f3       	brcs	.-56     	; 0x1de2 <main+0x184>
     1e1a:	ea cf       	rjmp	.-44     	; 0x1df0 <main+0x192>
     1e1c:	ce 01       	movw	r24, r28
     1e1e:	85 50       	subi	r24, 0x05	; 5
-				number = 1;
-				idlestate = 0;
-			}
-		
-		
-		if (x < 1830 && x > 1540 && y < 720 && y > 460)
     1e20:	96 40       	sbci	r25, 0x06	; 6
     1e22:	81 32       	cpi	r24, 0x21	; 33
     1e24:	91 40       	sbci	r25, 0x01	; 1
@@ -4499,56 +3640,30 @@ int main(void)
     1e28:	b7 cf       	rjmp	.-146    	; 0x1d98 <main+0x13a>
 
 00001e2a <Pulse>:
-#define IRQ_BIT 4
-
-// LOCAL FUNCTIONS /
-void Pulse()
-{
-	CLK_PORT |= 1 << CLK_BIT; // Clock high
     1e2a:	e2 e0       	ldi	r30, 0x02	; 2
     1e2c:	f1 e0       	ldi	r31, 0x01	; 1
     1e2e:	80 81       	ld	r24, Z
     1e30:	88 60       	ori	r24, 0x08	; 8
     1e32:	80 83       	st	Z, r24
 	...
-	for(int i = 0; i<4;i++)
-	{_NOP();}
-	
-	CLK_PORT &= ~(1 << CLK_BIT); // Clock low
     1e3c:	80 81       	ld	r24, Z
     1e3e:	87 7f       	andi	r24, 0xF7	; 247
     1e40:	80 83       	st	Z, r24
 	...
-	for(int i = 0; i<4;i++)
-	{_NOP();}
     1e4a:	08 95       	ret
 
 00001e4c <TouchInit>:
-
-// PUBLIC FUNCTIONS 
-void TouchInit()
-{
-	
-	DDRH |= (1<<CLK_BIT);
     1e4c:	e1 e0       	ldi	r30, 0x01	; 1
     1e4e:	f1 e0       	ldi	r31, 0x01	; 1
     1e50:	80 81       	ld	r24, Z
     1e52:	88 60       	ori	r24, 0x08	; 8
     1e54:	80 83       	st	Z, r24
-	DDRE |= (1<<CS_BIT);
     1e56:	6b 9a       	sbi	0x0d, 3	; 13
-	DDRG |= (1<<IN_BIT);
     1e58:	9d 9a       	sbi	0x13, 5	; 19
-	DDRE &= ~(1<<OUT_BIT);
     1e5a:	6d 98       	cbi	0x0d, 5	; 13
-	DDRE &= ~(1<<IRQ_BIT);
     1e5c:	6c 98       	cbi	0x0d, 4	; 13
-	
-	CS_IRQ_PORT |= 1 << CS_BIT;
     1e5e:	73 9a       	sbi	0x0e, 3	; 14
-	IN_PORT |= 1 << IN_BIT;
     1e60:	a5 9a       	sbi	0x14, 5	; 20
-	CLK_PORT |= 1 << CLK_BIT;
     1e62:	e2 e0       	ldi	r30, 0x02	; 2
     1e64:	f1 e0       	ldi	r31, 0x01	; 1
     1e66:	80 81       	ld	r24, Z
@@ -4557,64 +3672,28 @@ void TouchInit()
     1e6c:	08 95       	ret
 
 00001e6e <TouchRead>:
-	
-}
-int TouchRead(int xy)
-{
     1e6e:	0f 93       	push	r16
     1e70:	1f 93       	push	r17
     1e72:	cf 93       	push	r28
     1e74:	df 93       	push	r29
-	int cmd = 0;
-	if (xy == 1)
     1e76:	81 30       	cpi	r24, 0x01	; 1
     1e78:	91 05       	cpc	r25, r1
     1e7a:	29 f0       	breq	.+10     	; 0x1e86 <TouchRead+0x18>
-	{
-		cmd = 0x90; //read y
-	}
-	
-	else if (xy == 2)
     1e7c:	02 97       	sbiw	r24, 0x02	; 2
     1e7e:	31 f4       	brne	.+12     	; 0x1e8c <TouchRead+0x1e>
-	{
-		cmd = 0xD0; //read x
     1e80:	00 ed       	ldi	r16, 0xD0	; 208
     1e82:	10 e0       	ldi	r17, 0x00	; 0
     1e84:	05 c0       	rjmp	.+10     	; 0x1e90 <TouchRead+0x22>
-int TouchRead(int xy)
-{
-	int cmd = 0;
-	if (xy == 1)
-	{
-		cmd = 0x90; //read y
     1e86:	00 e9       	ldi	r16, 0x90	; 144
     1e88:	10 e0       	ldi	r17, 0x00	; 0
     1e8a:	02 c0       	rjmp	.+4      	; 0x1e90 <TouchRead+0x22>
-	CLK_PORT |= 1 << CLK_BIT;
-	
-}
-int TouchRead(int xy)
-{
-	int cmd = 0;
     1e8c:	00 e0       	ldi	r16, 0x00	; 0
     1e8e:	10 e0       	ldi	r17, 0x00	; 0
-	else if (xy == 2)
-	{
-		cmd = 0xD0; //read x
-	}
-	
-	CS_IRQ_PORT &= ~(1 << CS_BIT);
     1e90:	73 98       	cbi	0x0e, 3	; 14
-	_NOP();
     1e92:	00 00       	nop
-	_NOP();
     1e94:	00 00       	nop
-	for(int i = 7; i >= 0; i--)
     1e96:	c7 e0       	ldi	r28, 0x07	; 7
     1e98:	d0 e0       	ldi	r29, 0x00	; 0
-	{
-		if ((cmd & 0b00000001<<i) != 0)
     1e9a:	c8 01       	movw	r24, r16
     1e9c:	0c 2e       	mov	r0, r28
     1e9e:	02 c0       	rjmp	.+4      	; 0x1ea4 <TouchRead+0x36>
@@ -4624,69 +3703,27 @@ int TouchRead(int xy)
     1ea6:	e2 f7       	brpl	.-8      	; 0x1ea0 <TouchRead+0x32>
     1ea8:	80 ff       	sbrs	r24, 0
     1eaa:	02 c0       	rjmp	.+4      	; 0x1eb0 <TouchRead+0x42>
-		{
-			IN_PORT |= 1 << IN_BIT;
     1eac:	a5 9a       	sbi	0x14, 5	; 20
     1eae:	01 c0       	rjmp	.+2      	; 0x1eb2 <TouchRead+0x44>
-		}
-		else
-		{
-			IN_PORT &= ~(1 << IN_BIT);
     1eb0:	a5 98       	cbi	0x14, 5	; 20
-		}
-		
-		_NOP();
     1eb2:	00 00       	nop
-		_NOP();
     1eb4:	00 00       	nop
-		Pulse();
     1eb6:	b9 df       	rcall	.-142    	; 0x1e2a <Pulse>
-	}
-	
-	CS_IRQ_PORT &= ~(1 << CS_BIT);
-	_NOP();
-	_NOP();
-	for(int i = 7; i >= 0; i--)
     1eb8:	21 97       	sbiw	r28, 0x01	; 1
     1eba:	78 f7       	brcc	.-34     	; 0x1e9a <TouchRead+0x2c>
     1ebc:	0c e0       	ldi	r16, 0x0C	; 12
     1ebe:	10 e0       	ldi	r17, 0x00	; 0
     1ec0:	c0 e0       	ldi	r28, 0x00	; 0
     1ec2:	d0 e0       	ldi	r29, 0x00	; 0
-	}
-	
-	int data = 0;
-	for(int i = 0; i < 12; i++)
-	{
-		data = data << 1;
     1ec4:	cc 0f       	add	r28, r28
-		Pulse();
     1ec6:	dd 1f       	adc	r29, r29
     1ec8:	b0 df       	rcall	.-160    	; 0x1e2a <Pulse>
-		if((PINE & 0b00100000) != 0)
     1eca:	65 99       	sbic	0x0c, 5	; 12
-		{
-			data++;
     1ecc:	21 96       	adiw	r28, 0x01	; 1
     1ece:	01 50       	subi	r16, 0x01	; 1
     1ed0:	11 09       	sbc	r17, r1
-		_NOP();
-		Pulse();
-	}
-	
-	int data = 0;
-	for(int i = 0; i < 12; i++)
     1ed2:	c1 f7       	brne	.-16     	; 0x1ec4 <TouchRead+0x56>
-		if((PINE & 0b00100000) != 0)
-		{
-			data++;
-		}
-	}
-	CS_IRQ_PORT |= 1 << CS_BIT;
     1ed4:	73 9a       	sbi	0x0e, 3	; 14
-	
-	return data;
-}
     1ed6:	ce 01       	movw	r24, r28
     1ed8:	df 91       	pop	r29
     1eda:	cf 91       	pop	r28
@@ -4695,12 +3732,6 @@ int TouchRead(int xy)
     1ee0:	08 95       	ret
 
 00001ee2 <InitUART>:
-  Returns value <> 0 (TRUE), if the UART HAS received a new character.
-*************************************************************************/
-unsigned char CharReady()
-{
-   return UCSR0A & (1<<7);
-}
     1ee2:	0f 93       	push	r16
     1ee4:	1f 93       	push	r17
     1ee6:	52 2f       	mov	r21, r18
@@ -4773,77 +3804,35 @@ unsigned char CharReady()
     1f76:	08 95       	ret
 
 00001f78 <ReadChar>:
-Then this character is returned.
-*************************************************************************/
-char ReadChar()
-{
-  // Wait for new character received
-  while ( (UCSR0A & (1<<7)) == 0 )
     1f78:	e0 ec       	ldi	r30, 0xC0	; 192
     1f7a:	f0 e0       	ldi	r31, 0x00	; 0
     1f7c:	80 81       	ld	r24, Z
     1f7e:	88 23       	and	r24, r24
     1f80:	ec f7       	brge	.-6      	; 0x1f7c <ReadChar+0x4>
-  {}                        
-  // Then return it
-  return UDR0;
     1f82:	80 91 c6 00 	lds	r24, 0x00C6	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7000c6>
-}
     1f86:	08 95       	ret
 
 00001f88 <SendChar>:
-	Tegn : Character for sending. 
-*************************************************************************/
-void SendChar(char Tegn)
-{
-  // Wait for transmitter register empty (ready for new character)
-  while ( (UCSR0A & (1<<5)) == 0 )
     1f88:	e0 ec       	ldi	r30, 0xC0	; 192
     1f8a:	f0 e0       	ldi	r31, 0x00	; 0
     1f8c:	90 81       	ld	r25, Z
     1f8e:	95 ff       	sbrs	r25, 5
     1f90:	fd cf       	rjmp	.-6      	; 0x1f8c <SendChar+0x4>
-  {}
-  // Then send the character
-  UDR0 = Tegn;
     1f92:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7000c6>
     1f96:	08 95       	ret
 
 00001f98 <SendString>:
-Sends 0 terminated string.
-Parameter:
-   Streng: Pointer to the string. 
-*************************************************************************/
-void SendString(char* Streng)
-{
     1f98:	cf 93       	push	r28
     1f9a:	df 93       	push	r29
     1f9c:	ec 01       	movw	r28, r24
-  // Repeat until zero-termination
-  while (*Streng != 0)
     1f9e:	88 81       	ld	r24, Y
     1fa0:	88 23       	and	r24, r24
     1fa2:	29 f0       	breq	.+10     	; 0x1fae <SendString+0x16>
     1fa4:	21 96       	adiw	r28, 0x01	; 1
-  {
-    // Send the character pointed to by "Streng"
-    SendChar(*Streng);
     1fa6:	f0 df       	rcall	.-32     	; 0x1f88 <SendChar>
-   Streng: Pointer to the string. 
-*************************************************************************/
-void SendString(char* Streng)
-{
-  // Repeat until zero-termination
-  while (*Streng != 0)
     1fa8:	89 91       	ld	r24, Y+
     1faa:	81 11       	cpse	r24, r1
     1fac:	fc cf       	rjmp	.-8      	; 0x1fa6 <SendString+0xe>
-    // Send the character pointed to by "Streng"
-    SendChar(*Streng);
-    // Advance the pointer one step
-    Streng++;
-  }
-}
     1fae:	df 91       	pop	r29
     1fb0:	cf 91       	pop	r28
     1fb2:	08 95       	ret

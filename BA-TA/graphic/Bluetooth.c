@@ -228,6 +228,17 @@ void trustedDevicesScan()
 void nearbyAddressDelimeter(char* nearbyRawAddress)
 {
 	int t = 0;
+	
+	char *nearbySaveptr1;
+		
+	char* nearbyPart1 = malloc(5);
+	char* nearbyPart2 = malloc(3);
+	char* nearbyPart1and2;
+	char* nearbyFinalAddress;
+	
+	char** nearbyDataArray = malloc(3);
+	
+	char *nearbyAddressesToSend[4]; //skal måske være 3 (grundet skift til 4 devices)
 		
 	//Check number of recieved "+INQ", which should be equal to number of addresses
 	for(t = 0; t < 300; t++)
@@ -241,19 +252,8 @@ void nearbyAddressDelimeter(char* nearbyRawAddress)
 	//Splitting the addresses into numberOfRegisteredAddresses's array
 	char *delimeterColon = ":";
 	char *delimeteComma = ",";
-	
-	char *nearbySaveptr1;
-	
-	char* nearbyPart1 = malloc(5);
-	char* nearbyPart2 = malloc(3);
-	char* nearbyPart1and2;
-	char* nearbyFinalAddress;
-	
+
 	char *nearbyHeader1 = strtok_r(nearbyRawAddress, delimeterColon, &nearbySaveptr1);
-	
-	char** nearbyDataArray = malloc(3);
-	
-	char *nearbyAddressesToSend[4]; //skal måske være 3 (grundet skift til 4 devices)
 	
 	int q = 0;
 	
