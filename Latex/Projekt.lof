@@ -23,3 +23,4 @@
 \contentsline {figure}{\numberline {22}{\ignorespaces Kommunikationseksempel med AT-kommandoer ved brug af en UART forbindelse til Bluetooth modulet.}}{30}{figure.22}
 \contentsline {figure}{\numberline {23}{\ignorespaces Registrering af det returnede "OK" fra Bluetooth modulet}}{31}{figure.23}
 \contentsline {figure}{\numberline {24}{\ignorespaces Al r\IeC {\r a} adresse information modtaget fra Bluetooth modulet}}{31}{figure.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces Brug af "delimeter"\-princippet ved brug af strtok\_r funktionen}}{32}{figure.25}

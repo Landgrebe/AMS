@@ -54,4 +54,10 @@ Herefter kan der analyseres på det char array som alt adresse information for a
 Næste skridt er hermed at skille alt den information vi får udover MAC-adressen til de bestemte enheder. Dette gøres ved brug af "delimeter" princippet. Delimeter princippet kan bruges i dette tilfælde, da alle modtagede adresser i char array'et er sammensat og seperaret fra hinanden på en kontinuerlig måde. Hver MAC-adresse starter efter "+INQ:, de 3 dele af MAC adressen er separeret af ":" og MAC-adressen slutter ved et ",". Dette kan også ses på figur \ref{fig:raw_address}.
 
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 500 pt]{Img/delimetering.PNG}
+	\caption{Brug af "delimeter"\-princippet ved brug af strtok\_r funktionen}
+	\label{fig:delimeter}
+\end{figure}
 
