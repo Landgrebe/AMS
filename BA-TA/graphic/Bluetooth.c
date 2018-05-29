@@ -249,7 +249,7 @@ void nearbyAddressDelimeter(char* nearbyRawAddress)
 		}
 	}
 	
-	//Splitting the addresses into numberOfRegisteredAddresses's array
+	//Splitting (delimetering) the MAC addresses into 3 parts
 	char *delimeterColon = ":";
 	char *delimeteComma = ",";
 
@@ -257,18 +257,20 @@ void nearbyAddressDelimeter(char* nearbyRawAddress)
 	
 	int q = 0;
 	
+	//Adresse eksempel:
+	//{h0A}E{h0A}+INQ:74E5:43:96BCDF,A010C,7FFF
 	for(q = 0; q < numberOfNearbyAddresses; q++)
 	{
 		
 		if(q >= 1)
 		{
-			nearbyHeader1 = strtok_r(NULL,delimeteComma, &nearbySaveptr1);
+			nearbyHeader1 = strtok_r(NULL,delimeteComma, &nearbySaveptr1); 
 			nearbyHeader1 = strtok_r(NULL,delimeterColon, &nearbySaveptr1);
 		}
 		
-		nearbyDataArray[1] = strtok_r(NULL, delimeterColon, &nearbySaveptr1); //Første del
-		nearbyDataArray[2] = strtok_r(NULL, delimeterColon, &nearbySaveptr1); //Anden del
-		nearbyDataArray[3] = strtok_r(NULL, delimeteComma, &nearbySaveptr1);  //Tredje del
+		nearbyDataArray[1] = strtok_r(NULL, delimeterColon, &nearbySaveptr1); //Indeholder første del af adressen = 74E5
+		nearbyDataArray[2] = strtok_r(NULL, delimeterColon, &nearbySaveptr1); //Indeholder anden del af adressen  = 43
+		nearbyDataArray[3] = strtok_r(NULL, delimeteComma, &nearbySaveptr1);  //Indeholder tredje del af adressen = 96BCDF
 		
 		//PART 1
 		strcpy(nearbyPart1,nearbyDataArray[1]);
