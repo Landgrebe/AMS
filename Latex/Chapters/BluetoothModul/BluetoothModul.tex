@@ -23,12 +23,21 @@ En succesfuld AT-kommando vil altid få Bluetooth-modulet til at returnere et OK
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 200 pt]{Img/uart_eksempel.PNG}
-	\caption{Kommunikationseksempel med AT-kommandoer ved brug af en UART forbindelse til Bluetooth modulet}
-	\label{fig:UART}
+	\caption{Kommunikationseksempel med AT-kommandoer ved brug af en UART forbindelse til Bluetooth modulet.}
+	\label{fig:UART_eksempel}
 \end{figure}
+
+På ovenstående figur,  \ref{fig:UART_eksempel}, kan vi se et eksempel på kommunikation vha. en UART forbindelse til Bluetooth modulet. I eksemplet bliver der sendt et "AT+INQ" til Bluetooth-modulet. Denne besked betyder inquiry, og derfor går Bluetooth modulet straks igang med at undersøge hvilke nærtliggende Bluetooth enheder den kan finde. Herefter svarer den tilbage med et "+INQ:<AdressePåFundetEnhed>" hver gang den har fundet en ny enhed. Dette forsætter den med indtil den når sit maks antal devices eller timeout grænse, som er bestemt af kommandoen "AT+INQM". Når timeout eller maks antal enheder er nået returnerer Bluetooth modulet også et OK for at indikere at den er færdig. Herefter er den også klar igen til at modtage nye beskeder.
 
 \subsection{Implementering}
 
 Da AT-kommandoerne og retur-beskederne er opbygget med samme struktur, har gruppen med fordel taget brug af dette til, at kunne udvikle en Bluetooth-kommunikations-driver, som netop udnytter denne gentagende og genkendelige proces. 
 
-\textbf{***INDSÆT EKSEMPEL FRA KODEN HER EVT. – SOM VISER HVORDAN VI HÅNDTERER SVAR FRA MODULET}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 400 pt]{Img/OK_registrered.PNG}
+	\caption{Registrering af det returnede "OK" fra Bluetooth modulet}
+	\label{fig:OK_registrered}
+\end{figure}
+
+På figur \ref{fig:OK_registrered} kan vi se et eksempel på, hvordan gruppen har udnyttet at der altid vil blive sendt et OK retur til sidst, når Bluetooth modulet indikerer at den er færdig med den instruktionen/kommandoen som den har modtaget forinden.
