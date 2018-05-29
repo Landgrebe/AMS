@@ -87,43 +87,44 @@ I dette afsnit gives et overblik over funktionaliteterne ud fra use cases, som e
 	\label{fig:SD3}
 \end{figure}
 \newpage
-\section{Ikke-funktionelle krav}
-Kravene er delt op i tre underkategorier. Krav der relaterer til problemet. krav der relaterer til DSP platform og algoritme. Til sidst er der en kategori der beskriver kravene til systemet på baggrund af de to første kategorier.
-\begin{enumerate}
-	
-	\subsection{Problemrelateret krav}
-	\item R1: Systemet skal have 2 mikrofoner og 1 højtaler
-	
-	\item R2: Filteret skal gøre brug af LMS algoritmen
-	
-	\item R3: Systemet skal kunne processerer lyd i frekvensbåndet 50-20000Hz. 
-	
-	\item R4: Systemet skal kunne dæmpe uønkset støj 30dB.
-	
-	\item R5: Systemet skal kunne dæmpe støj uden at dæmpe ønsket lydsignal.
-	
-	\item R6: Systemet burde have en latency under 30ms.
-	
-	\item R7: Systemet burde have et dynamikområde på min 80dB
-	
-	\subsection{System og algoritme krav}
-	
-	\item R8: Filter algoritmen skal implementeres med fixed point 
-	
-	\item R9: Filteret skal max bruge 10kByte memory
-	
-	\item R10: Filteret skal implementeres på Blackfin BF533
-	
-	\item R11: Filteret må max benytte 98\% DSP load
 
-	\subsection{Afledte krav}
-	
-	\item DR1: DSP systemet skal kunne håndtere en samplingsrate på min 44100kHz(På baggrund af krav R3) 
-	
-	\item DR2: Filteret skal implementeres med 1.15 fixed point.(På baggrund af krav R7 og R8. Dette giver et dynamikområde på 96dB)
-	
-	\item DR3: Filter latency må max forsinkes 1280 samples(På baggrund af R6. (1/44100)*1280=30ms)
-	
-	\item DR4: Filteret må max bruge 13333 cycles af DSP processering for hver sample. (På baggrund af R10, R11 og DR1 (600MHz/44.1kHz)*98\%)
-	
-\end{enumerate}
+%\section{Ikke-funktionelle krav}
+%Kravene er delt op i tre underkategorier. Krav der relaterer til problemet. krav der relaterer til DSP platform og algoritme. Til sidst er der en kategori der beskriver kravene til systemet på baggrund af de to første kategorier.
+%\begin{enumerate}
+%	
+%	\subsection{Problemrelateret krav}
+%	\item R1: Systemet skal have 2 mikrofoner og 1 højtaler
+%	
+%	\item R2: Filteret skal gøre brug af LMS algoritmen
+%	
+%	\item R3: Systemet skal kunne processerer lyd i frekvensbåndet 50-20000Hz. 
+%	
+%	\item R4: Systemet skal kunne dæmpe uønkset støj 30dB.
+%	
+%	\item R5: Systemet skal kunne dæmpe støj uden at dæmpe ønsket lydsignal.
+%	
+%	\item R6: Systemet burde have en latency under 30ms.
+%	
+%	\item R7: Systemet burde have et dynamikområde på min 80dB
+%	
+%	\subsection{System og algoritme krav}
+%	
+%	\item R8: Filter algoritmen skal implementeres med fixed point 
+%	
+%	\item R9: Filteret skal max bruge 10kByte memory
+%	
+%	\item R10: Filteret skal implementeres på Blackfin BF533
+%	
+%	\item R11: Filteret må max benytte 98\% DSP load
+%
+%	\subsection{Afledte krav}
+%	
+%	\item DR1: DSP systemet skal kunne håndtere en samplingsrate på min 44100kHz(På baggrund af krav R3) 
+%	
+%	\item DR2: Filteret skal implementeres med 1.15 fixed point.(På baggrund af krav R7 og R8. Dette giver et dynamikområde på 96dB)
+%	
+%	\item DR3: Filter latency må max forsinkes 1280 samples(På baggrund af R6. (1/44100)*1280=30ms)
+%	
+%	\item DR4: Filteret må max bruge 13333 cycles af DSP processering for hver sample. (På baggrund af R10, R11 og DR1 (600MHz/44.1kHz)*98\%)
+%	
+%\end{enumerate}
