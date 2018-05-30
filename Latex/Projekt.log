@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.9)  30 MAY 2018 16:30
+=======
+<<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.27)  30 MAY 2018 15:54
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.9)  30 MAY 2018 16:16
+>>>>>>> 04912ab6d08a0ff25958c6618d6d274ee74bedb2
+>>>>>>> e27f92137c2c56d82b9b3a4eb5c631ffd3216b67
 entering extended mode
 **./Projekt.tex
 (Projekt.tex
@@ -1341,12 +1349,23 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 6.
+<<<<<<< HEAD
+=======
 
+<<<<<<< HEAD
 <Chapters/System/Img/Bdd.png, id=265, 795.72281pt x 254.45062pt>
+=======
+>>>>>>> 04912ab6d08a0ff25958c6618d6d274ee74bedb2
+<Chapters/System/Img/Bdd.png, id=260, 795.72281pt x 254.45062pt>
+>>>>>>> e27f92137c2c56d82b9b3a4eb5c631ffd3216b67
 File: Chapters/System/Img/Bdd.png Graphic file (type png)
 
 <use Chapters/System/Img/Bdd.png>
+<<<<<<< HEAD
+Package pdftex.def Info: Chapters/System/Img/Bdd.png  used on input line 21.
+=======
 Package pdftex.def Info: Chapters/System/Img/Bdd.png used on input line 21.
+>>>>>>> 04912ab6d08a0ff25958c6618d6d274ee74bedb2
 (pdftex.def)             Requested size: 500.0pt x 159.8854pt.
 
 Overfull \hbox (30.24498pt too wide) in paragraph at lines 21--22
@@ -1403,12 +1422,23 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 53.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 53.
+<<<<<<< HEAD
+=======
 
+<<<<<<< HEAD
 <Chapters/System/Img/Ibd.png, id=272, 526.21594pt x 323.70938pt>
+=======
+>>>>>>> 04912ab6d08a0ff25958c6618d6d274ee74bedb2
+<Chapters/System/Img/Ibd.png, id=267, 526.21594pt x 323.70938pt>
+>>>>>>> e27f92137c2c56d82b9b3a4eb5c631ffd3216b67
 File: Chapters/System/Img/Ibd.png Graphic file (type png)
 
 <use Chapters/System/Img/Ibd.png>
+<<<<<<< HEAD
+Package pdftex.def Info: Chapters/System/Img/Ibd.png  used on input line 57.
+=======
 Package pdftex.def Info: Chapters/System/Img/Ibd.png used on input line 57.
+>>>>>>> 04912ab6d08a0ff25958c6618d6d274ee74bedb2
 (pdftex.def)             Requested size: 300.0pt x 184.55577pt.
 )
 Package babel Info: Redefining danish shorthand "|
@@ -2202,12 +2232,26 @@ Here is how much of TeX's memory you used:
  13871 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,10n,92p,1161b,675s stack positions out of 5000i,500n,10000p,200000b,50000s
+<<<<<<< HEAD
+ <C:\Users\71395\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+tcrm1200.pk><C:/Users/71395/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb><C:/Users/71395/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/71395/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/71395/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Projekt.pdf (33 pages, 28398335 bytes).
+=======
  <C:\Users\Soren\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+<<<<<<< HEAD
 Output written on Projekt.pdf (34 pages, 28375658 bytes).
+=======
+Output written on Projekt.pdf (33 pages, 28374006 bytes).
+>>>>>>> 04912ab6d08a0ff25958c6618d6d274ee74bedb2
+>>>>>>> e27f92137c2c56d82b9b3a4eb5c631ffd3216b67
 PDF statistics:
  501 PDF objects out of 1000 (max. 8388607)
  99 named destinations out of 1000 (max. 500000)
