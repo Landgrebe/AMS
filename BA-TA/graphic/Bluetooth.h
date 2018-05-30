@@ -1,9 +1,3 @@
-/*
- * Bluetooth.h
- *
- * Created: 19-04-2018 10:24:19
- *  Author: 71395
- */ 
 
 void InitBluetoothModule();
 void SendStringCRLF(char* message);

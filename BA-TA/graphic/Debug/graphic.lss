@@ -15,19 +15,19 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
   5 .debug_aranges 00000260  00000000  00000000  00003b48  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_info   0000443e  00000000  00000000  00003da8  2**0
+  6 .debug_info   00004440  00000000  00000000  00003da8  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_abbrev 0000160c  00000000  00000000  000081e6  2**0
+  7 .debug_abbrev 0000160c  00000000  00000000  000081e8  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_line   00001c48  00000000  00000000  000097f2  2**0
+  8 .debug_line   00001c4b  00000000  00000000  000097f4  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_frame  000008c4  00000000  00000000  0000b43c  2**2
+  9 .debug_frame  000008c4  00000000  00000000  0000b440  2**2
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_str    00000eb5  00000000  00000000  0000bd00  2**0
+ 10 .debug_str    00000eb5  00000000  00000000  0000bd04  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    00002c49  00000000  00000000  0000cbb5  2**0
+ 11 .debug_loc    00002c49  00000000  00000000  0000cbb9  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_ranges 00000250  00000000  00000000  0000f7fe  2**0
+ 12 .debug_ranges 00000250  00000000  00000000  0000f802  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -193,10 +193,10 @@ Disassembly of section .text:
      126:	6c cf       	rjmp	.-296    	; 0x0 <__vectors>
 
 00000128 <SendStringCRLF>:
+	
 }
 
-//Status = not sure - der kan være problemer med eksekveringen, ved ikke hvorfor
-// PGA Manglende AT+somethingFunction
+//No longer used
 void setModuleName(char* newBluetoothName)
 {
      128:	0f 93       	push	r16
@@ -1345,9 +1345,9 @@ void setModuleName(char* newBluetoothName)
      b92:	08 95       	ret
 
 00000b94 <getTrustedDeviceName>:
-	//SendString("");
 }
 
+//get function for other classes to get the trusted device names
 char* getTrustedDeviceName(int i)
 {
 	switch (i)
@@ -1395,6 +1395,7 @@ char* getTrustedDeviceName(int i)
 
 00000bdc <getTrustedDeviceAddress>:
 
+//get function for other classes to get the trusted device address
 char* getTrustedDeviceAddress(int i)
 {
 	switch (i)
@@ -1442,6 +1443,7 @@ char* getTrustedDeviceAddress(int i)
 
 00000c24 <getNearbyDeviceAddress>:
 
+//get function for other classes to get the nearby device address in order to compare it to the trusted devices list
 char* getNearbyDeviceAddress(int i)
 {
 		switch (i)
@@ -4696,9 +4698,9 @@ int TouchRead(int xy)
 
 00001ee2 <InitUART>:
 
-// Constants
-#define XTAL 16000000
 
+//Function to initialize UART.
+//In our case with a BAUD of 38400, 8 databits and no parity
 void InitUART(long choosenBaudRate, char choosenNumberOfDataBits, char choosenParity)
 {
     1ee2:	0f 93       	push	r16
@@ -4799,7 +4801,7 @@ unsigned int tmp;
 
 00001f7c <ReadChar>:
 
-
+//Function to read char on port of the Arduino
 char ReadChar()
 {
   while ( (UCSR0A & (1<<7)) == 0 )
@@ -4818,6 +4820,7 @@ char ReadChar()
 
 00001f8c <SendChar>:
 
+//Function to send a char to the Bluetooth module
 void SendChar(char CharToSend)
 {
   while ( (UCSR0A & (1<<5)) == 0 )
@@ -4836,6 +4839,7 @@ void SendChar(char CharToSend)
 00001f9c <SendString>:
 }
 
+//Function taking use of the SendChar function, in order to easier send a whole string to the Bluetooth module
 void SendString(char* StringToSend)
 {
     1f9c:	cf 93       	push	r28
@@ -4850,8 +4854,8 @@ void SendString(char* StringToSend)
   {
     SendChar(*StringToSend);
     1faa:	f0 df       	rcall	.-32     	; 0x1f8c <SendChar>
-}
 
+//Function taking use of the SendChar function, in order to easier send a whole string to the Bluetooth module
 void SendString(char* StringToSend)
 {
   //Repeat until whole string has been sent

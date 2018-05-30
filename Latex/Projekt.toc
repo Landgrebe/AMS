@@ -15,10 +15,10 @@
 \contentsline {section}{\numberline {7}Brugergr\IeC {\ae }nseflade}{13}{section.7}
 \contentsline {section}{\numberline {8}Drivers}{19}{section.8}
 \contentsline {subsection}{\numberline {8.1}Display driver}{19}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Touch driver}{22}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.2}Touch driver}{21}{subsection.8.2}
 \contentsline {subsection}{\numberline {8.3}Bluetooth modul}{22}{subsection.8.3}
-\contentsline {subsubsection}{\numberline {8.3.1}Protokol}{23}{subsubsection.8.3.1}
-\contentsline {subsubsection}{\numberline {8.3.2}Implementering}{24}{subsubsection.8.3.2}
+\contentsline {subsubsection}{\numberline {8.3.1}Protokol}{22}{subsubsection.8.3.1}
+\contentsline {subsubsection}{\numberline {8.3.2}Implementering}{23}{subsubsection.8.3.2}
 \contentsline {subsection}{\numberline {8.4}SystemMaster}{25}{subsection.8.4}
 \contentsline {section}{\numberline {9}Tekniske overvejelse og valg}{27}{section.9}
 \contentsline {subsection}{\numberline {9.1}TFT Display}{27}{subsection.9.1}

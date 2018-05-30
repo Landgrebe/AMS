@@ -2,9 +2,11 @@
 #include <stdlib.h>
 #include "UART.h"
 
-// Constants
 #define XTAL 16000000
 
+
+//Function to initialize UART.
+//In our case with a BAUD of 38400, 8 databits and no parity
 void InitUART(long choosenBaudRate, char choosenNumberOfDataBits, char choosenParity)
 {
 unsigned int tmp;
@@ -31,7 +33,7 @@ unsigned int tmp;
   }  
 }
 
-
+//Function to read char on port of the Arduino
 char ReadChar()
 {
   while ( (UCSR0A & (1<<7)) == 0 )
@@ -41,6 +43,7 @@ char ReadChar()
   return UDR0;
 }
 
+//Function to send a char to the Bluetooth module
 void SendChar(char CharToSend)
 {
   while ( (UCSR0A & (1<<5)) == 0 )
@@ -50,6 +53,7 @@ void SendChar(char CharToSend)
   UDR0 = CharToSend;
 }
 
+//Function taking use of the SendChar function, in order to easier send a whole string to the Bluetooth module
 void SendString(char* StringToSend)
 {
   //Repeat until whole string has been sent

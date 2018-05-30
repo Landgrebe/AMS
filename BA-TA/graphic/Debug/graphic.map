@@ -919,16 +919,16 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x443e
+.debug_info     0x00000000     0x4440
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0xbbc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
- .debug_info    0x00000bbc     0x11c1 Bluetooth.o
- .debug_info    0x00001d7d      0x166 counting_millis.o
- .debug_info    0x00001ee3     0x11fa SystemMaster.o
- .debug_info    0x000030dd      0xbc5 TFTdriver.o
- .debug_info    0x00003ca2      0x4fe program.o
- .debug_info    0x000041a0      0x159 Touch.o
- .debug_info    0x000042f9      0x145 UART.o
+ .debug_info    0x00000bbc     0x11c3 Bluetooth.o
+ .debug_info    0x00001d7f      0x166 counting_millis.o
+ .debug_info    0x00001ee5     0x11fa SystemMaster.o
+ .debug_info    0x000030df      0xbc5 TFTdriver.o
+ .debug_info    0x00003ca4      0x4fe program.o
+ .debug_info    0x000041a2      0x159 Touch.o
+ .debug_info    0x000042fb      0x145 UART.o
 
 .debug_abbrev   0x00000000     0x160c
  *(.debug_abbrev)
@@ -941,16 +941,16 @@ END GROUP
  .debug_abbrev  0x00001479       0xcd Touch.o
  .debug_abbrev  0x00001546       0xc6 UART.o
 
-.debug_line     0x00000000     0x1c48
+.debug_line     0x00000000     0x1c4b
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x1f9 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
- .debug_line    0x000001f9      0x7d5 Bluetooth.o
- .debug_line    0x000009ce      0x183 counting_millis.o
- .debug_line    0x00000b51      0x59a SystemMaster.o
- .debug_line    0x000010eb      0x58f TFTdriver.o
- .debug_line    0x0000167a      0x2c1 program.o
- .debug_line    0x0000193b      0x1a2 Touch.o
- .debug_line    0x00001add      0x16b UART.o
+ .debug_line    0x000001f9      0x7d6 Bluetooth.o
+ .debug_line    0x000009cf      0x183 counting_millis.o
+ .debug_line    0x00000b52      0x59a SystemMaster.o
+ .debug_line    0x000010ec      0x58f TFTdriver.o
+ .debug_line    0x0000167b      0x2c1 program.o
+ .debug_line    0x0000193c      0x1a2 Touch.o
+ .debug_line    0x00001ade      0x16d UART.o
 
 .debug_frame    0x00000000      0x8c4
  *(.debug_frame)

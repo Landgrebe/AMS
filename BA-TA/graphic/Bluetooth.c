@@ -49,17 +49,19 @@ void InitBluetoothModule()
 	SendStringCRLF("AT+RESET");
 	
 	_delay_ms(1000);
-	SendStringCRLF("AT+ROLE=1");
+	SendStringCRLF("AT+ROLE=1"); //Taking Master role in future bonding. Enables inquiries which we need in order to scan for devices
 	
-	_delay_ms(1000);
+	_delay_ms(1000); //Time critcal in order for the module MCU to load the SPP Bluetooth Profile
 	SendStringCRLF("AT+INIT");
 	
 	_delay_ms(1500);
-	SendStringCRLF("AT+INQM=0,4,4"); //Timeout is 4*1.28 seconds
+	SendStringCRLF("AT+INQM=0,4,4"); //Timeout is 4*1.28 seconds and maximum 4 devices for searching
 	_delay_ms(1500);
 
 }
 
+//Function to send a CR LF (Carriage Return and Line Feed" on the end of the message that is sended to the Bluetooth module
+//Without the CR LF added, the Bluetooth module won't register the AT commands.
 void SendStringCRLF(char* message)
 {
 	char* CRLF = "\r\n";
@@ -71,10 +73,11 @@ void SendStringCRLF(char* message)
 	strcat(finalMessage,CRLF);
 	
 	SendString(finalMessage);
-	free(finalMessage);
+	free(finalMessage); //Freeing the dynamic allocated memory
 
 }
 
+//Function to get the addresses of nearby devices, which the system can correlate and compare to the addresses on the trusted list. Thereby the system can lock/open the doors
 void nearbyDevicesScan()
 {
 	int i = 0;
@@ -82,8 +85,9 @@ void nearbyDevicesScan()
 	
 	numberOfNearbyAddresses = 0;
 	
-	SendStringCRLF("AT+INQ");
+	SendStringCRLF("AT+INQ"); //Scanning for devices
 	
+	//Recieving all returned information until the returned "OK" is registreded (which means there is no more incomming data)
 	for(i = 0; i < 300; i++)
 	{
 		neabyRawAddresses[i] = ReadChar();
@@ -99,8 +103,10 @@ void nearbyDevicesScan()
 	//SendString("Raw address was recieved: ");
 	//SendStringCRLF(neabyRawAddresses);
 	
+	//Passing the data to manipulate into several usable addresses
 	nearbyAddressDelimeter(neabyRawAddresses);
 	
+	//Debugging usage
 	SendStringCRLF("");
 	SendString("1st name: ");
 	SendStringCRLF(nearbyDevice1Address);
@@ -117,7 +123,7 @@ void nearbyDevicesScan()
 	
 }
 
-
+//Function to get the address and names of potential trusted devices the user can add to the trusted list
 void trustedDevicesScan()
 {
 	int i = 0;
@@ -143,7 +149,6 @@ void trustedDevicesScan()
 	//SendStringCRLF(trustedRawAddresses);
 	
 	//Splitting the address into what we need to ask for name on device
-	//Setting the "cleanAddress" values
 	trustedAddressDelimeter(trustedRawAddresses);
 	
 	/*
@@ -201,7 +206,8 @@ void trustedDevicesScan()
 		device6Name = "N/A";
 	*/
 	
-		
+	
+	//Debugging usage
 	SendStringCRLF("");
 	SendString("1st name: ");
 	SendStringCRLF(trustedDevice1Name);
@@ -225,6 +231,7 @@ void trustedDevicesScan()
 	
 }
 
+//Function to search the whole data array for addresses and seperate them and concatenate them in the right order and comma beetween
 void nearbyAddressDelimeter(char* nearbyRawAddress)
 {
 	int t = 0;
@@ -237,8 +244,7 @@ void nearbyAddressDelimeter(char* nearbyRawAddress)
 	char* nearbyFinalAddress;
 	
 	char** nearbyDataArray = malloc(3);
-	
-	char *nearbyAddressesToSend[4]; //skal måske være 3 (grundet skift til 4 devices)
+	char *nearbyAddressesToSend[4];
 		
 	//Check number of recieved "+INQ", which should be equal to number of addresses
 	for(t = 0; t < 300; t++)
@@ -257,7 +263,7 @@ void nearbyAddressDelimeter(char* nearbyRawAddress)
 	
 	int q = 0;
 	
-	//Adresse eksempel:
+	//Adress example:
 	//{h0A}E{h0A}+INQ:74E5:43:96BCDF,A010C,7FFF
 	for(q = 0; q < numberOfNearbyAddresses; q++)
 	{
@@ -313,6 +319,7 @@ void nearbyAddressDelimeter(char* nearbyRawAddress)
 	//free(part1and2); //Warning - may be used uninitialized in this function
 	//free(finalAddress); //Warning - may be used uninitialized in this function
 	
+	//Setting the adresses and if not found: "N/A"
 	switch(numberOfRegisteredAddresses)
 	{
 		case 0 :
@@ -375,6 +382,7 @@ void nearbyAddressDelimeter(char* nearbyRawAddress)
 	}
 }
 
+//Function to search the whole data array for the potential new trusted addresses and seperate them and concatenate them in the right order and comma beetween
 void trustedAddressDelimeter(char* addresses)
 {
 	
@@ -407,17 +415,20 @@ void trustedAddressDelimeter(char* addresses)
 	char* part1and2;
 	char* finalAddress;
 		
+	//Removing the header of the data
 	char *header1 = strtok_r(addresses, delimeter2, &saveptr1);
 		
 	char** dataArray = malloc(3);
 		
-	char *addressesToSend[4]; //skal måske være 3 (grundet skift til 4 devices)
+	char *addressesToSend[4];
 		
 	q = 0;
-		
+	
+	//For each found address in the raw recieved data from the Bluetooth module
 	for(q = 0; q < numberOfRegisteredAddresses; q++)
 	{
-			
+		
+		//Delimetering
 		if(q >= 1)
 		{
 			header1 = strtok_r(NULL,delimeter3, &saveptr1);
@@ -468,7 +479,8 @@ void trustedAddressDelimeter(char* addresses)
 	//free(dataArray);
 	//free(part1and2); //Warning - may be used uninitialized in this function
 	//free(finalAddress); //Warning - may be used uninitialized in this function
-		
+	
+	//Setting the adresses and if not found: "N/A"
 	switch(numberOfRegisteredAddresses)
 	{
 		case 0 :
@@ -537,6 +549,7 @@ void trustedAddressDelimeter(char* addresses)
 		
 }
 
+//Function takes the right type of Bluetooth device MAC-address and
 char* getFoundDeviceName(char* moduleAddress)
 {
 	char* ATRNAME = "AT+RNAME?";
@@ -556,8 +569,9 @@ char* getFoundDeviceName(char* moduleAddress)
 	int timesOfCR = 0;
 	char deviceName[80];
 	
-	_delay_ms(250); //Necessary in order not to get ERROR(0) from bluetooth module and ensure stability
+	_delay_ms(250); //Necessary in order not to get ERROR(0) from bluetooth module and ensure stability. Indeed a time critical aspect of the Bluetooth SPP profile
 	
+	//Asking the Bluetooth module for the name of this adress:
 	SendStringCRLF(completeATmessage);
 	//completeATmessage = "AT+RNAME?C0EE,FB,DAF25E"
 	
@@ -613,7 +627,7 @@ char* getFoundDeviceName(char* moduleAddress)
 
 
 
-//Status = working - Use SendString before a checkForReturnedOK()
+//Used for debugging in development stage
 int checkForReturnedOK()
 {
 	
@@ -635,14 +649,14 @@ int checkForReturnedOK()
 	
 }
 
-//Status = not sure - der kan være problemer med eksekveringen, ved ikke hvorfor
-// PGA Manglende AT+somethingFunction
+//No longer used
 void setModuleName(char* newBluetoothName)
 {
 	//_delay_ms(50);
 	//SendString("");
 }
 
+//get function for other classes to get the trusted device names
 char* getTrustedDeviceName(int i)
 {
 	switch (i)
@@ -660,6 +674,7 @@ char* getTrustedDeviceName(int i)
 	}
 }
 
+//get function for other classes to get the trusted device address
 char* getTrustedDeviceAddress(int i)
 {
 	switch (i)
@@ -677,6 +692,7 @@ char* getTrustedDeviceAddress(int i)
 	}
 }
 
+//get function for other classes to get the nearby device address in order to compare it to the trusted devices list
 char* getNearbyDeviceAddress(int i)
 {
 		switch (i)
