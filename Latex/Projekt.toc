@@ -21,8 +21,13 @@
 \contentsline {subsubsection}{\numberline {8.3.2}Implementering}{23}{subsubsection.8.3.2}
 \contentsline {subsection}{\numberline {8.4}SystemMaster}{25}{subsection.8.4}
 \contentsline {section}{\numberline {9}Tekniske overvejelse og valg}{27}{section.9}
+\contentsline {subsection}{\numberline {9.1}TFT Display}{27}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}G\IeC {\o }r brug af globale variabler}{27}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Bluetooth Modul}{27}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}Touch.c og countingmillis.c}{28}{subsection.9.4}
 \contentsline {section}{\numberline {10}Tilegnelse af viden}{29}{section.10}
 \contentsline {subsection}{\numberline {10.1}Moduler, blokke og protokoller}{29}{subsection.10.1}
 \contentsline {subsection}{\numberline {10.2}Kode-klasser}{29}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}TFTdisplay og Touch}{29}{subsection.10.3}
 \contentsline {section}{\numberline {11}Test resultater}{30}{section.11}
 \contentsline {section}{\numberline {12}Konklusion}{31}{section.12}
