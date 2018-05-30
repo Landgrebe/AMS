@@ -22,9 +22,12 @@ For at opbygge en basisforståelse for driveren, vil der først blive forklaret 
 	\label{fig:Bus_timing}
 \end{figure}
 
-Herunder vil de essentielle funktioner deles op i hvert sin tabel. Flere af funktionerne gør brug af både Writecommand() og Writedata(), som er opbygget udfra Bus Timing figur \ref{fig:Bus_timing}. Derudover bruger flere af funktionerne SetColumnAddress() og SetPageAddress(), som er bygget op fra datasheet 8.2.20. og 8.2.21.: \\
-
-\textbf{\Large Included Font:}
+Herunder vil de essentielle funktioner deles op i hvert sin tabel. Flere af funktionerne gør brug af både Writecommand() og Writedata(), som er opbygget udfra Bus Timing figur \ref{fig:Bus_timing}. Derudover bruger flere af funktionerne SetColumnAddress() og SetPageAddress(), som er bygget op fra \href{https://blackboard.au.dk/bbcswebdav/pid-1697983-dt-content-rid-3847230_1/courses/BB-Cou-UUVA-73302/BB-Cou-UUVA-65758_ImportedContent_20170106021228/BB-Cou-STADS-UUVA-52360_ImportedContent_20160107025559/LAB/Lab3a%20Graphic%20LCD%20Display/Files%20for%20LAB3a/ILI9341_v1.11.pdf}{ILI9341} 
+8.2.20. og 8.2.21.: \\
+Nogle af funktionerne i driveren, bruges ikke i dette produkt, da flere af dem er brugt til test undervejs, for at kunne debugge den givne programstuktur.
+\newline
+\newline
+\textbf{\large Included Font:}
 
 \begin{center}
 \begin{tabular}{ |l|l|l| }
@@ -44,7 +47,7 @@ Antal karakter: 95\\
 	\label{fig:Thedotfactory}
 \end{figure}
 
-\textbf{\Large Funktions:}
+\textbf{\large Funktions:}
 
 \begin{center}
 \begin{tabular}{ |l|l|l| }
@@ -193,7 +196,7 @@ Før at Bluetooth modulet kan registrere at systemet forespørger navnet på en 
 \textbf{*** HVIS DER ER PLADS TIL MERE TEKST KAN NAVNE-FUNKTIONEN GODT UDDYBES HER}
 
 \subsection{SystemMaster}
-Dette driver/modul, står for at forbinde de andre cpp filer, og for at køre systemets funktionalitet. Derfor kaldes denne klasse også for master, da den fungerer som master ift. de andre klasser, som derved er slaves. Ift \textbf{REF TIL ENTITY}, ses Touch.h ikke som implementeret i denne klasse. Dette skulle den have været, men pga tidspres blev dette nedprioteret, derudover skulle klassen counting\_millis.c også være implementeret, mere om det i afsnittet Tekniske overvejelse og valg. 
+Dette driver/modul, står for at forbinde de andre cpp filer, og for at køre systemets funktionalitet. Derfor kaldes denne klasse også for master, da den fungerer som master ift. de andre klasser, som derved er slaves. Ift figur \ref{fig:Entity}, ses Touch.h ikke som implementeret i denne klasse. Dette skulle den have været, men pga tidspres blev dette nedprioteret, derudover skulle klassen counting\_millis.c også være implementeret, mere om det i afsnittet Tekniske overvejelse og valg. 
 Heruder vil kort gives et overblik over koden:
 \newline
 \newline
@@ -206,4 +209,4 @@ et udklip fra dafault staten, som laver Hoved Menuen fra afsnittet Brugergrænse
 	\label{fig:dafaultkode}
 \end{figure}
 
-Funktionaliteten fungerer på den måde at hvis auto mode sat i Hoved Menuen, vil der tjekkes for gemte enheder ift nye adresser som modtages fra bluetooth modulet. Det forløbige produkt, har en update state, som vises når den opdaterer nye værdier, og derved ikke kan brugeren ikke integere med systemet samtidig. Dette vil blive yderligere forklaret i afsnittet Tekniske overvejelse og valg. 
+Funktionaliteten fungerer på den måde at hvis auto mode sat i Hoved Menuen, vil der tjekkes for gemte enheder ift nye adresser som modtages fra bluetooth modulet. Det forløbige produkt, har en update state, som vises når den opdaterer nye værdier, og derved ikke kan brugeren ikke integere med systemet samtidig. Dette kan ses på figur \ref{fig:auto}
