@@ -4,7 +4,7 @@
 #include <util/delay.h>
 #include <avr/io.h>
 #include "TFTdriver.h"
-#include "display.h"
+#include "SystemMaster.h"
 #include "Touch.h"
 #include "UART.h"
 #include "Bluetooth.h"

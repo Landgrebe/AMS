@@ -11,7 +11,7 @@
 #include <util/delay.h>
 #include <string.h>
 #include "TFTdriver.h"
-#include "display.h"
+#include "SystemMaster.h"
 #include "Bluetooth.h"
 #include "logo.h"
 char* get_name[3] = {0,0,0}; 

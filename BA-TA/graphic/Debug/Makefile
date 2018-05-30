@@ -39,9 +39,9 @@ SUBDIRS :=
 C_SRCS +=  \
 ../Bluetooth.c \
 ../counting_millis.c \
-../display.c \
+../SystemMaster.c \
 ../TFTdriver.c \
-../TFTtest.c \
+../program.c \
 ../Touch.c \
 ../UART.c
 
@@ -55,36 +55,36 @@ ASM_SRCS +=
 OBJS +=  \
 Bluetooth.o \
 counting_millis.o \
-display.o \
+SystemMaster.o \
 TFTdriver.o \
-TFTtest.o \
+program.o \
 Touch.o \
 UART.o
 
 OBJS_AS_ARGS +=  \
 Bluetooth.o \
 counting_millis.o \
-display.o \
+SystemMaster.o \
 TFTdriver.o \
-TFTtest.o \
+program.o \
 Touch.o \
 UART.o
 
 C_DEPS +=  \
 Bluetooth.d \
 counting_millis.d \
-display.d \
+SystemMaster.d \
 TFTdriver.d \
-TFTtest.d \
+program.d \
 Touch.d \
 UART.d
 
 C_DEPS_AS_ARGS +=  \
 Bluetooth.d \
 counting_millis.d \
-display.d \
+SystemMaster.d \
 TFTdriver.d \
-TFTtest.d \
+program.d \
 Touch.d \
 UART.d
 

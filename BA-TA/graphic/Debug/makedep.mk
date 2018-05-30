@@ -6,11 +6,11 @@ Bluetooth.c
 
 counting_millis.c
 
-display.c
+SystemMaster.c
 
 TFTdriver.c
 
-TFTtest.c
+program.c
 
 Touch.c
 

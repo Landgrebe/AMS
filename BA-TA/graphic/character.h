@@ -6,7 +6,7 @@
  */ 
 
 //character arrays, for use in TFTdiver.c
-const unsigned char bogstaver[]= {
+const unsigned char tegn[]= {
 	
 	// @0 '!' (2 pixels wide)
 	0x00, //
