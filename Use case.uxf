@@ -20,7 +20,7 @@
       <w>180</w>
       <h>280</h>
     </coordinates>
-    <panel_attributes>Bluetooth anti-theft alarm
+    <panel_attributes>Bluetooth Anti-Theft Alarm
 halign=left</panel_attributes>
     <additional_attributes/>
   </element>
@@ -43,7 +43,7 @@ halign=left</panel_attributes>
       <w>460</w>
       <h>350</h>
     </coordinates>
-    <panel_attributes>Use case diagram
+    <panel_attributes>Use Case diagram
 --
 halign=left
 
