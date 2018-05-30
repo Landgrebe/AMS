@@ -1,3 +1,4 @@
+% !TeX spellcheck = de_DE
 %!TEX root = ../../Main.tex
 \graphicspath{{Chapters/BluetoothModul/}}
 %-------------------------------------------------------------------------------
@@ -5,7 +6,14 @@
 
 \section{Bluetooth modul}
 
-Bluetooth-modulet der bliver brugt i BA-TA systemet er af typen HC-05. Denne type-version understøtter nemlig mulighed for at tage rollen som både Master/Slave i et Bluetooth Master/Slave forhold imellem to parrende Bluetooth-enheden. Bluetooth modulet er sammensat med et breakout- board i bunden af modulet, hvilket giver nem adgang til de brugbare pins på selve Bluetooth-modulet.
+Bluetooth-modulet der bliver brugt i BA-TA systemet er af typen HC-05. Denne type-version understøtter nemlig mulighed for at tage rollen som både Master/Slave i et Bluetooth Master/Slave forhold imellem to parrende Bluetooth-enheden. Bluetooth modulet er sammensat med et breakout- board i bunden af modulet, hvilket giver nem adgang til de brugbare pins på selve Bluetooth-modulet, hvilket også kan ses på figur \ref{fig:bluetooth_modul}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 200 pt]{Img/modul.PNG}
+	\caption{Bluetooth modulet: HC-05 GW-040.}
+	\label{fig:bluetooth_modul}
+\end{figure}
 
 \subsection{Protokol}
 Der kommunikeres til systemets Bluetooth-modul igennem en UART-forbindelse. Gruppens implementerede UART-driver på Arduino’en gør det muligt, at Arduinoen og Bluetooth-modulet kan kommunikere sammen vha. AT-kommandoer. 

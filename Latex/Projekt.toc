@@ -15,14 +15,14 @@
 \contentsline {section}{\numberline {8}Brugergr\IeC {\ae }nseflade}{14}{section.8}
 \contentsline {section}{\numberline {9}Tekniske overvejelse og valg}{20}{section.9}
 \contentsline {subsection}{\numberline {9.1}Fordele og ulemper}{20}{subsection.9.1}
-\contentsline {section}{\numberline {10}Tilegnelse af viden}{21}{section.10}
-\contentsline {subsection}{\numberline {10.1}Moduler, blokke og protokoller}{21}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Kode-klasser}{21}{subsection.10.2}
-\contentsline {section}{\numberline {11}Test resultater}{22}{section.11}
-\contentsline {section}{\numberline {12}Konklusion}{23}{section.12}
-\contentsline {section}{\numberline {13}Graphic display driver}{25}{section.13}
-\contentsline {section}{\numberline {14}Display driver}{26}{section.14}
-\contentsline {section}{\numberline {15}Touch driver}{29}{section.15}
-\contentsline {section}{\numberline {16}Bluetooth modul}{30}{section.16}
-\contentsline {subsection}{\numberline {16.1}Protokol}{30}{subsection.16.1}
-\contentsline {subsection}{\numberline {16.2}Implementering}{31}{subsection.16.2}
+\contentsline {section}{\numberline {10}Tilegnelse af viden}{22}{section.10}
+\contentsline {subsection}{\numberline {10.1}Moduler, blokke og protokoller}{22}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Kode-klasser}{22}{subsection.10.2}
+\contentsline {section}{\numberline {11}Test resultater}{23}{section.11}
+\contentsline {section}{\numberline {12}Konklusion}{24}{section.12}
+\contentsline {section}{\numberline {13}Graphic display driver}{26}{section.13}
+\contentsline {section}{\numberline {14}Display driver}{27}{section.14}
+\contentsline {section}{\numberline {15}Touch driver}{30}{section.15}
+\contentsline {section}{\numberline {16}Bluetooth modul}{31}{section.16}
+\contentsline {subsection}{\numberline {16.1}Protokol}{31}{subsection.16.1}
+\contentsline {subsection}{\numberline {16.2}Implementering}{32}{subsection.16.2}

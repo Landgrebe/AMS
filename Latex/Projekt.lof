@@ -18,9 +18,10 @@
 \contentsline {figure}{\numberline {17}{\ignorespaces Valgt fjernet en enhed}}{18}{figure.17}
 \contentsline {figure}{\numberline {18}{\ignorespaces L\IeC {\r a}st op}}{18}{figure.18}
 \contentsline {figure}{\numberline {19}{\ignorespaces L\IeC {\r a}s Automatisk}}{19}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces Bus Timing}}{26}{figure.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces The Dot Factory karakter}}{27}{figure.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces Kommunikationseksempel med AT-kommandoer ved brug af en UART forbindelse til Bluetooth modulet.}}{30}{figure.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces Registrering af det returnede "OK" fra Bluetooth modulet}}{31}{figure.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces Al r\IeC {\r a} adresse information modtaget fra Bluetooth modulet}}{31}{figure.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces Brug af "delimeter"\-princippet ved brug af strtok\_r funktionen}}{32}{figure.25}
+\contentsline {figure}{\numberline {20}{\ignorespaces Bus Timing}}{27}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces The Dot Factory karakter}}{28}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Bluetooth modulet: HC-05 GW-040.}}{31}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Kommunikationseksempel med AT-kommandoer ved brug af en UART forbindelse til Bluetooth modulet.}}{32}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces Registrering af det returnede "OK" fra Bluetooth modulet}}{32}{figure.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces Al r\IeC {\r a} adresse information modtaget fra Bluetooth modulet}}{33}{figure.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces Brug af "delimeter"\-princippet ved brug af strtok\_r funktionen}}{33}{figure.26}
