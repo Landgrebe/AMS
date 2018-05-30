@@ -1,0 +1,32 @@
+\BOOKMARK [1][-]{section.1}{Indledning}{}% 1
+\BOOKMARK [1][-]{section.2}{Krav}{}% 2
+\BOOKMARK [1][-]{section.3}{Akt\370rbeskrivelse}{}% 3
+\BOOKMARK [1][-]{section.4}{Use Case beskrivelse}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{UC 1 - ADD DEVICE}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{UC 2 - REMOVE DEVICE}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{UC 3 - LOCK ON / LOCK OFF / AUTO}{section.4}% 7
+\BOOKMARK [1][-]{section.5}{System beskrivelse}{}% 8
+\BOOKMARK [2][-]{subsection.5.1}{Blokbeskrivelse BA-TA}{section.5}% 9
+\BOOKMARK [2][-]{subsection.5.2}{Internal Block Diagram for BA-TA}{section.5}% 10
+\BOOKMARK [1][-]{section.6}{System Arkitektur}{}% 11
+\BOOKMARK [2][-]{subsection.6.1}{Entity Relationship Diagram}{section.6}% 12
+\BOOKMARK [2][-]{subsection.6.2}{Sekvensdiagrammer}{section.6}% 13
+\BOOKMARK [1][-]{section.7}{Brugergr\346nseflade}{}% 14
+\BOOKMARK [1][-]{section.8}{Drivers}{}% 15
+\BOOKMARK [2][-]{subsection.8.1}{Display driver}{section.8}% 16
+\BOOKMARK [2][-]{subsection.8.2}{Touch driver}{section.8}% 17
+\BOOKMARK [2][-]{subsection.8.3}{Bluetooth modul}{section.8}% 18
+\BOOKMARK [3][-]{subsubsection.8.3.1}{Protokol}{subsection.8.3}% 19
+\BOOKMARK [3][-]{subsubsection.8.3.2}{Implementering}{subsection.8.3}% 20
+\BOOKMARK [2][-]{subsection.8.4}{SystemMaster}{section.8}% 21
+\BOOKMARK [1][-]{section.9}{Tekniske overvejelse og valg}{}% 22
+\BOOKMARK [2][-]{subsection.9.1}{TFT Display}{section.9}% 23
+\BOOKMARK [2][-]{subsection.9.2}{G\370r brug af globale variabler}{section.9}% 24
+\BOOKMARK [2][-]{subsection.9.3}{Bluetooth Modul}{section.9}% 25
+\BOOKMARK [2][-]{subsection.9.4}{Touch.c og countingmillis.c}{section.9}% 26
+\BOOKMARK [1][-]{section.10}{Tilegnelse af viden}{}% 27
+\BOOKMARK [2][-]{subsection.10.1}{Moduler, blokke og protokoller}{section.10}% 28
+\BOOKMARK [2][-]{subsection.10.2}{Kode-klasser}{section.10}% 29
+\BOOKMARK [2][-]{subsection.10.3}{TFTdisplay og Touch}{section.10}% 30
+\BOOKMARK [1][-]{section.11}{Test resultater}{}% 31
+\BOOKMARK [1][-]{section.12}{Konklusion}{}% 32
