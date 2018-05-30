@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.27)  30 MAY 2018 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.27)  30 MAY 2018 15:54
 entering extended mode
 **./Projekt.tex
 (Projekt.tex
@@ -1385,11 +1385,11 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 6.
-<Chapters/System/Img/Bdd.png, id=260, 713.66624pt x 238.64156pt>
+<Chapters/System/Img/Bdd.png, id=260, 795.72281pt x 254.45062pt>
 File: Chapters/System/Img/Bdd.png Graphic file (type png)
 <use Chapters/System/Img/Bdd.png>
 Package pdftex.def Info: Chapters/System/Img/Bdd.png  used on input line 21.
-(pdftex.def)             Requested size: 500.0pt x 167.19359pt.
+(pdftex.def)             Requested size: 500.0pt x 159.8854pt.
 
 Overfull \hbox (30.24498pt too wide) in paragraph at lines 21--22
  [][] 
@@ -1400,51 +1400,56 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 28.
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--49
+Underfull \hbox (badness 10000) in paragraph at lines 29--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--49
+Underfull \hbox (badness 10000) in paragraph at lines 29--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--49
+Underfull \hbox (badness 10000) in paragraph at lines 29--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--49
+Underfull \hbox (badness 10000) in paragraph at lines 29--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--49
+Underfull \hbox (badness 10000) in paragraph at lines 29--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--53
 
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 53.
 [7
 
 
  <./Chapters/System/Img/Bdd.png>]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 49.
-<Chapters/System/Img/Ibd.png, id=267, 444.91219pt x 301.125pt>
+(babel)             in language  on input line 53.
+<Chapters/System/Img/Ibd.png, id=267, 526.21594pt x 323.70938pt>
 File: Chapters/System/Img/Ibd.png Graphic file (type png)
 <use Chapters/System/Img/Ibd.png>
-Package pdftex.def Info: Chapters/System/Img/Ibd.png  used on input line 53.
-(pdftex.def)             Requested size: 300.0pt x 203.04382pt.
+Package pdftex.def Info: Chapters/System/Img/Ibd.png  used on input line 57.
+(pdftex.def)             Requested size: 300.0pt x 184.55577pt.
 )
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 117.
@@ -2181,7 +2186,7 @@ c/amsfonts/cm/cmbx12.pfb><C:/Users/71395/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/71395/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/71395/AppData/Loca
 l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Projekt.pdf (33 pages, 28393303 bytes).
+Output written on Projekt.pdf (33 pages, 28398335 bytes).
 PDF statistics:
  485 PDF objects out of 1000 (max. 8388607)
  96 named destinations out of 1000 (max. 500000)
