@@ -1,4 +1,4 @@
-\babel@toc {danish}{}
+\select@language {danish}
 \contentsline {section}{\numberline {1}Indledning}{3}{section.1}
 \contentsline {section}{\numberline {2}Krav}{4}{section.2}
 \contentsline {section}{\numberline {3}Akt\IeC {\o }rbeskrivelse}{4}{section.3}
