@@ -22,8 +22,13 @@ Vi har ikke brugt meget tid på at undersøge alternative display. Der blev valg
 \newline
 \newline
 \textbf{Gør brug af globale variabler} \\*
-Igennem de forskellige drivere gøres brug af globale variabler, dette er gjort da for at simplificire udviklingen af driverene. Denne metode at programmere på er dog ikke god program skik, og hvis gruppen havde afsat mere tid til at udvikling, ville det første være at erstatte disse globale variabler, med get og set metoder. 
+Igennem de forskellige drivere gøres der brug af globale variabler. Dette er gjort for at simplificire udviklingen af driverne. Denne metode at programmere på er dog ikke god programmerings-skik, og hvis gruppen havde afsat mere tid til udviklingen, ville det første være at erstatte disse globale variabler, med get() og set() metoder. 
 \newline
 \newline
-\textbf{Bluetooth Modul} \\*
-  
+\textbf{Bluetooth Modul} \\
+De første uger af udviklingsperioden var der i gruppen større problemer med det Bluetooth modul der først var blevet lånt af \href{https://stockmanager.ase.au.dk/}{Embedded Stock} til implementering i systemet. Efter en uges tid med troubleshooting på hvorfor den ikke kunne sættes op til at søge efter andre enheder, vidste det sig at det udleverede modul ikke var det rigtige modul som gruppen havde bestilt. Der var blevet bestilt et HC-05 modul, men istedet udleveret et HC-06 modul. Forskellen kan ikke ses med det blotte øje, da modulerne fysisk er ens og den eneste reele forskel er firmwaren den er blevet sendt afsted med fra fabrikken. HC-06 firmwaren er meget mere simpelt bygget op og understøtter derfor ikke samme antal avancerede AT-kommandoer. Dermed kan den ikke initialiseres til at kunne søge efter andre enheder og dermed lave inquiries.
+
+Herefter blev der lånt et anerledes HC-05 med et større breakout-board, hvilket efter nogle få timers debugging og troubleshooting måtte konkluderes at være i stykker. Det lykkedes os dog igennem Embedded Stock at få lånt et nyt HC-05 modul af anerledes breakout-board. Dette var funktionelt og endelig kunne gruppen begynde på selve implementeringen af Bluetooth-modulet i systemet, som inkluderer alle de funktioner den skal kunne understøtte fra Arduino'en. Der var dog også snak om hvorvidt gruppen skulle bestille et dyrere Bluetooth-modul på Amazon, men i og med vi først fik prøvet det andet af, kunne gruppen konstatere at det fint ville fungerere i sammenhæng med resten af systemet. Yderlige havde gruppen på dette tidspunkt ikke behov for flere forsinkelser med Bluetooth-moduler og derfor var der ikke incitament for at skulle vente på at posten ville nå frem.
+
+Den benyttede Bluetooth-modul i systemet, som kan ses på figur \ref{fig:bluetooth_modul}, er dog anderledes bygget op på breakout-boardet, hvilket betyder, at der har skulle træffes nogle valg alt efter, hvordan gruppen ville bruge Bluetooth-modulet i systemet. Bluetooth-modulet har 2 muligheder: den kan styres af kommandoer igennem Bluetooth-protokolen OTA (over-the-air) af enheder den har oprettet en Bluetooth forbindelse til og så kan man styre den ved brug af UART forbindelse og AT-kommandoer til dens RX/TX ben.
+
