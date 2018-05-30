@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.27)  30 MAY 2018 09:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.27)  30 MAY 2018 09:46
 entering extended mode
 **./Projekt.tex
 (Projekt.tex
@@ -1388,21 +1388,21 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 68.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 68.
-<Chapters/Krav/Img/SD1.png, id=239, 571.38469pt x 523.20468pt>
+<Chapters/Krav/Img/SD1.png, id=239, 570.63188pt x 523.20468pt>
 File: Chapters/Krav/Img/SD1.png Graphic file (type png)
 <use Chapters/Krav/Img/SD1.png>
 Package pdftex.def Info: Chapters/Krav/Img/SD1.png  used on input line 73.
-(pdftex.def)             Requested size: 400.0pt x 366.2727pt.
-<Chapters/Krav/Img/SD2.png, id=240, 438.8897pt x 411.03563pt>
+(pdftex.def)             Requested size: 400.0pt x 366.75171pt.
+<Chapters/Krav/Img/SD2.png, id=240, 485.56406pt x 441.14813pt>
 File: Chapters/Krav/Img/SD2.png Graphic file (type png)
 <use Chapters/Krav/Img/SD2.png>
 Package pdftex.def Info: Chapters/Krav/Img/SD2.png  used on input line 79.
-(pdftex.def)             Requested size: 400.0pt x 374.62001pt.
-<Chapters/Krav/Img/SD3.png, id=241, 570.63188pt x 462.22687pt>
+(pdftex.def)             Requested size: 400.0pt x 363.40645pt.
+<Chapters/Krav/Img/SD3.png, id=241, 575.90157pt x 492.33937pt>
 File: Chapters/Krav/Img/SD3.png Graphic file (type png)
 <use Chapters/Krav/Img/SD3.png>
 Package pdftex.def Info: Chapters/Krav/Img/SD3.png  used on input line 85.
-(pdftex.def)             Requested size: 400.0pt x 324.008pt.
+(pdftex.def)             Requested size: 400.0pt x 341.96826pt.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 88.
 Package babel Info: Redefining danish shorthand "~
@@ -1502,12 +1502,12 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 58.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 58.
-<Chapters/System/Img/Entity.png, id=268, 676.02562pt x 450.9347pt>
+<Chapters/System/Img/Entity.png, id=268, 767.11594pt x 433.62pt>
 File: Chapters/System/Img/Entity.png Graphic file (type png)
 <use Chapters/System/Img/Entity.png>
 Package pdftex.def Info: Chapters/System/Img/Entity.png  used on input line 64.
 
-(pdftex.def)             Requested size: 300.0pt x 200.11829pt.
+(pdftex.def)             Requested size: 300.0pt x 169.58089pt.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 67.
 Package babel Info: Redefining danish shorthand "~
@@ -1868,20 +1868,20 @@ File: Chapters/Display/Img/Thedotfactory.png Graphic file (type png)
 Package pdftex.def Info: Chapters/Display/Img/Thedotfactory.png  used on input 
 line 38.
 (pdftex.def)             Requested size: 150.0pt x 57.6318pt.
-
-Overfull \hbox (53.46446pt too wide) in paragraph at lines 72--83
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 75.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 75.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 75.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 75.
+ [28 <./Chapters/Display/Img/Thedotfactory.png>]
+Overfull \hbox (41.63806pt too wide) in paragraph at lines 76--87
  [] 
  []
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 83.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 83.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 83.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 83.
-[28 <./Chapters/Display/Img/Thedotfactory.png>])
+)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 144.
 Package babel Info: Redefining danish shorthand "~
@@ -1913,7 +1913,8 @@ Package babel Info: Redefining danish shorthand "~
 ]
 \openout2 = `Chapters/BluetoothModul/BluetoothModul.aux'.
 
- (Chapters/BluetoothModul/BluetoothModul.tex
+
+(Chapters/BluetoothModul/BluetoothModul.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 7.
 Package babel Info: Redefining danish shorthand "~
@@ -2058,7 +2059,7 @@ c/amsfonts/cm/cmbx12.pfb><C:/Users/71395/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/71395/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/71395/AppData/Loca
 l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Projekt.pdf (35 pages, 19736180 bytes).
+Output written on Projekt.pdf (35 pages, 19770095 bytes).
 PDF statistics:
  461 PDF objects out of 1000 (max. 8388607)
  93 named destinations out of 1000 (max. 500000)
