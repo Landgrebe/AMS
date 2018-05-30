@@ -5,7 +5,7 @@
 
 \section{Tilegnelse af viden}
 
-Meget af viden som er grundlagt for dette projekt er tilegnet gennem AMS kurset og igennem tidligere fag på ASE, hvor embedded software har været i fokus. Herunder vil vi give et overblik over hvor vi ellers har tilegnet os den nødvendige viden.
+Den viden som har dannet grundlag for dette projekt er tilegnet gennem AMS kurset og igennem tidligere fag på ASE, hvor embedded software har været i fokus. Herunder gives der et overblik over hvor gruppen yderligere har tilegnet sig den nødvendige viden for at kunne realisere implementeringen af systemet og den endelige prototype.
 
 \subsection{Moduler, blokke og protokoller}
   
@@ -13,20 +13,11 @@ Meget af viden som er grundlagt for dette projekt er tilegnet gennem AMS kurset 
 Dele af gruppen har på forhånd været bekendt med AT-kommandoer og deres opbygning og struktur. Denne viden er tilegnet i praktik på 5. semester, hvor der fra en microcontroller blev brugt AT-kommandoer til at initialisere og styre et IoT-device.
 
 \textbf{Bluetooth modulet - HC-05}\\
-Tilegnelsen af viden til Bluetooth-SMT-modulet (Surface-Mount-Technology), HC-05, har forummer og generelle internetsøgninger været nødvendige. Da modulet ikke bliver produceret af én bestemt producent har der ikke været et decideret datasheet som gruppen har kunne bruge. Derimod er modulet meget kendt og er brugt af mange mennesker. Det afspejler sig i de mange forskellige blogge gruppen har fundet, hvor modulet er blevet brugt i et projekt. Her har vi kunne hente nok information om modulet og de AT-kommandoer som modulet kan genkende.
-Især nedenstående side har været meget brugbar:
-http://www.martyncurrey.com/arduino-with-hc-05-bluetooth-module-at-mode/
-(Lav til referencer senere)
+Tilegnelsen af viden til Bluetooth-SMT-modulet (Surface-Mount-Technology), HC-05, har forummer og generelle internetsøgninger været nødvendige. Da modulet ikke bliver produceret af én bestemt producent har der ikke været et decideret datasheet som gruppen har kunne bruge som udgangspunkt til at udvikle ud fra. Derimod er modulet meget kendt og er brugt af mange mennesker. Det afspejler sig i de mange forskellige websider gruppen har fundet, hvor modulet er blevet brugt i et projekt. Her har vi kunne hente nok information om modulet og de AT-kommandoer som modulet kan genkende.
+Især \href{http://www.martyncurrey.com/arduino-with-hc-05-bluetooth-module-at-mode/}{Marty N Currey's projekt} har været meget brugbar at kunne følge.
 
-\subsection{Kode-klasser}
-*Her kan evt tilføjes noget om funktioner eller andre principper som bliver brugt i koden, som er viden vi har tilegnet os undervejs*
 
-*** delimetering i Bluetooth.c
-strcat
-strcpy
-strdup ***
-
-\subsection{TFTdisplay og Touch}
-Disse to driver klasser er lavet ud fra undervisningen i AMS, og dertilhørende viden igennem oplæg fra underviser. Derudover er der fundet inspiration og hjælp fra \href{http://www.rinkydinkelectronics.com/library.php}{RinkyDinky}, hvor igennem læsning af kode er givet en lille forståelse. Derudover er alt den viden som er brugt til opbygning af disse klasser bygget på det forskellige datasheet: \href{https://blackboard.au.dk/bbcswebdav/pid-1697983-dt-content-rid-3847230_1/courses/BB-Cou-UUVA-73302/BB-Cou-UUVA-65758_ImportedContent_20170106021228/BB-Cou-STADS-UUVA-52360_ImportedContent_20160107025559/LAB/Lab3a%20Graphic%20LCD%20Display/Files%20for%20LAB3a/ILI9341_v1.11.pdf}{ILI9341} 
+\textbf{TFTdisplay og Touch}
+Disse to driver klasser er lavet ud fra undervisningen i AMS, og dertilhørende viden igennem oplæg fra underviser. Derudover er der fundet inspiration og hjælp fra \href{http://www.rinkydinkelectronics.com/library.php}{RinkyDinkyElectronics}, hvor igennem læsning af kode er givet en lille forståelse. Derudover er alt den viden som er brugt til opbygning af disse klasser bygget på de forskellige datasheet: \href{https://blackboard.au.dk/bbcswebdav/pid-1697983-dt-content-rid-3847230_1/courses/BB-Cou-UUVA-73302/BB-Cou-UUVA-65758_ImportedContent_20170106021228/BB-Cou-STADS-UUVA-52360_ImportedContent_20160107025559/LAB/Lab3a%20Graphic%20LCD%20Display/Files%20for%20LAB3a/ILI9341_v1.11.pdf}{ILI9341} 
 og 
 \href{https://blackboard.au.dk/bbcswebdav/pid-1762166-dt-content-rid-4251461_1/courses/BB-Cou-UUVA-73302/BB-Cou-UUVA-65758_ImportedContent_20170106021228/BB-Cou-STADS-UUVA-52360_ImportedContent_20160107025559/LAB/LAB10%20Touch%20Screen%20Driver/Files%20for%20LAB10/XPT2046.pdf}{XPT2046}

@@ -5,15 +5,15 @@
 
 \section{System beskrivelse}
 
-BA-TA's (Bluetooth Anti-Theft Alarm) primære funktionalitet ligger i hhv. at kunne låse op og låse hoveddøren, så snart systemet registrerer at husets ejer, og dermed ejerens smartphone, er i nærheden eller ej.
+BA-TA's (Bluetooth Anti-Theft Alarm) primære funktionalitet ligger i hhv. at kunne låse op og låse hoveddøren, så snart systemet registrerer at husets ejer (og dermed smartphone) eller en anden godkendt Bluetooth-enhed, er i nærheden eller ej.
 
-Hele systemet styres fra en samlet enhed, som kan integeres fra brugeren gennem en skærm og dertilhørende touch funktion. 
+Hele systemet styres fra en samlet enhed, som brugeren kan interagere med gennem en skærm og dertilhørende touch funktion. 
 
 Igennem brugergrænsefladen kan brugeren både tilføje og fjerne de godkendte Bluetooth-enheder (personer) som skal kunne låse og låse op for døren.
 
-Når alle godkendte enheder er uden for rækkevidde af systemets Bluetooth-modul, låses døren, og så snart systemet ser en godkendt enhed indenfor rækkevidden bliver døren låst op. 
+Når alle godkendte enheder er uden for rækkevidde af systemets Bluetooth-modul, låses døren, og så snart systemet ser en godkendt enhed indenfor rækkevidden bliver døren igen låst op. 
 
-I under-afsnittende herunder bliver systemets blokke og de interne fobindelser præsenteret. Derudover dannes der et overblik over funktionaliteten som er implementeret i projektet og systemet. 
+I under-afsnittende herunder bliver systemets blokke og de interne fobindelser præsenteret.
 På figur \ref{fig:Bdd} ses et overordnet Bdd for projektet, hvor de interne forbindelser forklares på figur \ref{fig:Ibd}. 
 
 \begin{figure}[H]
@@ -30,7 +30,7 @@ I det følgende vil komme en beskrivelse af de enkelte blokke i BA-TA og deres i
 \newline
 \newline
 \textbf{Arduino} \\*
-Arduino'en, mega2560, initialiserer og styrer alt funktionaliteten som indgår i systemet. Arduino blokken står for at initialisere  Touch Display, Touch Controller og Display Controller, som bruges til at kunne modtage signaler fra Touch-delen, samt at sende signaler til Display'et og dermed få repræsenteret noget til brugeren. Yderligere bruges Arduinoen til at kommunikkere med Bluetooth-blokken.
+Arduino'en, mega2560, initialiserer og styrer alt funktionaliteten som indgår i systemet. Arduino blokken står for at initialisere  Touch Display, Touch Controller og Display Controller som bruges til at kunne modtage signaler fra Touch-delen, samt at sende signaler til Display'et og dermed få repræsenteret noget til brugeren. Yderligere bruges Arduinoen til at initialisere og kontrollere UART driveren og Bluetooth modulet.
 \newline
 \newline
 \textbf{Touch Controller} \\*
