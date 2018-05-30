@@ -1,0 +1,28 @@
+\babel@toc {danish}{}
+\contentsline {section}{\numberline {1}Indledning}{3}{section.1}
+\contentsline {section}{\numberline {2}Krav}{4}{section.2}
+\contentsline {section}{\numberline {3}Akt\IeC {\o }rbeskrivelse}{4}{section.3}
+\contentsline {section}{\numberline {4}Use Case beskrivelse}{5}{section.4}
+\contentsline {subsubsection}{\numberline {4.0.1}UC 1 - ADD DEVICE}{5}{subsubsection.4.0.1}
+\contentsline {subsubsection}{\numberline {4.0.2}UC 2 - REMOVE DEVICE}{5}{subsubsection.4.0.2}
+\contentsline {subsubsection}{\numberline {4.0.3}UC 3 - LOCK ON / LOCK OFF / AUTO}{6}{subsubsection.4.0.3}
+\contentsline {section}{\numberline {5}System beskrivelse}{7}{section.5}
+\contentsline {subsection}{\numberline {5.1}Blokbeskrivelse BA-TA}{7}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Internal Block Diagram for BA-TA}{8}{subsection.5.2}
+\contentsline {section}{\numberline {6}System Arkitektur}{9}{section.6}
+\contentsline {subsection}{\numberline {6.1}Entity Relationship Diagram}{9}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Sekvensdiagrammer}{10}{subsection.6.2}
+\contentsline {section}{\numberline {7}Brugergr\IeC {\ae }nseflade}{13}{section.7}
+\contentsline {section}{\numberline {8}Tekniske overvejelse og valg}{19}{section.8}
+\contentsline {subsection}{\numberline {8.1}Fordele og ulemper}{19}{subsection.8.1}
+\contentsline {section}{\numberline {9}Tilegnelse af viden}{21}{section.9}
+\contentsline {subsection}{\numberline {9.1}Moduler, blokke og protokoller}{21}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Kode-klasser}{21}{subsection.9.2}
+\contentsline {section}{\numberline {10}Test resultater}{22}{section.10}
+\contentsline {section}{\numberline {11}Konklusion}{23}{section.11}
+\contentsline {section}{\numberline {12}Graphic display driver}{25}{section.12}
+\contentsline {section}{\numberline {13}Display driver}{26}{section.13}
+\contentsline {section}{\numberline {14}Touch driver}{29}{section.14}
+\contentsline {section}{\numberline {15}Bluetooth modul}{30}{section.15}
+\contentsline {subsection}{\numberline {15.1}Protokol}{30}{subsection.15.1}
+\contentsline {subsection}{\numberline {15.2}Implementering}{31}{subsection.15.2}
