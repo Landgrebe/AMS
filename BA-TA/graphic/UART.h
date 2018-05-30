@@ -1,6 +1,4 @@
-void InitUART(unsigned long BaudRate, unsigned char DataBit, char Parity);
-unsigned char CharReady();
+void InitUART(long choosenBaudRate, char choosenNumberOfDataBits, char choosenParity);
 char ReadChar();
-void SendChar(char Tegn);
-void SendString(char* Streng);
-void SendInteger(int Tal);
+void SendChar(char CharToSend);
+void SendString(char* StringToSend);

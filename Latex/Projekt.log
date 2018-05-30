@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.27)  30 MAY 2018 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.27)  30 MAY 2018 16:55
 entering extended mode
 **./Projekt.tex
 (Projekt.tex
@@ -1480,12 +1480,12 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 10.
-<Chapters/SystemArkitektur/Img/Entity.png, id=279, 762.59906pt x 433.62pt>
+<Chapters/SystemArkitektur/Img/Entity.png, id=279, 932.73468pt x 526.96875pt>
 File: Chapters/SystemArkitektur/Img/Entity.png Graphic file (type png)
 <use Chapters/SystemArkitektur/Img/Entity.png>
 Package pdftex.def Info: Chapters/SystemArkitektur/Img/Entity.png  used on inpu
 t line 15.
-(pdftex.def)             Requested size: 500.0pt x 284.30438pt.
+(pdftex.def)             Requested size: 500.0pt x 282.48433pt.
 
 Overfull \hbox (30.24498pt too wide) in paragraph at lines 15--16
  [][] 
@@ -2224,7 +2224,7 @@ c/amsfonts/cm/cmbx12.pfb><C:/Users/71395/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/71395/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/71395/AppData/Loca
 l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Projekt.pdf (34 pages, 28386599 bytes).
+Output written on Projekt.pdf (34 pages, 28405109 bytes).
 PDF statistics:
  511 PDF objects out of 1000 (max. 8388607)
  103 named destinations out of 1000 (max. 500000)
