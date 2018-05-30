@@ -137,10 +137,10 @@
     <Compile Include="counting_millis.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="display.c">
+    <Compile Include="SystemMaster.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="display.h">
+    <Compile Include="SystemMaster.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="logo.h">
@@ -152,7 +152,7 @@
     <Compile Include="TFTdriver.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="TFTtest.c">
+    <Compile Include="program.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Touch.c">

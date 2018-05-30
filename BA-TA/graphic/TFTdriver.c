@@ -90,7 +90,7 @@ void letterhelper(int numberletter, int startx, int starty,unsigned char Red, un
 	{
 		fixed_letter++; //add one length
 	}
-	drawXletter(bogstaver,fixed_letter,count,start_x,starty, offset,modulus,Red,Green,Blue);
+	drawXletter(tegn,fixed_letter,count,start_x,starty, offset,modulus,Red,Green,Blue);
 	start_x = start_x+array_carrier[numberletter]+1; //sets the new startpoint for next session
 }
 
