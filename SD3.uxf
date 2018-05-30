@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.1.1">
-  <zoom_level>8</zoom_level>
+<diagram program="umlet" version="14.2">
+  <zoom_level>11</zoom_level>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>312</x>
-      <y>152</y>
-      <w>80</w>
-      <h>24</h>
+      <x>517</x>
+      <y>165</y>
+      <w>110</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>_:SystemMaster_</panel_attributes>
     <additional_attributes/>
@@ -15,10 +15,10 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>424</x>
-      <y>152</y>
-      <w>80</w>
-      <h>24</h>
+      <x>671</x>
+      <y>165</y>
+      <w>110</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>_:TFTDisplay_</panel_attributes>
     <additional_attributes/>
@@ -26,10 +26,10 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>544</x>
-      <y>152</y>
-      <w>80</w>
-      <h>24</h>
+      <x>836</x>
+      <y>165</y>
+      <w>110</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>_:Touch_</panel_attributes>
     <additional_attributes/>
@@ -37,10 +37,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>576</x>
-      <y>168</y>
-      <w>24</w>
-      <h>40</h>
+      <x>880</x>
+      <y>187</y>
+      <w>33</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
@@ -48,10 +48,10 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>664</x>
-      <y>152</y>
-      <w>80</w>
-      <h>24</h>
+      <x>1001</x>
+      <y>165</y>
+      <w>110</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>_:Bluetooth_</panel_attributes>
     <additional_attributes/>
@@ -59,10 +59,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>696</x>
-      <y>168</y>
-      <w>24</w>
-      <h>240</h>
+      <x>1045</x>
+      <y>187</y>
+      <w>33</w>
+      <h>330</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;280.0</additional_attributes>
@@ -70,10 +70,10 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>792</x>
-      <y>152</y>
-      <w>80</w>
-      <h>24</h>
+      <x>1177</x>
+      <y>165</y>
+      <w>110</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>_:UART_</panel_attributes>
     <additional_attributes/>
@@ -81,10 +81,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>824</x>
-      <y>168</y>
-      <w>24</w>
-      <h>272</h>
+      <x>1221</x>
+      <y>187</y>
+      <w>33</w>
+      <h>374</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;320.0</additional_attributes>
@@ -92,10 +92,10 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>208</x>
-      <y>96</y>
-      <w>48</w>
-      <h>88</h>
+      <x>374</x>
+      <y>88</y>
+      <w>66</w>
+      <h>121</h>
     </coordinates>
     <panel_attributes>Bruger</panel_attributes>
     <additional_attributes/>
@@ -103,10 +103,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>224</x>
-      <y>168</y>
-      <w>24</w>
-      <h>568</h>
+      <x>396</x>
+      <y>187</y>
+      <w>33</w>
+      <h>781</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;690.0</additional_attributes>
@@ -114,10 +114,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>344</x>
-      <y>168</y>
-      <w>24</w>
-      <h>72</h>
+      <x>561</x>
+      <y>187</y>
+      <w>33</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
@@ -125,10 +125,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>224</x>
-      <y>184</y>
-      <w>368</w>
-      <h>40</h>
+      <x>396</x>
+      <y>209</y>
+      <w>506</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Brugeren trykker på "ENTER" i hovedmenuen 
@@ -138,10 +138,10 @@ Brugeren trykker på "ENTER" i hovedmenuen
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>576</x>
-      <y>192</y>
-      <w>16</w>
-      <h>48</h>
+      <x>880</x>
+      <y>220</y>
+      <w>22</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -149,10 +149,10 @@ Brugeren trykker på "ENTER" i hovedmenuen
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>352</x>
-      <y>216</y>
-      <w>240</w>
-      <h>32</h>
+      <x>572</x>
+      <y>253</y>
+      <w>330</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Sender information om trykket knap</panel_attributes>
@@ -161,10 +161,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>344</x>
-      <y>224</y>
-      <w>16</w>
-      <h>40</h>
+      <x>561</x>
+      <y>264</y>
+      <w>22</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -172,10 +172,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>456</x>
-      <y>168</y>
-      <w>24</w>
-      <h>96</h>
+      <x>715</x>
+      <y>187</y>
+      <w>33</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
@@ -183,10 +183,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
-      <y>72</y>
-      <w>760</w>
-      <h>648</h>
+      <x>286</x>
+      <y>55</y>
+      <w>1045</w>
+      <h>891</h>
     </coordinates>
     <panel_attributes>Sekvens Diagram UC 3</panel_attributes>
     <additional_attributes/>
@@ -194,10 +194,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>192</x>
-      <y>184</y>
-      <w>704</w>
-      <h>512</h>
+      <x>352</x>
+      <y>209</y>
+      <w>968</w>
+      <h>704</h>
     </coordinates>
     <panel_attributes>loop</panel_attributes>
     <additional_attributes/>
@@ -205,10 +205,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>456</x>
-      <y>248</y>
-      <w>16</w>
-      <h>56</h>
+      <x>715</x>
+      <y>297</y>
+      <w>22</w>
+      <h>77</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -216,10 +216,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>352</x>
-      <y>240</y>
-      <w>120</w>
-      <h>32</h>
+      <x>572</x>
+      <y>286</y>
+      <w>165</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Lås op</panel_attributes>
@@ -228,10 +228,10 @@ Lås op</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>224</x>
-      <y>280</y>
-      <w>248</w>
-      <h>32</h>
+      <x>396</x>
+      <y>341</y>
+      <w>341</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Vis ulåst = GRØN</panel_attributes>
@@ -240,10 +240,10 @@ Vis ulåst = GRØN</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>224</x>
-      <y>304</y>
-      <w>368</w>
-      <h>40</h>
+      <x>396</x>
+      <y>374</y>
+      <w>506</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Brugeren trykker på "ENTER" i hovedmenuen 
@@ -253,10 +253,10 @@ Brugeren trykker på "ENTER" i hovedmenuen
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>576</x>
-      <y>312</y>
-      <w>16</w>
-      <h>48</h>
+      <x>880</x>
+      <y>385</y>
+      <w>22</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -264,10 +264,10 @@ Brugeren trykker på "ENTER" i hovedmenuen
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>352</x>
-      <y>336</y>
-      <w>240</w>
-      <h>32</h>
+      <x>572</x>
+      <y>418</y>
+      <w>330</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Sender information om trykket knap</panel_attributes>
@@ -276,10 +276,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>344</x>
-      <y>344</y>
-      <w>16</w>
-      <h>72</h>
+      <x>561</x>
+      <y>429</y>
+      <w>22</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -287,10 +287,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>352</x>
-      <y>384</y>
-      <w>360</w>
-      <h>32</h>
+      <x>572</x>
+      <y>484</y>
+      <w>495</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Find Bluetooth enheder i nærheden</panel_attributes>
@@ -299,10 +299,10 @@ Find Bluetooth enheder i nærheden</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>352</x>
-      <y>448</y>
-      <w>360</w>
-      <h>32</h>
+      <x>572</x>
+      <y>572</y>
+      <w>495</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Sender adresser på enheder i nærheden</panel_attributes>
@@ -311,10 +311,10 @@ Sender adresser på enheder i nærheden</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>344</x>
-      <y>408</y>
-      <w>24</w>
-      <h>64</h>
+      <x>561</x>
+      <y>517</y>
+      <w>33</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
@@ -322,10 +322,10 @@ Sender adresser på enheder i nærheden</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>344</x>
-      <y>456</y>
-      <w>16</w>
-      <h>64</h>
+      <x>561</x>
+      <y>583</y>
+      <w>22</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -333,10 +333,10 @@ Sender adresser på enheder i nærheden</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>456</x>
-      <y>384</y>
-      <w>16</w>
-      <h>48</h>
+      <x>715</x>
+      <y>484</y>
+      <w>22</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -344,10 +344,10 @@ Sender adresser på enheder i nærheden</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>352</x>
-      <y>400</y>
-      <w>120</w>
-      <h>32</h>
+      <x>572</x>
+      <y>506</y>
+      <w>165</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Lås</panel_attributes>
@@ -356,10 +356,10 @@ Lås</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>224</x>
-      <y>520</y>
-      <w>248</w>
-      <h>32</h>
+      <x>396</x>
+      <y>671</y>
+      <w>341</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Vis ulåst(GRØN) / låst (RØD)</panel_attributes>
@@ -368,10 +368,10 @@ Vis ulåst(GRØN) / låst (RØD)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>456</x>
-      <y>424</y>
-      <w>24</w>
-      <h>88</h>
+      <x>715</x>
+      <y>539</y>
+      <w>33</w>
+      <h>121</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
@@ -379,10 +379,10 @@ Vis ulåst(GRØN) / låst (RØD)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>344</x>
-      <y>512</y>
-      <w>24</w>
-      <h>112</h>
+      <x>561</x>
+      <y>660</y>
+      <w>33</w>
+      <h>154</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
@@ -390,10 +390,10 @@ Vis ulåst(GRØN) / låst (RØD)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>576</x>
-      <y>352</y>
-      <w>24</w>
-      <h>240</h>
+      <x>880</x>
+      <y>440</y>
+      <w>33</w>
+      <h>330</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;280.0</additional_attributes>
@@ -401,10 +401,10 @@ Vis ulåst(GRØN) / låst (RØD)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>696</x>
-      <y>472</y>
-      <w>24</w>
-      <h>264</h>
+      <x>1045</x>
+      <y>605</y>
+      <w>33</w>
+      <h>363</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;310.0</additional_attributes>
@@ -412,10 +412,10 @@ Vis ulåst(GRØN) / låst (RØD)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>824</x>
-      <y>448</y>
-      <w>24</w>
-      <h>288</h>
+      <x>1221</x>
+      <y>572</y>
+      <w>33</w>
+      <h>396</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;340.0</additional_attributes>
@@ -423,10 +423,10 @@ Vis ulåst(GRØN) / låst (RØD)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
-      <y>480</y>
-      <w>152</w>
-      <h>32</h>
+      <x>550</x>
+      <y>616</y>
+      <w>209</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
      Matchende enhed - Ja/Nej</panel_attributes>
@@ -435,10 +435,10 @@ Vis ulåst(GRØN) / låst (RØD)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>344</x>
-      <y>640</y>
-      <w>24</w>
-      <h>96</h>
+      <x>561</x>
+      <y>836</y>
+      <w>33</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
@@ -446,10 +446,10 @@ Vis ulåst(GRØN) / låst (RØD)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>456</x>
-      <y>688</y>
-      <w>24</w>
-      <h>48</h>
+      <x>715</x>
+      <y>902</y>
+      <w>33</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
@@ -457,10 +457,10 @@ Vis ulåst(GRØN) / låst (RØD)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>576</x>
-      <y>624</y>
-      <w>24</w>
-      <h>112</h>
+      <x>880</x>
+      <y>814</y>
+      <w>33</w>
+      <h>154</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
@@ -468,10 +468,10 @@ Vis ulåst(GRØN) / låst (RØD)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>576</x>
-      <y>232</y>
-      <w>24</w>
-      <h>96</h>
+      <x>880</x>
+      <y>275</y>
+      <w>33</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
@@ -479,10 +479,10 @@ Vis ulåst(GRØN) / låst (RØD)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>456</x>
-      <y>296</y>
-      <w>24</w>
-      <h>104</h>
+      <x>715</x>
+      <y>363</y>
+      <w>33</w>
+      <h>143</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
@@ -490,10 +490,10 @@ Vis ulåst(GRØN) / låst (RØD)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>344</x>
-      <y>256</y>
-      <w>24</w>
-      <h>104</h>
+      <x>561</x>
+      <y>308</y>
+      <w>33</w>
+      <h>143</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
@@ -501,10 +501,10 @@ Vis ulåst(GRØN) / låst (RØD)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>696</x>
-      <y>392</y>
-      <w>16</w>
-      <h>88</h>
+      <x>1045</x>
+      <y>495</y>
+      <w>22</w>
+      <h>121</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -512,10 +512,10 @@ Vis ulåst(GRØN) / låst (RØD)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>824</x>
-      <y>424</y>
-      <w>16</w>
-      <h>32</h>
+      <x>1221</x>
+      <y>539</y>
+      <w>22</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -523,10 +523,10 @@ Vis ulåst(GRØN) / låst (RØD)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>704</x>
-      <y>416</y>
-      <w>136</w>
-      <h>32</h>
+      <x>1056</x>
+      <y>528</y>
+      <w>187</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Sender AT-kommando</panel_attributes>
@@ -535,10 +535,10 @@ Sender AT-kommando</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>704</x>
-      <y>432</y>
-      <w>136</w>
-      <h>32</h>
+      <x>1056</x>
+      <y>550</y>
+      <w>187</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Sender x antal Char</panel_attributes>
@@ -547,10 +547,10 @@ Sender x antal Char</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>456</x>
-      <y>496</y>
-      <w>16</w>
-      <h>48</h>
+      <x>715</x>
+      <y>638</y>
+      <w>22</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -558,10 +558,10 @@ Sender x antal Char</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>456</x>
-      <y>536</y>
-      <w>24</w>
-      <h>112</h>
+      <x>715</x>
+      <y>693</y>
+      <w>33</w>
+      <h>154</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
@@ -569,10 +569,10 @@ Sender x antal Char</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>272</x>
-      <y>376</y>
-      <w>88</w>
-      <h>152</h>
+      <x>462</x>
+      <y>473</y>
+      <w>121</w>
+      <h>209</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 5. sek delay
@@ -582,10 +582,10 @@ Sender x antal Char</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>576</x>
-      <y>560</y>
-      <w>24</w>
-      <h>40</h>
+      <x>880</x>
+      <y>726</y>
+      <w>33</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
@@ -593,10 +593,10 @@ Sender x antal Char</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>344</x>
-      <y>560</y>
-      <w>24</w>
-      <h>72</h>
+      <x>561</x>
+      <y>726</y>
+      <w>33</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
@@ -604,10 +604,10 @@ Sender x antal Char</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>224</x>
-      <y>576</y>
-      <w>368</w>
-      <h>40</h>
+      <x>396</x>
+      <y>748</y>
+      <w>506</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Brugeren trykker på "ENTER" i hovedmenuen 
@@ -617,10 +617,10 @@ Brugeren trykker på "ENTER" i hovedmenuen
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>576</x>
-      <y>584</y>
-      <w>16</w>
-      <h>48</h>
+      <x>880</x>
+      <y>759</y>
+      <w>22</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -628,10 +628,10 @@ Brugeren trykker på "ENTER" i hovedmenuen
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>352</x>
-      <y>608</y>
-      <w>240</w>
-      <h>32</h>
+      <x>572</x>
+      <y>792</y>
+      <w>330</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Sender information om trykket knap</panel_attributes>
@@ -640,10 +640,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>344</x>
-      <y>616</y>
-      <w>16</w>
-      <h>40</h>
+      <x>561</x>
+      <y>803</y>
+      <w>22</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -651,10 +651,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>456</x>
-      <y>560</y>
-      <w>24</w>
-      <h>96</h>
+      <x>715</x>
+      <y>726</y>
+      <w>33</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
@@ -662,10 +662,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>456</x>
-      <y>640</y>
-      <w>16</w>
-      <h>56</h>
+      <x>715</x>
+      <y>836</y>
+      <w>22</w>
+      <h>77</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -673,10 +673,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>352</x>
-      <y>632</y>
-      <w>120</w>
-      <h>32</h>
+      <x>572</x>
+      <y>825</y>
+      <w>165</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Lås</panel_attributes>
@@ -685,10 +685,10 @@ Lås</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>224</x>
-      <y>664</y>
-      <w>248</w>
-      <h>32</h>
+      <x>396</x>
+      <y>869</y>
+      <w>341</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Vis låst = RØD</panel_attributes>

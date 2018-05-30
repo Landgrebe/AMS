@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.1.1">
+<diagram program="umlet" version="14.2">
   <help_text>// Uncomment the following line to change the fontsize and font:
 fontsize=10
 // fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
@@ -24,14 +24,14 @@ fontsize=10
 
 
 // This text will be stored with each diagram;  use it for notes.</help_text>
-  <zoom_level>10</zoom_level>
+  <zoom_level>15</zoom_level>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>270</x>
-      <y>200</y>
-      <w>100</w>
-      <h>20</h>
+      <x>630</x>
+      <y>165</y>
+      <w>150</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>_:SystemMaster_</panel_attributes>
     <additional_attributes/>
@@ -39,10 +39,10 @@ fontsize=10
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>410</x>
-      <y>200</y>
-      <w>100</w>
-      <h>20</h>
+      <x>840</x>
+      <y>165</y>
+      <w>150</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>_:TFTDisplay_</panel_attributes>
     <additional_attributes/>
@@ -50,10 +50,10 @@ fontsize=10
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>560</x>
-      <y>200</y>
-      <w>100</w>
-      <h>20</h>
+      <x>1065</x>
+      <y>165</y>
+      <w>150</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>_:Touch_</panel_attributes>
     <additional_attributes/>
@@ -61,10 +61,10 @@ fontsize=10
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
-      <y>210</y>
-      <w>30</w>
-      <h>60</h>
+      <x>1125</x>
+      <y>180</y>
+      <w>45</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
@@ -72,10 +72,10 @@ fontsize=10
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>140</x>
-      <y>150</y>
-      <w>60</w>
-      <h>100</h>
+      <x>435</x>
+      <y>90</y>
+      <w>90</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>Bruger</panel_attributes>
     <additional_attributes/>
@@ -83,10 +83,10 @@ fontsize=10
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>240</y>
-      <w>30</w>
-      <h>480</h>
+      <x>465</x>
+      <y>225</y>
+      <w>45</w>
+      <h>720</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;460.0</additional_attributes>
@@ -94,10 +94,10 @@ fontsize=10
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>310</x>
-      <y>210</y>
-      <w>30</w>
-      <h>100</h>
+      <x>690</x>
+      <y>180</y>
+      <w>45</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
@@ -105,10 +105,10 @@ fontsize=10
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>240</y>
-      <w>460</w>
-      <h>40</h>
+      <x>465</x>
+      <y>225</y>
+      <w>690</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Brugeren trykker på "ENTER" i hovedmenuen "REMOVE DEVICE"</panel_attributes>
@@ -117,10 +117,10 @@ Brugeren trykker på "ENTER" i hovedmenuen "REMOVE DEVICE"</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>600</x>
-      <y>250</y>
-      <w>20</w>
-      <h>60</h>
+      <x>1125</x>
+      <y>240</y>
+      <w>30</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -128,10 +128,10 @@ Brugeren trykker på "ENTER" i hovedmenuen "REMOVE DEVICE"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
-      <y>300</y>
-      <w>30</w>
-      <h>110</h>
+      <x>1125</x>
+      <y>315</y>
+      <w>45</w>
+      <h>165</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
@@ -139,10 +139,10 @@ Brugeren trykker på "ENTER" i hovedmenuen "REMOVE DEVICE"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
+      <x>705</x>
       <y>270</y>
-      <w>300</w>
-      <h>40</h>
+      <w>450</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Sender information om trykket knap</panel_attributes>
@@ -151,10 +151,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>310</x>
-      <y>290</y>
-      <w>20</w>
-      <h>50</h>
+      <x>690</x>
+      <y>300</y>
+      <w>30</w>
+      <h>75</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -162,10 +162,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>310</x>
-      <y>330</y>
-      <w>30</w>
-      <h>120</h>
+      <x>690</x>
+      <y>360</y>
+      <w>45</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
@@ -173,10 +173,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>450</x>
-      <y>210</y>
-      <w>30</w>
-      <h>130</h>
+      <x>900</x>
+      <y>180</y>
+      <w>45</w>
+      <h>195</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
@@ -184,10 +184,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>450</x>
-      <y>320</y>
-      <w>20</w>
-      <h>60</h>
+      <x>900</x>
+      <y>345</y>
+      <w>30</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -195,10 +195,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>450</x>
-      <y>370</y>
-      <w>30</w>
-      <h>120</h>
+      <x>900</x>
+      <y>420</y>
+      <w>45</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
@@ -206,10 +206,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>70</x>
-      <y>120</y>
-      <w>640</w>
-      <h>580</h>
+      <x>330</x>
+      <y>45</y>
+      <w>960</w>
+      <h>870</h>
     </coordinates>
     <panel_attributes>Sekvens Diagram UC 2</panel_attributes>
     <additional_attributes/>
@@ -217,10 +217,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>380</y>
-      <w>460</w>
-      <h>40</h>
+      <x>465</x>
+      <y>435</y>
+      <w>690</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Brugeren trykker på "ENTER" i menuen REMOVE DEVICE</panel_attributes>
@@ -229,10 +229,10 @@ Brugeren trykker på "ENTER" i menuen REMOVE DEVICE</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>600</x>
-      <y>390</y>
-      <w>20</w>
-      <h>60</h>
+      <x>1125</x>
+      <y>450</y>
+      <w>30</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -240,10 +240,10 @@ Brugeren trykker på "ENTER" i menuen REMOVE DEVICE</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
-      <y>440</y>
-      <w>30</w>
-      <h>120</h>
+      <x>1125</x>
+      <y>525</y>
+      <w>45</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
@@ -251,10 +251,10 @@ Brugeren trykker på "ENTER" i menuen REMOVE DEVICE</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
-      <y>420</y>
-      <w>300</w>
-      <h>40</h>
+      <x>705</x>
+      <y>495</y>
+      <w>450</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Sender information om trykket knap</panel_attributes>
@@ -263,10 +263,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>310</x>
-      <y>430</y>
-      <w>20</w>
-      <h>60</h>
+      <x>690</x>
+      <y>510</y>
+      <w>30</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -274,10 +274,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>310</x>
-      <y>480</y>
-      <w>30</w>
-      <h>120</h>
+      <x>690</x>
+      <y>585</y>
+      <w>45</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
@@ -285,10 +285,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>450</x>
-      <y>470</y>
-      <w>20</w>
-      <h>60</h>
+      <x>900</x>
+      <y>570</y>
+      <w>30</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -296,10 +296,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
-      <y>460</y>
-      <w>150</w>
-      <h>40</h>
+      <x>705</x>
+      <y>555</y>
+      <w>225</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Vis valgt BT enhed</panel_attributes>
@@ -308,10 +308,10 @@ Vis valgt BT enhed</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>500</y>
-      <w>310</w>
-      <h>40</h>
+      <x>465</x>
+      <y>615</y>
+      <w>465</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Viser den slettede, tidligere godkendte, BT enhed</panel_attributes>
@@ -320,10 +320,10 @@ Viser den slettede, tidligere godkendte, BT enhed</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>120</x>
-      <y>530</y>
-      <w>560</w>
-      <h>120</h>
+      <x>405</x>
+      <y>660</y>
+      <w>840</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>Alt</panel_attributes>
     <additional_attributes/>
@@ -331,10 +331,10 @@ Viser den slettede, tidligere godkendte, BT enhed</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>530</y>
-      <w>460</w>
-      <h>40</h>
+      <x>465</x>
+      <y>660</y>
+      <w>690</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Brugeren trykker på "BACK" i menuen REMOVE DEVICE</panel_attributes>
@@ -343,10 +343,10 @@ Brugeren trykker på "BACK" i menuen REMOVE DEVICE</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>600</x>
-      <y>540</y>
-      <w>20</w>
-      <h>60</h>
+      <x>1125</x>
+      <y>675</y>
+      <w>30</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -354,10 +354,10 @@ Brugeren trykker på "BACK" i menuen REMOVE DEVICE</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
-      <y>560</y>
-      <w>300</w>
-      <h>40</h>
+      <x>705</x>
+      <y>705</y>
+      <w>450</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Sender information om trykket knap</panel_attributes>
@@ -366,10 +366,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>310</x>
-      <y>580</y>
-      <w>20</w>
-      <h>40</h>
+      <x>690</x>
+      <y>735</y>
+      <w>30</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -377,10 +377,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>450</x>
-      <y>520</y>
-      <w>30</w>
-      <h>100</h>
+      <x>900</x>
+      <y>645</y>
+      <w>45</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
@@ -388,10 +388,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>450</x>
-      <y>600</y>
-      <w>20</w>
-      <h>40</h>
+      <x>900</x>
+      <y>765</y>
+      <w>30</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -399,10 +399,10 @@ Sender information om trykket knap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
-      <y>590</y>
-      <w>150</w>
-      <h>40</h>
+      <x>705</x>
+      <y>750</y>
+      <w>225</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Vis hovedmenu</panel_attributes>
@@ -411,10 +411,10 @@ Vis hovedmenu</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>620</y>
-      <w>310</w>
-      <h>40</h>
+      <x>465</x>
+      <y>795</y>
+      <w>465</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Viser hovedmenu</panel_attributes>
@@ -423,10 +423,10 @@ Viser hovedmenu</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>450</x>
-      <y>630</y>
-      <w>30</w>
-      <h>90</h>
+      <x>900</x>
+      <y>810</y>
+      <w>45</w>
+      <h>135</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
@@ -434,10 +434,10 @@ Viser hovedmenu</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
-      <y>590</y>
-      <w>30</w>
-      <h>130</h>
+      <x>1125</x>
+      <y>750</y>
+      <w>45</w>
+      <h>195</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
@@ -445,10 +445,10 @@ Viser hovedmenu</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>310</x>
-      <y>610</y>
-      <w>30</w>
-      <h>110</h>
+      <x>690</x>
+      <y>780</y>
+      <w>45</w>
+      <h>165</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
@@ -456,10 +456,10 @@ Viser hovedmenu</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
-      <y>310</y>
-      <w>150</w>
-      <h>40</h>
+      <x>705</x>
+      <y>330</y>
+      <w>225</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Vis godkendte BT enheder</panel_attributes>
@@ -468,10 +468,10 @@ Vis godkendte BT enheder</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>350</y>
-      <w>310</w>
-      <h>40</h>
+      <x>465</x>
+      <y>390</y>
+      <w>465</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Viser listen af godkendte BT enheder</panel_attributes>

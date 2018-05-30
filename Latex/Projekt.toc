@@ -6,23 +6,23 @@
 \contentsline {subsubsection}{\numberline {4.0.1}UC 1 - ADD DEVICE}{5}{subsubsection.4.0.1}
 \contentsline {subsubsection}{\numberline {4.0.2}UC 2 - REMOVE DEVICE}{5}{subsubsection.4.0.2}
 \contentsline {subsubsection}{\numberline {4.0.3}UC 3 - LOCK ON / LOCK OFF / AUTO}{6}{subsubsection.4.0.3}
-\contentsline {section}{\numberline {5}Sekvensdiagram}{7}{section.5}
-\contentsline {section}{\numberline {6}System beskrivelse}{10}{section.6}
-\contentsline {subsection}{\numberline {6.1}Blokbeskrivelse BA-TA}{10}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Internal Block Diagram for BA-TA}{11}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Entity Relationship Diagram for BA-TA}{12}{subsection.6.3}
-\contentsline {section}{\numberline {7}System Arkitektur}{13}{section.7}
-\contentsline {section}{\numberline {8}Brugergr\IeC {\ae }nseflade}{14}{section.8}
-\contentsline {section}{\numberline {9}Tekniske overvejelse og valg}{20}{section.9}
-\contentsline {subsection}{\numberline {9.1}Fordele og ulemper}{20}{subsection.9.1}
-\contentsline {section}{\numberline {10}Tilegnelse af viden}{22}{section.10}
-\contentsline {subsection}{\numberline {10.1}Moduler, blokke og protokoller}{22}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Kode-klasser}{22}{subsection.10.2}
-\contentsline {section}{\numberline {11}Test resultater}{23}{section.11}
-\contentsline {section}{\numberline {12}Konklusion}{24}{section.12}
-\contentsline {section}{\numberline {13}Graphic display driver}{26}{section.13}
-\contentsline {section}{\numberline {14}Display driver}{27}{section.14}
-\contentsline {section}{\numberline {15}Touch driver}{30}{section.15}
-\contentsline {section}{\numberline {16}Bluetooth modul}{31}{section.16}
-\contentsline {subsection}{\numberline {16.1}Protokol}{31}{subsection.16.1}
-\contentsline {subsection}{\numberline {16.2}Implementering}{32}{subsection.16.2}
+\contentsline {section}{\numberline {5}System beskrivelse}{7}{section.5}
+\contentsline {subsection}{\numberline {5.1}Blokbeskrivelse BA-TA}{7}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Internal Block Diagram for BA-TA}{8}{subsection.5.2}
+\contentsline {section}{\numberline {6}System Arkitektur}{9}{section.6}
+\contentsline {subsection}{\numberline {6.1}Entity Relationship Diagram}{9}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Sekvensdiagrammer}{9}{subsection.6.2}
+\contentsline {section}{\numberline {7}Brugergr\IeC {\ae }nseflade}{13}{section.7}
+\contentsline {section}{\numberline {8}Tekniske overvejelse og valg}{19}{section.8}
+\contentsline {subsection}{\numberline {8.1}Fordele og ulemper}{19}{subsection.8.1}
+\contentsline {section}{\numberline {9}Tilegnelse af viden}{21}{section.9}
+\contentsline {subsection}{\numberline {9.1}Moduler, blokke og protokoller}{21}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Kode-klasser}{21}{subsection.9.2}
+\contentsline {section}{\numberline {10}Test resultater}{22}{section.10}
+\contentsline {section}{\numberline {11}Konklusion}{23}{section.11}
+\contentsline {section}{\numberline {12}Graphic display driver}{25}{section.12}
+\contentsline {section}{\numberline {13}Display driver}{26}{section.13}
+\contentsline {section}{\numberline {14}Touch driver}{29}{section.14}
+\contentsline {section}{\numberline {15}Bluetooth modul}{30}{section.15}
+\contentsline {subsection}{\numberline {15.1}Protokol}{30}{subsection.15.1}
+\contentsline {subsection}{\numberline {15.2}Implementering}{31}{subsection.15.2}
