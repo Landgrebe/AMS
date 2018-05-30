@@ -54,33 +54,7 @@ Funktion som laver en firkant med den valgte baggrundsfarve  \\
 \end{tabular}
 \end{center} 
 
-
-
-\begin{center}
-\begin{tabular}{ |l|l|l| }
-\hline
-\multicolumn{1}{ |c| }{\textbf{ letterhelper(numberletter, startx, starty,Red, Green, Blue)}} \\
-\hline
-Funktion som bruger input fra Include filen character,\\ til at bestemme hver karakter bredde og længde\\
-\hline
-\textbf{Paramentre:}  \\numberletter: Bestemmer hvilken karakter der skal hentes\\ Startx: Startværdi på x-aksen \\Starty: Startværdi på y-aksen\\ Red: farve(værdi)\\ Green: farve(værdi) \\ Blue: farve(værdi)\\
-\hline
-\end{tabular}
-\end{center}
-
-\begin{center}
-\begin{tabular}{ |l|l|l| }
-\hline
-\multicolumn{1}{ |c| }{\textbf{ drawXBitmap( bitmap[],length,count,startx,starty, letter, modulus,Red, Green, Blue)}} \\
-\hline
-Funktion som står for at skrive til hver bit, med værdier fra letterhelper()\\
-\hline
-\textbf{Paramentre:}  \\bitmap[]: Henter en byte fra character.h\\ length: Fortæller funktionen, hvor bred karakteren der skal skrives er\\ count: hvor mange bytes funktionen skal køre igennem for at lave hele karakteren\\ Startx: Startværdi på x-aksen \\Starty: Startværdi på y-aksen\\ Red: farve(værdi)\\ Green: farve(værdi) \\ Blue: farve(værdi)\\
-\textbf{Note:} Funktionen sletter gamle karakterer, da en ny smallere karakter end forrige stadig\\ vil forblive på displayet\\
-
-\hline
-\end{tabular}
-\end{center}  
+FillRectangle er en funktion som visuelt kan ændre bits til en anden farve på den givne skærm. Fra input vælges startx og starty samt længde og bredde. Derefter laves en ud fra de input der er givet. Farven afhænger også af inputtet. Det der reelt sker, er at den givne farve bliver skrevet til hver eneste pixel, i det sted der er valgt en firkant. 
 
 \begin{center}
 \begin{tabular}{ |l|l|l| }
@@ -96,32 +70,23 @@ Funktion som modtager en en streng, og konverterer ascii værdien til \\den rett
 \end{tabular}
 \end{center}  
 
+drawletters er en startfunktion til drawXletter, i denne funktion, findes længden på den på det givne tegn, som skal skrives. Herudover findes lægden at det givne loop drawXletter skal fortsætte, ift hvor mange bytes der hører til det givne tegn. Denne funktion står for at finde de respektive værdier fra array\_carrier, og sende dem med til drawXletter.  til sidst sættes den nye start\_x, hvor næste tegn kan placeres, her er der valgt et mellemrum fra udvikleren på 1 pixel.
+
 \begin{center}
 \begin{tabular}{ |l|l|l| }
 \hline
-\multicolumn{1}{ |c| }{\textbf{ drawNumber(number,startx, starty,Red, Green, Blue)}} \\
+\multicolumn{1}{ |c| }{\textbf{ drawXletter( bitmap[],length,count,startx,starty, letter, modulus,Red, Green, Blue)}} \\
 \hline
-Funktion som modtager en en integer, og konverterer ascii værdien til \\den rette værdi ift character.h \\
+Funktion som står for at skrive til hver bit, med værdier fra letterhelper()\\
 \hline
-\textbf{Paramentre:}  \\number: Modtager et interger tal\\  Startx: Startværdi på x-aksen \\Starty: Startværdi på y-aksen\\ Red: farve(værdi)\\ Green: farve(værdi) \\ Blue: farve(værdi)\\
-\\
+\textbf{Paramentre:}  \\bitmap[]: Henter en byte fra character.h\\ length: Fortæller funktionen, hvor bred karakteren der skal skrives er\\ count: hvor mange bytes funktionen skal køre igennem for at lave hele karakteren\\ Startx: Startværdi på x-aksen \\Starty: Startværdi på y-aksen\\ Red: farve(værdi)\\ Green: farve(værdi) \\ Blue: farve(værdi)\\
+\textbf{Note:} Funktionen sletter gamle karakterer, da en ny smallere karakter end forrige stadig\\ vil forblive på displayet\\
 
 \hline
 \end{tabular}
 \end{center}  
 
-\begin{center}
-\begin{tabular}{ |l|l|l| }
-\hline
-\multicolumn{1}{ |c| }{\textbf{ setBaggroundPixel(int red, int green, int blue)}} \\
-\hline
-Funktion som sætter baggrundsfarven af tekst og tal\\
-\hline
-\textbf{Paramentre:}  \\ Red: farve(værdi)\\ Green: farve(værdi) \\ Blue: farve(værdi)\\
-\\
+drawXletters står for at farve hver pixel, så der laves det tegn som er anmodet, dette sker ved at funktionen modtager information fra drawletters, som har information om tegn[], som er hentet fra character.h. Dette array, består af et bitmap af alle ascii tegn, og byte værdier som tegner hver pixel. Igennem funktionen sikres at bredden på tegnet overholdes, og et nyt startx punkt bliver sat, samtidig med at starty (colum) sættes til næste linje. dette gøres indtil den del af arrayet er løbet igennem som er givet fra drawletters. Til sidst i koden slettes (pixels = hvid) tegn eller pixels, som ligger forand det nye tegn som er tegnet. Dette sker for at sikre at tegnene ikke flyder ind over hinanden, hvis der findes gamle tegn på pladsen, hvor den nye tegnes. 
 
-\hline
-\end{tabular}
-\end{center}  
 
 
