@@ -5,6 +5,30 @@
 
 \section{Test resultater}
 
+Prototypen til BA-TA systemet er gennemgået test, som er prædefineret af de 3 Use Cases.
+Herunder, i tabel \ref{test_resultater}, kan resultatet af de 3 forskellige tests ses og dermed hvorvidt resultatet af testen er godkendt eller ej. Yderligere er der tilknyttet eventuelle bemærkninger til testens forløb og resultater.
 
+\hfill \break
+\hfill \break
 
-Her skal der smides alle test resultater ind af systemet. Tag brug af Use Cases som udgangspunkt til disse. Dermed er der også en bedre rød tråd i dokumentet og dermed grundlag for en god konklusion efterfølgende.
+%\setlength{\arrayrulewidth}{1mm}
+\setlength{\tabcolsep}{18pt}
+%\renewcommand{\arraystretch}{1.5}
+
+{
+\centering
+\label{test_resultater}
+\begin{tabular}{ |p{4.2cm}|p{4.2cm}|p{4.2cm}|  }
+		\hline
+		\multicolumn{3}{|c|}{\textbf{Test resultater af BA-TA prototypen}} \\
+		\hline
+		Use Case \#& Godkendt eller ikke-godkendt? &Bemærkninger \\
+		\hline
+		\#1 & Godkendt & Test af Use Case 1 gik som forventet. En fundet BT-enhed kan tilføjes til den godkendte liste. \\
+		\hline
+		\#2 & Godkendt & Test af Use Case 2 gik som forventet. En tidligere godkendt BT-enhed kan fjernes fra den godkendte liste. \\
+		\hline
+		\#3 & Godkendt & Test af Use Case 3 gik som forventet. Alle 3 lock/låse states virker. I tilfælde af at en godkendt enhed på listen vælger at skifte navn på den respektive enhed, kan BA-TA på nuværende tidspunkt ikke opdatere til det nye navn i listen over godkendte enheder. \\
+		\hline
+\end{tabular}
+}
